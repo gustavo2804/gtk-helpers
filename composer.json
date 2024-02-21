@@ -1,0 +1,56 @@
+{
+    "name": "gtk/gtk-helpers",
+    "description": "My GTK-Helpers",
+    "authors": [
+        {
+            "name": "Gustavo Tavares",
+            "email": "gustavo@knittynotes.com"
+        }
+    ],
+    "repositories": [
+    ],
+    "require": {
+    },
+    "autoload": {
+        "files": [
+            "src/Functions/Authorization.php",
+            "src/Functions/CedulaFunctions.php",
+            "src/Functions/Data/Array.php",
+            "src/Functions/Data/Stream.php",
+            "src/Functions/Data/String.php",
+            "src/Functions/Data/Time.php",
+            "src/Functions/Data/Truthy.php",
+            "src/Functions/MethodLogger.php",
+            "src/Functions/OSFunctions.php",
+            "src/Functions/PriviliegedHostFunctions.php",
+            "src/Functions/QRFunctions.php",
+            "src/Functions/Sugar/IfResponds.php",
+            "src/Functions/UI/CurrentValueOrCheckbox.php",
+            "src/Functions/UI/GenerateSelect.php",
+            "src/Functions/UI/GenerateTable.php",
+            "src/Functions/UI/PrintRowContents.php",
+            "src/Functions/UI/Render.php",
+            "src/Functions/URLFunctions.php",
+            "src/Functions/WWWForm/FileFunctions.php",
+            "src/Functions/WWWForm/IsInvalidFile.php",
+            "src/lib/ArrayHelpers.php",
+            "src/lib/ArrayToDictionaryConverter.php",
+            "src/lib/AuthorizationHelpers.php",
+            "src/lib/CedulaManagement.php",
+            "src/lib/ContainerNumber.php",
+            "src/lib/FileHelpers.php",
+            "src/lib/FormResult.php",
+            "src/lib/IfResponds.php",
+            "src/lib/ImageValidationHelpers.php",
+            "src/lib/OperatingSystemHelpers.php",
+            "src/lib/QRCode.php",
+            "src/lib/TruthyHelpers.php",
+            "src/lib/URLHelpers.php"
+        ],
+        "classmap": [
+            "src/"
+        ]
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
