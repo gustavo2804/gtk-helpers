@@ -1,3 +1,6 @@
+environment.php
+.secret/
+.secretapp.sqlite
 .secret/*
 vendor/*
 *.env
@@ -13,5 +16,6 @@ node_modules/*
 build/*
 dist/*
 *.lock
-__FOSSIL__
+_FOSSIL_
 *~
+auth.json
