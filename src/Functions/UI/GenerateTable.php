@@ -6,6 +6,9 @@
 
 // Usage:
 // echo generateTable($columnsToDisplay, $items, $dataSource, $dataSourceName, $debug);
+
+
+
 function generateTableForUser(
     $user,
     $columnsToDisplay, 
@@ -41,7 +44,12 @@ function generateTableForUser(
             </tr>
         </thead>
         <tbody>
-        <?php if (!count($items)): ?>
+
+
+        <?php $currentItem = $items->current(); ?>
+        <?php $index       = 0; ?>
+        
+        <?php if (!$currentItem): ?>
         <tr>
             <td colspan="<?php echo count($columnsToDisplay) + 1; ?>">
                 No hay elementos que mostrar.
@@ -49,20 +57,24 @@ function generateTableForUser(
         </tr>
         <?php else: ?>
             <?php $currentUser = DataAccessManager::get("session")->getCurrentUser(); ?>
-            <?php foreach ($items as $index => $item): ?>
-                <?php if ($dataSource->itemIsVisibleToUser($currentUser, $item)): ?>
-                    <?php $itemIdentifier = $dataSource->dataMapping->valueForIdentifier($item); ?>
+            <?php // while ($currentItem): ?>
+            <?php foreach ($items as $currentItem): ?>
+                <?php if ($dataSource->itemIsVisibleToUser($currentUser, $currentItem)): ?>
+                    <?php $itemIdentifier = $dataSource->dataMapping->valueForIdentifier($currentItem); ?>
                     <tr 
                         class="border-b border-gray-200"
-                        style=<?php echo '"'.$dataSource->rowStyleForItem($item, $index).'"'; ?>
+                        style=<?php echo '"'.$dataSource->rowStyleForItem($currentItem, $index).'"'; ?>
                         id=<?php echo '"cell-'.$dataSource->dataAccessorName.'-'.$itemIdentifier.'"'; ?>
                     >
                         <?php echo $dataSource->tableRowContentsForUserItemColumns(
                                                     $user, 
-                                                    $item, 
+                                                    $currentItem, 
                                                     $columnsToDisplay); ?>
                     </tr>
                 <?php endif; ?>
+                <?php //$currentItem = $items->next(); ?>
+                <?php //$index++; ?>
+            <?php // endwhile; ?>
             <?php endforeach; ?>
         <?php endif; ?>
         </tbody>

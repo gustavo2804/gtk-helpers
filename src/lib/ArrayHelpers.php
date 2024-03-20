@@ -1,7 +1,20 @@
 <?php
 
 function isDictionary($array) {
+	/*
     return (bool)count(array_filter(array_keys($array), 'is_string'));
+	*/
+	return count(array_filter(array_keys($array), function($key) {
+        return is_string($key);
+    })) > 0;
+
+	// return count(array_filter(array_keys($array), 'is_string', ARRAY_FILTER_USE_KEY)) > 0;
+}
+
+function isAssociativeArray($array) {
+    return count(array_filter(array_keys($array), function($key) {
+        return is_string($key);
+    })) > 0;
 }
 
 function parseCSVLine($inputString) {
@@ -206,9 +219,3 @@ function ensureRequiredValuesSetInArray($form_vars, $required_vars, $validation_
 
 	return true;
 }
-
-
-
-
-
-
