@@ -12,15 +12,65 @@
 function generateTableForUser(
     $user,
     $columnsToDisplay, 
-    $items, 
+    $itemsOrQueryObject, 
     $dataSource, 
     $dataSourceName = null, 
     $debug = false
 ) {
+    $items = null;
+    $count = 0;
+
+    if (is_array($itemsOrQueryObject))
+    {
+        $count = count($itemsOrQueryObject);
+        $items = $itemsOrQueryObject;
+
+        if ($debug)
+        {
+            gtk_log("Is Array!");
+            gtk_log("Items count: ".$count);
+            if ($count < 200)
+            {
+                gtk_log("Items: ".print_r($items, true));
+            }
+            
+        }
+    }
+    else
+    {
+        $count = $itemsOrQueryObject->count();
+        $items = $itemsOrQueryObject->executeAndYield();
+
+        if ($debug)
+        {
+            gtk_log("Is Query Object!");
+            gtk_log("Items count: ".$count);
+        }
+    }
+
+
     if (!isset($dataSourceName))
     {
         $dataSourceName = $dataSource->dataAccessorName;
     }
+
+    if ($debug)
+    {
+        error_log("Generating table for user: ".print_r($user, true));
+        // error_log("Columns to display: ".print_r($columnsToDisplay, true));
+        if (is_array($items))
+        {
+            error_log("Items: ".print_r($items, true));
+        }
+        else
+        {
+            error_log("Items: ".get_class($items));
+        }
+        error_log("Data source: ".get_class($dataSource));
+    }
+
+    $index = 0;
+
     ob_start(); // Start output buffering 
     ?>
     <table>
@@ -44,22 +94,16 @@ function generateTableForUser(
             </tr>
         </thead>
         <tbody>
-
-
-        <?php $currentItem = $items->current(); ?>
-        <?php $index       = 0; ?>
         
-        <?php if (!$currentItem): ?>
+        <?php if ($count == 0): ?>
         <tr>
             <td colspan="<?php echo count($columnsToDisplay) + 1; ?>">
                 No hay elementos que mostrar.
             </td>
         </tr>
         <?php else: ?>
-            <?php $currentUser = DataAccessManager::get("session")->getCurrentUser(); ?>
-            <?php // while ($currentItem): ?>
             <?php foreach ($items as $currentItem): ?>
-                <?php if ($dataSource->itemIsVisibleToUser($currentUser, $currentItem)): ?>
+                <?php if ($dataSource->itemIsVisibleToUser($user, $currentItem)): ?>
                     <?php $itemIdentifier = $dataSource->dataMapping->valueForIdentifier($currentItem); ?>
                     <tr 
                         class="border-b border-gray-200"
@@ -71,10 +115,12 @@ function generateTableForUser(
                                                     $currentItem, 
                                                     $columnsToDisplay); ?>
                     </tr>
+                    <?php $index++; ?>
+                <?php else: ?>
+                    <?php if ($debug): ?>
+                        <?php gtk_log("Item is not visible to user: ".print_r($currentItem, true)); ?>
+                    <?php endif; ?>
                 <?php endif; ?>
-                <?php //$currentItem = $items->next(); ?>
-                <?php //$index++; ?>
-            <?php // endwhile; ?>
             <?php endforeach; ?>
         <?php endif; ?>
         </tbody>
