@@ -8,6 +8,16 @@ function currentValueOrCheckbox(
     $value,
     $options
 ){
+    $debug = true;
+
+    if ($debug)
+    {
+        error_log("currentValueOrCheckbox - Options: ".serialize($options));
+        error_log("currentValueOrCheckbox - PHPKey: ".serialize($value));
+        error_log("currentValueOrCheckbox - Value: ".$value);
+        error_log("currentValueOrCheckbox - Identifier: ".$identifier);
+    }
+
     if (isTruthy($value))
     {
         return "<p>".$value."</p>";
