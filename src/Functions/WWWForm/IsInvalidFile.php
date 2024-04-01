@@ -2,7 +2,7 @@
 
 function isInvalidFile($fileKey, $options)
 {
-    $debug = true;
+    $debug = false;
 
     $required         = true;
     $allowedFileSpecs = null;

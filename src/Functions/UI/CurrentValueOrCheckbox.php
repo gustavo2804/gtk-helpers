@@ -2,18 +2,50 @@
 
 
 function currentValueOrCheckbox(
+    $user,
     $dataAccessor,
     $identifier,
     $phpKey,
     $value,
     $options
 ){
-    $debug = true;
+    $debug = false;
+
+    if (!$identifier || !is_string($identifier))
+    {
+        if (isset($options["identifier"]))
+        {
+            $identifier = $options["identifier"];
+        }
+        else
+        {
+            throw new Exception("Identifier is required or must be string. Got: ".print_r($identifier, true));
+        }
+    }
+
+    if (!$phpKey || !is_string($phpKey))
+    {
+        if (isset($options["phpKey"]))
+        {
+            $phpKey = $options["phpKey"];
+        }
+        else
+        {
+            throw new Exception("PHP Key is required or must be string. Got: ".print_r($phpKey, true));
+        }
+    }
 
     if ($debug)
     {
-        error_log("currentValueOrCheckbox - Options: ".serialize($options));
-        error_log("currentValueOrCheckbox - PHPKey: ".serialize($value));
+        if ($options)
+        {
+            error_log("currentValueOrCheckbox - Options: ".print_r($options, true));
+        }
+        else
+        {
+            error_log("currentValueOrCheckbox - Options: null");
+        }
+        error_log("currentValueOrCheckbox - PHPKey: ".$phpKey);
         error_log("currentValueOrCheckbox - Value: ".$value);
         error_log("currentValueOrCheckbox - Identifier: ".$identifier);
     }
