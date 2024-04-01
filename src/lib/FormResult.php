@@ -21,10 +21,17 @@ class FormResult {
 	*/
 	public $success;
 	public $data;
+	public $value;
+
+	public function value()
+	{
+		return $this->success;
+	}
 
 	public function __construct($enum, $stringOrArray)
 	{
 		$this->success = $enum;
+		$this->value = $enum->value;
 		if (is_array($stringOrArray))
 		{
 			$this->data = $stringOrArray;

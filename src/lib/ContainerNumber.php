@@ -1,19 +1,4 @@
 <?php 
-
-/*
-
-[13-Nov-2023 15:37:17 America/Santo_Domingo] PHP Fatal error:  Uncaught TypeError: Illegal offset type in C:\StonewoodPHP\Lib\ContainerNumber.php:375
-Stack trace:
-#0 C:\StonewoodPHP\Lib\ContainerNumber.php(513): ContainerNumber::getContainerData(Array)
-#1 C:\StonewoodPHP\Model\Ops\StoneConduce.php(1305): ContainerNumber::containerSizeFromString(Array)
-#2 C:\StonewoodPHP\Model\Ops\StoneConduce.php(1397): StoneConduce->conduceArrayFromSolicitudObject(Array)
-#3 C:\StonewoodPHP\Model\LogisticsLand\SolicitudReservaDataAccess.php(340): StoneConduce->generateConduceFromSolicitud(Array, Array)
-#4 C:\StonewoodPHP\app.stonewood.com\action.php(151): SolicitudReservaDataAccess->actionGenerarConduce(Array)
-#5 {main}
-  thrown in C:\StonewoodPHP\Lib\ContainerNumber.php on line 375
-
-*/
-
 class ContainerNumber
 {
 	public static function isValidISOContainerString($containerString)
