@@ -252,17 +252,15 @@ class ContainerNumber
 		],
 	];
 
+	public static function generateISOContainerSelect(CustomInputFunctionArgument $argument)
+	{
 
-
-	public static function generateISOContainerSelect(
-		$dataAccessor,
-		$objectID,
-		$columnName,
-		$columnValue,
-		$options = null
-	){
 		$debug = false;
 
+		$columnName  = $argument->getColumnName();
+		$columnValue = $argument->getColumnValue();
+		$options     = $argument->getOptions();
+		
 		if ($debug)
 		{
 			error_log("Will prepare container select...");
