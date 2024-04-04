@@ -19,6 +19,8 @@ class FormResult {
 	PHP: In the example above, we define a Test class that has a private $value property. The __bool() magic method is implemented to control the evaluation of the object as a boolean. In this case, the __bool() method converts the $value property to a boolean using the (bool) typecast.
 
 	*/
+	public $isError;
+	public $message;
 	public $success;
 	public $data;
 	public $value;
@@ -102,6 +104,75 @@ class FormResult {
 	public function isFailure()
 	{
 		return !$this->success;
+	}
+
+	public function render($get, $post, $server, $cookie, $session, $files, $env)
+	{
+		if ($this->isSuccess())
+		{
+			header("Response: 200 OK");
+		}
+		else
+		{
+			header("Response: 200 OK");
+			// header("Response: 400 Bad Request");
+		}
+
+		$contentType = $this->data["Content-Type"] ?? "application/json";
+
+		header("Content-Type: ".$contentType);
+
+		switch ($contentType)
+		{
+			
+			case "text/html":
+				$toReturn = "";
+				
+				$header = "";
+
+				if ($this->isError)
+				{
+					$header = "<h1 class='error'>Error</h1>";
+				}
+				else
+				{
+					$header = "<h1 class='success'>Success</h1>";
+				}
+
+				$toReturn .= $header;
+
+				$message = $this->message();
+
+
+				if (array_key_exists("message", $this->data))
+				{
+					$toReturn .= "<div class='message'>".$this->data["message"]."</div>";
+				}
+				if (array_key_exists("html", $this->data))
+				{
+					$toReturn .= $this->data["html"];
+				}
+				echo $this->data;
+				break;
+			case "application/json":
+			default:
+				$toReturn = [];
+
+				if ($this->isFailure())
+				{
+					$toReturn["type"] = "error";
+				}
+				else
+				{
+					$toReturn["type"] = "success";
+				}
+
+				$toReturn["message"] = $this->message();
+
+
+				echo json_encode($toReturn);
+				break;
+		}
 	}
 
 }

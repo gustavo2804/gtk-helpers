@@ -28,7 +28,8 @@ function renderPage($input)
         // (e.g., has a specific method or property) and handle accordingly
         if (method_exists($input, 'render')) 
 		{
-            echo $input->render();
+            global $_GTK_SUPER_GLOBALS;
+            echo $input->render(...$_GTK_SUPER_GLOBALS);
         } 
 		elseif (property_exists($input, 'template_path')) 
 		{
