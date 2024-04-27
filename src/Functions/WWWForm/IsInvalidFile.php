@@ -41,7 +41,7 @@ function isInvalidFile($fileKey, $options)
 
         if (!isset($options["allowedFileSpecs"]))
         {
-            return new FormResult(
+            return new FailureResult(
                 ConduceSaveOptions::InvalidData, 
                 "No se especificaron allowedFileSpecs");
         }
@@ -80,7 +80,7 @@ function isInvalidFile($fileKey, $options)
                 error_log($missingMessage);
             }
     
-            return new FormResult(
+            return new FailureResult(
                 0,
                 $missingMessage);
         }
@@ -106,7 +106,7 @@ function isInvalidFile($fileKey, $options)
         }
 
 
-        return new FormResult(
+        return new FailureResult(
             0,
             $notAllowableTypeMessage);
     }
@@ -125,7 +125,7 @@ function isInvalidFile($fileKey, $options)
             error_log($tooBigMessage);
         }
 
-        return new FormResult(
+        return new FailureResult(
             0,
             $tooBigMessage);
     }

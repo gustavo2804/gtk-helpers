@@ -176,3 +176,26 @@ class FormResult {
 	}
 
 }
+
+
+class SuccessResult extends FormResult {
+	public function isSuccess()
+	{
+		return true;
+	}
+	public function isFailure()
+	{
+		return false;
+	}
+}
+
+class FailureResult extends FormResult {
+	public function isSuccess()
+	{
+		return false;
+	}
+	public function isFailure()
+	{
+		return true;
+	}
+}
