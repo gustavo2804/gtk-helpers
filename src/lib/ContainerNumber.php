@@ -328,7 +328,21 @@ class ContainerNumber
 	{
 		if ($key)
 		{
-			return self::$containerData[$key];
+			if (!array_key_exists($key, self::$containerData))
+			{
+				$message = ("Error: unknown isoCategory in `getContainerData`: $key");
+
+				if (true)
+				{
+					error_log($message);
+				}
+				
+				throw new Exception($message);
+			}
+			else
+			{
+				return self::$containerData[$key];
+			}
 		} 
 		else 
 		{
