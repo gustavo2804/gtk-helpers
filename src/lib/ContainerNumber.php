@@ -324,20 +324,18 @@ class ContainerNumber
 	}
 
 
-	public static function getContainerData($key = null)
+	public static function getContainerData($key = null, $throwException = true)
 	{
 		if ($key)
 		{
 			if (!array_key_exists($key, self::$containerData))
 			{
-				$message = ("Error: unknown isoCategory in `getContainerData`: $key");
-
-				if (true)
+				if ($throwException)
 				{
-					error_log($message);
+
+					$message = ("Error: unknown isoCategory in `getContainerData`: $key");
+					throw new Exception($message);
 				}
-				
-				throw new Exception($message);
 			}
 			else
 			{
@@ -480,7 +478,7 @@ class ContainerNumber
 		}
 
 		// Method 1
-		$data = self::getContainerData($string);
+		$data = self::getContainerData($string, false);
 
 		if ($data)
 		{
@@ -528,10 +526,11 @@ class ContainerNumber
 			case '40TK':
 				return 40;
 			default:
+				throw new Exception("`containerSizeFromString` Invalid Container Number: $string");
 				return 88;
 		}
 		
-		// throw new Exception("Invalid Container Number");
+		
 	}
 
 
