@@ -330,7 +330,8 @@ class ContainerNumber
 		{
 			if (!is_numeric($key) || !is_string($key))
 			{
-				throw new Exception("Illegal offset type on `getContainerWithData` - got: ".print_r($key, true));
+				$message = "Illegal offset type on `getContainerWithData` - got: ".print_r($key, true)." - Type: - ".gettype($key);
+				throw new Exception($message);
 			}
 
 			if (!array_key_exists($key, self::$containerData))
