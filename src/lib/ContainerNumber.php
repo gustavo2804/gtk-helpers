@@ -183,6 +183,12 @@ class ContainerNumber
 		//--------------------------
 		// 40 Fridge
 		//--------------------------
+		"42R1" => [
+			"english" => "40' Refrigerated", 
+			"spanish" => "Contenedor de 40 pies refrigerado (no productos alimenticios)",
+			"length"  => 40,
+			"colloquial" => "40RH",
+		],
 		"42R9" => [
 			"english" => "40' Refrigerated (no foodstuff)", 
 			"spanish" => "Contenedor de 40 pies refrigerado (no productos alimenticios)",
