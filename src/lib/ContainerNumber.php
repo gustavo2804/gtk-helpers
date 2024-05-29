@@ -256,6 +256,12 @@ class ContainerNumber
 			"length"  => 45,
 			"stonewood" => "45HC",
 		],
+		"L2G1" => [
+			"english" => "45'General Purpose Dry Container", 
+			"spanish" => "Contenedor de 45 pies propósito general",
+			"length"  => 45,
+			"stonewood" => "45DC",
+		],
 	];
 
 	public static function generateISOContainerSelect(CustomInputFunctionArgument $argument)
