@@ -1,4 +1,187 @@
 <?php 
+
+class UNEDIFactContainerType 
+{
+    const FULL_CONTAINER_LOAD = 1;
+    const EMPTY_CONTAINER = 2;
+    const EXPORT_CONTAINER = 3;
+    const IMPORT_CONTAINER = 4;
+    const SHIPPER_OWNED_CONTAINER = 5;
+    const CARRIER_OWNED_CONTAINER = 6;
+    const LEASED_CONTAINER = 7;
+    const DAMAGED_CONTAINER = 8;
+    const RESERVED_CONTAINER = 9;
+    const QUARANTINED_CONTAINER = 10;
+
+    public static function getDescription($type) {
+        switch ($type) {
+            case self::FULL_CONTAINER_LOAD:
+                return 'Full container load';
+            case self::EMPTY_CONTAINER:
+                return 'Empty container';
+            case self::EXPORT_CONTAINER:
+                return 'Export container';
+            case self::IMPORT_CONTAINER:
+                return 'Import container';
+            case self::SHIPPER_OWNED_CONTAINER:
+                return 'Shipper-owned container';
+            case self::CARRIER_OWNED_CONTAINER:
+                return 'Carrier-owned container';
+            case self::LEASED_CONTAINER:
+                return 'Leased container';
+            case self::DAMAGED_CONTAINER:
+                return 'Damaged container';
+            case self::RESERVED_CONTAINER:
+                return 'Reserved container';
+            case self::QUARANTINED_CONTAINER:
+                return 'Quarantined container';
+            default:
+                return 'Unknown type';
+        }
+    }
+}
+
+// 8051  Transport stage code qualifier
+// https://service.unece.org/trade/untdid/d99b/tred/tred8051.htm
+class UNEDITransportStageCodeQualifier 
+{
+	public function source()
+	{
+		return "https://service.unece.org/trade/untdid/d99b/tred/tred8051.htm";
+	}
+
+    const INLAND_TRANSPORT = 1;
+    const STATISTICAL_TERRITORY_LIMIT = 2;
+    const PRE_CARRIAGE_TRANSPORT = 10;
+    const AT_BORDER = 11;
+    const AT_DEPARTURE = 12;
+    const AT_DESTINATION = 13;
+    const MAIN_CARRIAGE_FOURTH_CARRIER = 15;
+    const MAIN_CARRIAGE_FIFTH_CARRIER = 16;
+    const MAIN_CARRIAGE_SIXTH_CARRIER = 17;
+    const MAIN_CARRIAGE_SEVENTH_CARRIER = 18;
+    const MAIN_CARRIAGE_EIGHTH_CARRIER = 19;
+    const MAIN_CARRIAGE_TRANSPORT = 20;
+    const MAIN_CARRIAGE_FIRST_CARRIER = 21;
+    const MAIN_CARRIAGE_SECOND_CARRIER = 22;
+    const MAIN_CARRIAGE_THIRD_CARRIER = 23;
+    const INLAND_WATERWAY_TRANSPORT = 24;
+    const DELIVERY_CARRIER_ALL_TRANSPORT = 25;
+    const SECOND_PRE_CARRIAGE_TRANSPORT = 26;
+    const PRE_ACCEPTANCE_TRANSPORT = 27;
+    const SECOND_ON_CARRIAGE_TRANSPORT = 28;
+    const MAIN_CARRIAGE_NINTH_CARRIER = 29;
+    const ON_CARRIAGE_TRANSPORT = 30;
+    const MAIN_CARRIAGE_TENTH_CARRIER = 31;
+    const MAIN_CARRIAGE_ELEVENTH_CARRIER = 32;
+    const MAIN_CARRIAGE_TWELFTH_CARRIER = 33;
+
+    public static function getDescription($code) {
+        switch ($code) {
+            case self::INLAND_TRANSPORT:
+                return 'Inland transport';
+            case self::STATISTICAL_TERRITORY_LIMIT:
+                return 'At the statistical territory limit';
+            case self::PRE_CARRIAGE_TRANSPORT:
+                return 'Pre-carriage transport';
+            case self::AT_BORDER:
+                return 'At border';
+            case self::AT_DEPARTURE:
+                return 'At departure';
+            case self::AT_DESTINATION:
+                return 'At destination';
+            case self::MAIN_CARRIAGE_FOURTH_CARRIER:
+                return 'Main carriage - fourth carrier';
+            case self::MAIN_CARRIAGE_FIFTH_CARRIER:
+                return 'Main carriage - fifth carrier';
+            case self::MAIN_CARRIAGE_SIXTH_CARRIER:
+                return 'Main carriage - sixth carrier';
+            case self::MAIN_CARRIAGE_SEVENTH_CARRIER:
+                return 'Main carriage - seventh carrier';
+            case self::MAIN_CARRIAGE_EIGHTH_CARRIER:
+                return 'Main carriage - eighth carrier';
+            case self::MAIN_CARRIAGE_TRANSPORT:
+                return 'Main-carriage transport';
+            case self::MAIN_CARRIAGE_FIRST_CARRIER:
+                return 'Main carriage - first carrier';
+            case self::MAIN_CARRIAGE_SECOND_CARRIER:
+                return 'Main carriage - second carrier';
+            case self::MAIN_CARRIAGE_THIRD_CARRIER:
+                return 'Main carriage - third carrier';
+            case self::INLAND_WATERWAY_TRANSPORT:
+                return 'Inland waterway transport';
+            case self::DELIVERY_CARRIER_ALL_TRANSPORT:
+                return 'Delivery carrier all transport';
+            case self::SECOND_PRE_CARRIAGE_TRANSPORT:
+                return 'Second pre-carriage transport';
+            case self::PRE_ACCEPTANCE_TRANSPORT:
+                return 'Pre-acceptance transport';
+            case self::SECOND_ON_CARRIAGE_TRANSPORT:
+                return 'Second on-carriage transport';
+            case self::MAIN_CARRIAGE_NINTH_CARRIER:
+                return 'Main carriage - ninth carrier';
+            case self::ON_CARRIAGE_TRANSPORT:
+                return 'On-carriage transport';
+            case self::MAIN_CARRIAGE_TENTH_CARRIER:
+                return 'Main carriage - tenth carrier';
+            case self::MAIN_CARRIAGE_ELEVENTH_CARRIER:
+                return 'Main carriage - eleventh carrier';
+            case self::MAIN_CARRIAGE_TWELFTH_CARRIER:
+                return 'Main carriage - twelfth carrier';
+            default:
+                return 'Unknown code';
+        }
+    }
+}
+
+enum UNMeasurementPurposeCode: string 
+{
+    case ACTUAL_MEASUREMENT = 'AAE'; // Actual measurement
+    case DIMENSION 			= 'DIM'; // Dimension
+    case GROSS_WEIGHT 		= 'G'; // Gross weight
+    case NET_WEIGHT 		= 'N'; // Net weight
+}
+
+enum UNMeasurementUnitCode: string {
+    case KILOGRAM 	 = 'KGM'; // Kilogram
+    case METER 		 = 'MTR'; // Meter
+    case CUBIC_METER = 'MTQ'; // Cubic Meter
+    case TON 		 = 'TNE'; // Ton
+}
+
+
+enum UNMeasuredAttributeCode: string 
+{
+    case LENGTH = 'LN'; // Length
+    case WIDTH  = 'WD'; // Width
+    case HEIGHT = 'HT'; // Height
+    case VOLUME = 'VOL'; // Volume
+    case WEIGHT = 'WT'; // Weight
+
+	public function source() 
+	{
+		return "https://service.unece.org/trade/untdid/d01a/tred/tred6313.htm";
+	}
+}
+
+enum UNEmptyFullContainerStatus: string {
+    case FULL  = 1; // Full container load
+    case EMPTY = 2; // Empty container
+
+	public static function getDescription($code) {
+		switch ($code) {
+			case self::FULL:
+				return 'Full container load';
+			case self::EMPTY:
+				return 'Empty container';
+			default:
+				return 'Unknown code';
+		}
+	}
+}
+
+
+
 class ContainerNumber
 {
 	public static function isValidISOContainerString($containerString)
@@ -494,6 +677,57 @@ class ContainerNumber
 				return '20HC';
 			case 'R1':
 				return '20TK';	
+		}
+	}
+
+	public function getKGWeightEmpty($string)
+	{
+		$data = self::getContainerData($string, false);
+
+		if ($data)
+		{
+			if (isset($data["empty_weight"]))
+			{
+				return $data["empty_weight"];
+			}
+		}
+
+		$size = self::containerSizeFromString($string);
+
+		switch ($size)
+		{
+			case 20:
+				return "2200"; // could be 2400
+			case 40:
+				return "3600"; // could be 4000
+			case 45:
+				return "4200"; // could be 4800
+		}
+	}
+
+	public function getKGWeightFull($string)
+	
+	{
+		$data = self::getContainerData($string, false);
+
+		if ($data)
+		{
+			if (isset($data["full_weight"]))
+			{
+				return $data["full_weight"];
+			}
+		}
+		
+		$size = self::containerSizeFromString($string);
+
+		switch ($size)
+		{
+			case 20:
+				return "24000"; // could be 30480
+			case 40:
+				return "30480"; // could be 30480
+			case 45:
+				return "32500"; // could be 32500
 		}
 	}
 
