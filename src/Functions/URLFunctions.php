@@ -1,6 +1,6 @@
 <?php
 
-
+/*
 function findRootLevel()
 {
     $dir = __DIR__;
@@ -17,6 +17,7 @@ function findAutoloadFile() {
     $rootLevel = findRootLevel();
     return $rootLevel.'/vendor/autoload.php';
 }
+*/
 
 function getProtocol() {
 	$protocol = 0;
