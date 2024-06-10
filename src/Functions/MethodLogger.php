@@ -1,6 +1,7 @@
 <?php
 
-class MethodLogger {
+class MethodLogger 
+{
     private $log = [];
 
     public function __call($name, $arguments) {
