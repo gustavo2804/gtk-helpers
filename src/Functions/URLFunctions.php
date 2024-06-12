@@ -71,10 +71,12 @@ function isRootPath($path) {
         return true;
     }
     
+	/*
     // Check if the path starts with a backslash "\"
     if (strpos($path, '\\') === 0) {
         return true;
     }
+	*/
     
     // Check if the path starts with a drive letter (e.g., "C:\", "D:\", etc.)
     if (preg_match('/^[A-Za-z]:[\\\\\/]/', $path)) {
