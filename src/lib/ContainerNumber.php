@@ -1,5 +1,15 @@
 <?php 
 
+
+
+function dateOnlyFromString($date, $format = 'Y-m-d')
+{
+    $dateTime = new DateTime($date);
+    $dateTime->setTime(0, 0);
+    return $dateTime->format('Y-m-d');
+}
+
+
 class UNEDIFactContainerType 
 {
     const FULL_CONTAINER_LOAD = 1;
