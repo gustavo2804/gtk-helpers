@@ -85,3 +85,17 @@ function isRootPath($path) {
     
     return false;
 }
+
+// Function to prompt the user to confirm they are not connected to production
+function askUserToConfirmThatTheyAreNotOnProduction() {
+    echo "Did you check to make sure you are not connected to production? (yes/no): ";
+    $handle = fopen("php://stdin", "r");
+    $line = trim(fgets($handle));
+    
+    if (strtolower($line) !== 'yes') {
+        echo "Please make sure you are not connected to production. Exiting...\n";
+        exit(1);
+    }
+    
+    echo "Proceeding with the script...\n";
+}
