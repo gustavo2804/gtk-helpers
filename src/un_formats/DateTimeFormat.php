@@ -95,3 +95,11 @@ enum UNDateTimeFormatCode: string
     case DayOfWeek = '813';
     case WorkingDays = '814';
 }
+
+
+function dateOnlyFromString($date, $format = 'Y-m-d')
+{
+    $dateTime = new DateTime($date);
+    $dateTime->setTime(0, 0);
+    return $date->format('Y-m-d');
+}
