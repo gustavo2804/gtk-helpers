@@ -112,12 +112,13 @@ function check_tls_and_cipher($url, $expectedResponse)
 
     $response = curl_exec($ch);
 
-    if (curl_errno($ch)) {
+    if (curl_errno($ch)) 
+	{
         echo 'Error: ' . curl_error($ch);
     } else {
         $cert_info = curl_getinfo($ch, CURLINFO_CERTINFO);
-        echo "TLS version: " . curl_getinfo($ch, CURLINFO_SSL_VERSION) . PHP_EOL;
-        echo "Cipher Suite: " . curl_getinfo($ch, CURLINFO_SSL_CIPHER) . PHP_EOL;
+        // echo "TLS version: " . curl_getinfo($ch, CURLINFO_SSL_VERSION) . PHP_EOL;
+        // echo "Cipher Suite: " . curl_getinfo($ch, CURLINFO_SSL_CIPHER) . PHP_EOL;
         
         echo "Certificate Info:" . PHP_EOL;
         foreach ($cert_info as $cert) {
