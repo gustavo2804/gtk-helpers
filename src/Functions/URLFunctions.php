@@ -99,3 +99,37 @@ function askUserToConfirmThatTheyAreNotOnProduction() {
     
     echo "Proceeding with the script...\n";
 }
+
+function check_tls_and_cipher($url, $expectedResponse) 
+{
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, $url);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, true);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 2);
+    curl_setopt($ch, CURLOPT_VERBOSE, true);
+    curl_setopt($ch, CURLOPT_CERTINFO, true);
+
+    $response = curl_exec($ch);
+
+    if (curl_errno($ch)) {
+        echo 'Error: ' . curl_error($ch);
+    } else {
+        $cert_info = curl_getinfo($ch, CURLINFO_CERTINFO);
+        echo "TLS version: " . curl_getinfo($ch, CURLINFO_SSL_VERSION) . PHP_EOL;
+        echo "Cipher Suite: " . curl_getinfo($ch, CURLINFO_SSL_CIPHER) . PHP_EOL;
+        
+        echo "Certificate Info:" . PHP_EOL;
+        foreach ($cert_info as $cert) {
+            echo "Subject: " . $cert['Subject'] . PHP_EOL;
+            echo "Issuer: " . $cert['Issuer'] . PHP_EOL;
+            echo "Expiry: " . $cert['Expire date'] . PHP_EOL;
+        }
+
+		echo "Got response: ".$response.PHP_EOL;
+    }
+
+    curl_close($ch);
+
+	return $response;
+}
