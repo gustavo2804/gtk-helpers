@@ -1,7 +1,7 @@
 <?php
 
-<?php
-class LockManager {
+class LockManager 
+{
     private $locks = [];
     private static $instance = null;
 
