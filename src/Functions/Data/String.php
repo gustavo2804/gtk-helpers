@@ -23,3 +23,8 @@ function stringEndsWith($suffix, $string)
 
     return strcasecmp($endOfStr, $suffix) === 0;
 }
+
+
+function isNullOrEmpty($str) {
+    return (!isset($str) || trim($str) === '');
+}
