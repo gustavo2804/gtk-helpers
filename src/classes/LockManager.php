@@ -1,6 +1,6 @@
 <?php
 
-class LockManager 
+class GTKLockManager 
 {
     private $locks = [];
     private static $instance = null;
@@ -8,10 +8,10 @@ class LockManager
     // Private constructor to prevent direct instantiation
     private function __construct() {}
 
-    // Method to get the single instance of LockManager
+    // Method to get the single instance of GTKLockManager
     private static function getInstance() {
         if (self::$instance === null) {
-            self::$instance = new LockManager();
+            self::$instance = new GTKLockManager();
         }
         return self::$instance;
     }
@@ -78,15 +78,15 @@ class LockManager
 
 // Example usage
 try {
-    LockManager::acquireLock('myLock');
+    GTKLockManager::acquireLock('myLock');
 
-    if (LockManager::hasLock('myLock')) {
-        $lock = LockManager::getLock('myLock');
+    if (GTKLockManager::hasLock('myLock')) {
+        $lock = GTKLockManager::getLock('myLock');
         echo "Lock 'myLock' acquired.\n";
 
         // Perform operations while the lock is held
 
-        LockManager::releaseLock('myLock');
+        GTKLockManager::releaseLock('myLock');
         echo "Lock 'myLock' released.\n";
     }
 } catch (Exception $e) {
