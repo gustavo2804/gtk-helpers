@@ -30,7 +30,8 @@ class GTKTimeOutLock
             }
 
             // Attempt to acquire an exclusive lock (LOCK_EX)
-            if (flock($fp, LOCK_EX | LOCK_NB)) {
+            if (flock($fp, LOCK_EX | LOCK_NB)) 
+            {
                 $instance->locks[$lockName] = $fp;
                 return; // Lock acquired successfully
             }
@@ -55,8 +56,10 @@ class GTKTimeOutLock
             flock($fp, LOCK_UN);
             fclose($fp);
             unset($instance->locks[$lockName]);
-        } else {
-            throw new Exception("No lock found with name: $lockName");
+        } 
+        else 
+        {
+            error_log("No lock found with name: $lockName");
         }
     }
 

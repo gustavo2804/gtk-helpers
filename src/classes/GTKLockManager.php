@@ -60,6 +60,24 @@ class GTKLockManager
             self::releaseLock($lockName);
         }
     }
+
+    
+    // Method to release a lock by name
+    public static function releaseLock($lockName) 
+    {
+        $instance = self::getInstance();
+        if (isset($instance->locks[$lockName])) {
+            $fp = $instance->locks[$lockName];
+            // Release the lock
+            flock($fp, LOCK_UN);
+            fclose($fp);
+            unset($instance->locks[$lockName]);
+        } 
+        else 
+        {
+            error_log("No lock found with name: $lockName");
+        }
+    }
 }
 
 
