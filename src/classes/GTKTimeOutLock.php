@@ -74,4 +74,29 @@ class GTKTimeOutLock
         }
         return null; // Or handle the case when the lock does not exist
     }
+
+            // Method to execute a closure with a lock
+    public static function withLockDo($lockName, callable $closure, $timeoutSeconds = 10, callable $onTimeout = null) 
+    {
+        try 
+        {
+            self::acquireLockWihTimeout($lockName, $timeoutSeconds);
+            $closure();
+        } 
+        catch (Exception $e) 
+        {
+            if ($onTimeout)
+            {
+                $onTimeout();
+            }
+            else
+            {
+                throw $e;
+            }
+        } 
+        finally 
+        {
+            self::releaseLock($lockName);
+        }
+    }
 }
