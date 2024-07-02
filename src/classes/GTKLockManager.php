@@ -51,12 +51,17 @@ class GTKLockManager
         // Method to execute a closure with a lock
     public static function withLockDo($lockName, callable $closure) 
     {
-        try {
+        try 
+        {
             self::acquireLock($lockName);
-            $closure();
-        } catch (Exception $e) {
+            return $closure();
+        } 
+        catch (Exception $e) 
+        {
             throw $e;
-        } finally {
+        } 
+        finally 
+        {
             self::releaseLock($lockName);
         }
     }

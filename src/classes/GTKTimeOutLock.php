@@ -84,13 +84,13 @@ class GTKTimeOutLock
         try 
         {
             self::acquireLockWihTimeout($lockName, $timeoutSeconds);
-            $closure();
+            return $closure();
         } 
         catch (Exception $e) 
         {
             if ($onTimeout)
             {
-                $onTimeout();
+                return $onTimeout();
             }
             else
             {
