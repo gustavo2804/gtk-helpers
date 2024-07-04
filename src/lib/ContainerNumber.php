@@ -316,13 +316,13 @@ class ContainerNumber
 			"spanish"   => "Contenedor de 20 pies propósito general",
 			"length"    => 20,
 			"stonewood" => "20DC",
-			"msc_code"  => "20.1",
 		],
 		"20G1" => [ // 2
 			"english"   => "20' General Purpose (passive vents)", 
 			"spanish"   => "Contenedor de 20 pies propósito general (ventilación pasiva)",
 			"length"    => 20,
 			"stonewood" => "20DC",
+			"msc_code"  => "20.1",
 		],
 		"20HH"	=> [ // 3
 			"english"   => "20FT HIGH CUBE TK CONT. (25T0) NON DANGEROUS LIQ.", 
@@ -366,27 +366,21 @@ class ContainerNumber
 			"stonewood" => "20DC",
 			"msc_code"  => "22.1",
 		],
-		"22G1" => [ // 3
-			"english"   => "20' General Purpose (passive vents)", 
-			"spanish"   => "Contenedor de 20 pies propósito general (ventilación pasiva)",
-			"length"    => 20,
-			"stonewood" => "20DC"
-		],
-		"22HO" => [ // 4
+		"22HO" => [ // 3
 			"english"   => "20IN INSULATED", 
 			"spanish"   => "Contenedor de 20 pies aislado",
 			"length"    => 20,
 			"stonewood" => "20DC",
 			"msc_code"  => "22.2",
 		],
-		"22P1" => [ // 5
+		"22P1" => [ // 4
 			"english"   => "20' Flat (fixed ends)", 
 			"spanish"   => "Contenedor de 20 pies tipo plataforma (extremos fijos)",
 			"length"    => 20,
 			"stonewood" => "20FR",
 			"msc_code"  => "22.61",
 		],
-		"22P2" => [ // 6
+		"22P2" => [ // 5
 			"english"   => "20FT FREESTANDING POST FLAT RACK", 
 			"spanish"   => "Contenedor de 20 pies tipo plataforma (poste independiente)",
 			"length"    => 20,
@@ -709,26 +703,38 @@ class ContainerNumber
 
 		foreach ($containerData as $key => $data)
 		{
-			$mscCode = $data["msc_code"];
-
-			if (is_array($mscCode))
+			if (isset($data["msc_code"]))
 			{
-				foreach ($mscCode as $code)
+				$mscCode = $data["msc_code"];
+
+				if (is_array($mscCode))
 				{
-					$mscCodeLookupKeys[$code] = $key;
+					foreach ($mscCode as $code)
+					{
+						$mscCodeLookupKeys[$code] = $key;
+					}
+				}
+				else
+				{
+					$mscCodeLookupKeys[$mscCode] = $key;
 				}
 			}
 			else
 			{
-				$mscCodeLookupKeys[$mscCode] = $key;
+				// echo "No msc_code for key: ".$key."<br>";
+				// error_log("No msc_code for key: $key");
 			}
 		}
 
 		ContainerNumber::$mscCodeLookupKeys = $mscCodeLookupKeys;
 	}
 
-	public static function getByMSCCode($mscCode)
+	public static function getByMSCCode($toLookup)
 	{
+		$debug = false;
+
+		$mscCode = (string)$toLookup;
+
 		if (!ContainerNumber::$mscCodeLookupKeys)
 		{
 			ContainerNumber::prepareMSCCodeLookupKeys();
@@ -736,13 +742,32 @@ class ContainerNumber
 
 		$mscCodeLookupKeys = ContainerNumber::$mscCodeLookupKeys;
 
-		if (array_key_exists($mscCode, $mscCodeLookupKeys))
+		if ($debug)
 		{
+			$message = "MSC Code Lookup Keys: $mscCode - ".print_r($mscCodeLookupKeys, true)."<br>";
+			echo $message;
+			error_log($message);
+		}
+
+		if (isset($mscCodeLookupKeys[(string)$mscCode]))
+		{
+			// die("Found it set");
 			$key = $mscCodeLookupKeys[$mscCode];
-			return ContainerNumber::getContainerData($key);
+			$containerData = ContainerNumber::getContainerData($key);
+			$containerData["iso_type"] = $key;
+			
+			if ($debug)
+			{
+				$message = "Container found for mscCode: $mscCode";
+				error_log($message);
+				echo $message."<br>";
+			}
+
+			return $containerData;
 		}
 		else
 		{
+			die("No container found for mscCode: $mscCode");
 			return null;
 		}
 	}
