@@ -747,6 +747,20 @@ class ContainerNumber
 		}
 	}
 
+	public static function getISOCodeFromMSCCode($mscCode)
+	{
+		$container = ContainerNumber::getByMSCCode($mscCode);
+
+		if ($container)
+		{
+			return $container["iso_type"];
+		}
+		else
+		{
+			return null;
+		}
+	}
+
 	public static function generateISOContainerSelect(CustomInputFunctionArgument $argument)
 	{
 
