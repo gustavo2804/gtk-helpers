@@ -9,6 +9,56 @@ function dateOnlyFromString($date, $format = 'Y-m-d')
     return $dateTime->format('Y-m-d');
 }
 
+class UNEDIFactContainerStatus
+{
+
+    const RESERVED = 1;
+    const EXPORT = 2;
+    const IMPORT = 3;
+	const EMPTY_CONTAINER = 4;
+    const FULL_CONTAINER = 5;
+    const TRANSHIPMENT = 6;
+    const RESERVED_2 = 7;
+    const RESERVED_3 = 8;
+    const RESERVED_4 = 9;
+
+    public static function getDescription($status) {
+        switch ($status) {
+            case self::EMPTY_CONTAINER:
+                return 'Empty container';
+            case self::FULL_CONTAINER:
+                return 'Full container';
+            case self::RESERVED:
+                return 'Reserved';
+            case self::EXPORT:
+                return 'Export';
+            case self::IMPORT:
+                return 'Import';
+            case self::TRANSHIPMENT:
+                return 'Transhipment';
+            case self::RESERVED_2:
+            case self::RESERVED_3:
+            case self::RESERVED_4:
+                return 'Reserved for future use';
+            default:
+                return 'Unknown status';
+        }
+    }
+
+    public static function isValid($status) {
+        return in_array($status, [
+            self::EMPTY_CONTAINER,
+            self::FULL_CONTAINER,
+            self::RESERVED,
+            self::EXPORT,
+            self::IMPORT,
+            self::TRANSHIPMENT,
+            self::RESERVED_2,
+            self::RESERVED_3,
+            self::RESERVED_4
+        ]);
+    }
+}
 
 class UNEDIFactContainerType 
 {
