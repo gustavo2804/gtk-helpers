@@ -1,5 +1,30 @@
 <?php
 
+function gtk_count($item)
+{
+	if (is_array($item))
+	{
+		return count($item);
+	}
+	else if (is_string($item))
+	{
+		return strlen($item);
+	}
+	else if (is_object($item))
+	{
+		return count(get_object_vars($item));
+	}
+	else if (method_exists($item, 'count'))
+	{
+		return $item->count();
+	}
+	else
+	{
+		throw new Exception("Can't count item of type: ".gettype($item));
+	}
+
+}
+
 function isDictionary($array) {
 	/*
     return (bool)count(array_filter(array_keys($array), 'is_string'));

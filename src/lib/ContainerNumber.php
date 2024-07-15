@@ -836,15 +836,29 @@ class ContainerNumber
 		}
 	}
 
-	public static function generateISOContainerSelect(CustomInputFunctionArgument $argument)
+	public static function generateISOContainerSelect($argument)
 	{
 
 		$debug = false;
 
-		$columnName  = $argument->getColumnName();
-		$columnValue = $argument->getColumnValue();
-		$options     = $argument->getOptions();
-		
+		if ($argument instanceof CustomInputFunctionArgument)
+		{
+			$columnName  = $argument->getColumnName();
+			$columnValue = $argument->getColumnValue();
+			$options     = $argument->getOptions();
+		}
+		else if (is_array($argument))
+		{
+			$columnName  = $argument["columnName"];
+			$columnValue = $argument["columnValue"];
+			$options     = $argument["options"];
+		}
+		else
+		{
+			die("Illegal argument type in `generateISOContainerSelect`");
+		}
+
+
 		if ($debug)
 		{
 			error_log("Will prepare container select...");
