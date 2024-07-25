@@ -39,7 +39,15 @@ function generateTableForUser(
     else
     {
         $count = $itemsOrQueryObject->count();
-        $items = $itemsOrQueryObject->executeAndYield();
+
+        if (method_exists("getIterator", $itemsOrQueryObject))
+        {
+            $items = $itemsOrQueryObject->getIterator();
+        }
+        else
+        {
+            $items = $itemsOrQueryObject->executeAndYield();
+        }
 
         if ($debug)
         {
@@ -97,7 +105,7 @@ function generateTableForUser(
         
         <?php if ($count == 0): ?>
         <tr>
-            <td colspan="<?php echo count($columnsToDisplay) + 1; ?>">
+            <td colspan="<?php echo gtk_count($columnsToDisplay) + 1; ?>">
                 No hay elementos que mostrar.
             </td>
         </tr>

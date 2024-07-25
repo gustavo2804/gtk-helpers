@@ -10,14 +10,16 @@ function gtk_count($item)
 	{
 		return strlen($item);
 	}
-	else if (is_object($item))
-	{
-		return count(get_object_vars($item));
-	}
 	else if (method_exists($item, 'count'))
 	{
 		return $item->count();
 	}
+	/*
+	else if (is_object($item))
+	{
+		return count(get_object_vars($item));
+	}
+	*/
 	else
 	{
 		throw new Exception("Can't count item of type: ".gettype($item));
