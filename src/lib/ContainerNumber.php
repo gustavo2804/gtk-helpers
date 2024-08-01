@@ -867,7 +867,7 @@ class ContainerNumber
 
     	$containerData = ContainerNumber::$containerData;
 
-    	$select = '<select name="' . $columnName . '">';
+    	$select = '<select name="' . $columnName . '" id="' . $columnName . '">';
 
 		$addNullCase = true;
 
