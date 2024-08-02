@@ -844,12 +844,14 @@ class ContainerNumber
 		if ($argument instanceof CustomInputFunctionArgument)
 		{
 			$columnName  = $argument->getColumnName();
+			$idValue  = $argument->getIdValue();
 			$columnValue = $argument->getColumnValue();
 			$options     = $argument->getOptions();
 		}
 		else if (is_array($argument))
 		{
 			$columnName  = $argument["columnName"];
+			$idValue  = $argument['idValue'];
 			$columnValue = $argument["columnValue"];
 			$options     = $argument["options"];
 		}
@@ -867,7 +869,13 @@ class ContainerNumber
 
     	$containerData = ContainerNumber::$containerData;
 
-    	$select = '<select name="' . $columnName . '" id="' . $columnName . '">';
+		if(isset($idValue)){
+			$select = '<select name="' . $columnName . '" id="' . $idValue . '">';
+		}
+		else{
+
+			$select = '<select name="' . $columnName . '">';
+		}
 
 		$addNullCase = true;
 
@@ -1291,3 +1299,4 @@ class ContainerNumber
 
 	
 }
+	
