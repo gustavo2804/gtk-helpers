@@ -563,6 +563,20 @@ class ContainerNumber
 			"stonewood" => "40OT",
 			"msc_code" => "45.51",
 		],
+		"45U0" => [ // 1
+			"english" => "40' Open Top", 
+			"spanish" => "Contenedor de 40 pies tipo techo abierto",
+			"length"  => 40,
+			"stonewood" => "40OT",
+			"msc_code" => "45.51",
+		],
+		"45U1" => [ // 1
+			"english" => "40' Open Top", 
+			"spanish" => "Contenedor de 40 pies tipo techo abierto",
+			"length"  => 40,
+			"stonewood" => "40OT",
+			"msc_code" => "45.51",
+		],
 		"40PW" => [ // 2
 			"english" => "45' Palletwide Standard Container", 
 			"spanish" => "Contenedor estándar de 45 pies de ancho de palet",
