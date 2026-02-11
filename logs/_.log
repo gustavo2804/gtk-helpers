@@ -1,0 +1,2244 @@
+[31-Jul-2025 13:29:50 America/Santo_Domingo] Iniciando proceso de envío de archivos EDI linea Despacho. Buscando conduces pendientes de enviar.
+[31-Jul-2025 13:29:50 America/Santo_Domingo] Conduces pendientes de enviar EDI Despacho: 5
+[31-Jul-2025 13:29:50 America/Santo_Domingo] Sending FTP to DPH at 192.168.20.183 with user DPHFTP: //DPH/D_CE000727284H895.txt
+[31-Jul-2025 13:29:52 America/Santo_Domingo] Error al conectar con el servidor FTP: 192.168.20.183 para enviar archivo: //DPH/D_CE000727284H895.txtError al conectar con el servidor FTP: 192.168.20.183 para enviar archivo: //DPH/D_CE000727284H895.txt
+
+
+\Sending...n
+
+Tipo Transaccion:DESPACHO
+Conduce No:CE000727284H895
+Modulo I/E:EXPORT
+Chassis No:CHASSIS PROPIO
+Tamano Chassis: 20
+Agencia:MADO
+Cedido a:
+Contenedor No:MEDU6938498
+Tipo Contenedor:20DC
+Linea:MSCSHI
+Genset No:
+RNC:131210406
+Nombre Cliente:MSC MEDITERRANEAN SHIPPING COMPANY S A
+BL No:
+Booking No:EDOEVA20
+Fecha:2025-06-27
+Hora:11:19:00.00
+Terminal:01-STW CAUCEDO
+Chassis Alquilado:NO
+Cola Privada:SI
+
+[31-Jul-2025 13:29:52 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 13:29:52 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CE000727284H895
+[31-Jul-2025 13:29:52 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_dph_despacho = :edi_file_dph_despacho WHERE FCNUEMRO = :numero
+[31-Jul-2025 13:29:52 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_dph_despacho
+[31-Jul-2025 13:29:52 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CE000727284H895
+[31-Jul-2025 13:29:52 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 13:29:52 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 13:29:52 America/Santo_Domingo] Remote file name: Exportacion_out_MEDU6938498.edi
+[31-Jul-2025 13:29:52 America/Santo_Domingo] Forma de generación: 
+[31-Jul-2025 13:29:52 America/Santo_Domingo] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in C:\proyectos\repositorios\stonewood-lib\src\Conduce\StoneConduce.php on line 4875
+[31-Jul-2025 13:29:53 America/Santo_Domingo] Guardando archivo en disco: Exportacion_out_MEDU6938498.edi
+[31-Jul-2025 13:29:53 America/Santo_Domingo] Guardando archivo en disco: Exportacion_out_MEDU6938498.edi
+[31-Jul-2025 13:29:53 America/Santo_Domingo] archivo guardado en : C:\proyectos\repositorios\stonewood-app\Data\ftpFiles\/Exportacion_out_MEDU6938498.edi
+[31-Jul-2025 13:29:53 America/Santo_Domingo] PHP Deprecated:  Optional parameter $port declared before required parameter $password is implicitly treated as a required parameter in C:\proyectos\repositorios\stonewood-lib\src\Utils\SftpFileTransfer.php on line 14
+[31-Jul-2025 13:29:53 America/Santo_Domingo] INFO - Conectado al servidor SFTP: 192.168.20.221:2222
+[31-Jul-2025 13:29:53 America/Santo_Domingo] INFO - Subiendo Exportacion_out_MEDU6938498.edi (394 B) a /uploads/Exportacion_out_MEDU6938498.edi
+[31-Jul-2025 13:29:53 America/Santo_Domingo] INFO - Archivo subido exitosamente: Exportacion_out_MEDU6938498.edi
+[31-Jul-2025 13:29:53 America/Santo_Domingo] INFO - Desconectado del servidor SFTP
+[31-Jul-2025 13:29:53 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 13:29:53 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CE000727284H895
+[31-Jul-2025 13:29:53 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_linea_despacho = :edi_file_linea_despacho, edi_file_linea_despacho_intentos = :edi_file_linea_despacho_intentos WHERE FCNUEMRO = :numero
+[31-Jul-2025 13:29:53 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho
+[31-Jul-2025 13:29:54 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho_intentos
+[31-Jul-2025 13:29:54 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CE000727284H895
+[31-Jul-2025 13:29:54 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 13:29:54 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 13:29:54 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 13:29:54 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CE000727284H895
+[31-Jul-2025 13:29:54 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_dph_despacho_intentos = :edi_file_dph_despacho_intentos, edi_file_linea_despacho = :edi_file_linea_despacho, edi_file_linea_despacho_intentos = :edi_file_linea_despacho_intentos WHERE FCNUEMRO = :numero
+[31-Jul-2025 13:29:54 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_dph_despacho_intentos
+[31-Jul-2025 13:29:54 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho
+[31-Jul-2025 13:29:54 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho_intentos
+[31-Jul-2025 13:29:54 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CE000727284H895
+[31-Jul-2025 13:29:54 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 13:29:54 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 13:29:54 America/Santo_Domingo] Sending FTP to DPH at 192.168.20.183 with user DPHFTP: //DPH/D_CE000727283H895.txt
+[31-Jul-2025 13:29:56 America/Santo_Domingo] Error al conectar con el servidor FTP: 192.168.20.183 para enviar archivo: //DPH/D_CE000727283H895.txtError al conectar con el servidor FTP: 192.168.20.183 para enviar archivo: //DPH/D_CE000727283H895.txt
+
+
+\Sending...n
+
+Tipo Transaccion:DESPACHO
+Conduce No:CE000727283H895
+Modulo I/E:EXPORT
+Chassis No:CHASSIS PROPIO
+Tamano Chassis: 20
+Agencia:MADO
+Cedido a:
+Contenedor No:MSMU1455905
+Tipo Contenedor:20DC
+Linea:MSCSHI
+Genset No:
+RNC:131210406
+Nombre Cliente:MSC MEDITERRANEAN SHIPPING COMPANY S A
+BL No:
+Booking No:EDOEVA20
+Fecha:2025-06-27
+Hora:08:48:00.00
+Terminal:01-STW CAUCEDO
+Chassis Alquilado:NO
+Cola Privada:SI
+
+[31-Jul-2025 13:29:56 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 13:29:56 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CE000727283H895
+[31-Jul-2025 13:29:56 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_dph_despacho = :edi_file_dph_despacho WHERE FCNUEMRO = :numero
+[31-Jul-2025 13:29:56 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_dph_despacho
+[31-Jul-2025 13:29:56 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CE000727283H895
+[31-Jul-2025 13:29:56 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 13:29:56 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 13:29:56 America/Santo_Domingo] Remote file name: Exportacion_out_MSMU1455905.edi
+[31-Jul-2025 13:29:56 America/Santo_Domingo] Forma de generación: 
+[31-Jul-2025 13:29:56 America/Santo_Domingo] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in C:\proyectos\repositorios\stonewood-lib\src\Conduce\StoneConduce.php on line 4875
+[31-Jul-2025 13:29:56 America/Santo_Domingo] Guardando archivo en disco: Exportacion_out_MSMU1455905.edi
+[31-Jul-2025 13:29:56 America/Santo_Domingo] Guardando archivo en disco: Exportacion_out_MSMU1455905.edi
+[31-Jul-2025 13:29:56 America/Santo_Domingo] archivo guardado en : C:\proyectos\repositorios\stonewood-app\Data\ftpFiles\/Exportacion_out_MSMU1455905.edi
+[31-Jul-2025 13:29:56 America/Santo_Domingo] INFO - Conectado al servidor SFTP: 192.168.20.221:2222
+[31-Jul-2025 13:29:56 America/Santo_Domingo] INFO - Subiendo Exportacion_out_MSMU1455905.edi (394 B) a /uploads/Exportacion_out_MSMU1455905.edi
+[31-Jul-2025 13:29:56 America/Santo_Domingo] INFO - Archivo subido exitosamente: Exportacion_out_MSMU1455905.edi
+[31-Jul-2025 13:29:56 America/Santo_Domingo] INFO - Desconectado del servidor SFTP
+[31-Jul-2025 13:29:56 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 13:29:56 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CE000727283H895
+[31-Jul-2025 13:29:56 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_linea_despacho = :edi_file_linea_despacho, edi_file_linea_despacho_intentos = :edi_file_linea_despacho_intentos WHERE FCNUEMRO = :numero
+[31-Jul-2025 13:29:56 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho
+[31-Jul-2025 13:29:56 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho_intentos
+[31-Jul-2025 13:29:56 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CE000727283H895
+[31-Jul-2025 13:29:56 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 13:29:56 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 13:29:56 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 13:29:56 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CE000727283H895
+[31-Jul-2025 13:29:56 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_dph_despacho_intentos = :edi_file_dph_despacho_intentos, edi_file_linea_despacho = :edi_file_linea_despacho, edi_file_linea_despacho_intentos = :edi_file_linea_despacho_intentos WHERE FCNUEMRO = :numero
+[31-Jul-2025 13:29:56 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_dph_despacho_intentos
+[31-Jul-2025 13:29:56 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho
+[31-Jul-2025 13:29:56 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho_intentos
+[31-Jul-2025 13:29:56 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CE000727283H895
+[31-Jul-2025 13:29:56 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 13:29:56 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 13:29:56 America/Santo_Domingo] Sending FTP to DPH at 192.168.20.183 with user DPHFTP: //DPH/D_CE000727282H895.txt
+[31-Jul-2025 13:29:58 America/Santo_Domingo] Error al conectar con el servidor FTP: 192.168.20.183 para enviar archivo: //DPH/D_CE000727282H895.txtError al conectar con el servidor FTP: 192.168.20.183 para enviar archivo: //DPH/D_CE000727282H895.txt
+
+
+\Sending...n
+
+Tipo Transaccion:DESPACHO
+Conduce No:CE000727282H895
+Modulo I/E:EXPORT
+Chassis No:CHASSIS PROPIO
+Tamano Chassis: 20
+Agencia:MADO
+Cedido a:
+Contenedor No:MSDU1280729
+Tipo Contenedor:20DC
+Linea:MSCSHI
+Genset No:
+RNC:131210406
+Nombre Cliente:MSC MEDITERRANEAN SHIPPING COMPANY S A
+BL No:
+Booking No:EDOEVA20
+Fecha:2025-06-27
+Hora:08:48:00.00
+Terminal:01-STW CAUCEDO
+Chassis Alquilado:NO
+Cola Privada:SI
+
+[31-Jul-2025 13:29:58 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 13:29:58 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CE000727282H895
+[31-Jul-2025 13:29:58 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_dph_despacho = :edi_file_dph_despacho WHERE FCNUEMRO = :numero
+[31-Jul-2025 13:29:58 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_dph_despacho
+[31-Jul-2025 13:29:58 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CE000727282H895
+[31-Jul-2025 13:29:58 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 13:29:58 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 13:29:58 America/Santo_Domingo] Remote file name: Exportacion_out_MSDU1280729.edi
+[31-Jul-2025 13:29:58 America/Santo_Domingo] Forma de generación: 
+[31-Jul-2025 13:29:58 America/Santo_Domingo] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in C:\proyectos\repositorios\stonewood-lib\src\Conduce\StoneConduce.php on line 4875
+[31-Jul-2025 13:29:58 America/Santo_Domingo] Guardando archivo en disco: Exportacion_out_MSDU1280729.edi
+[31-Jul-2025 13:29:58 America/Santo_Domingo] Guardando archivo en disco: Exportacion_out_MSDU1280729.edi
+[31-Jul-2025 13:29:58 America/Santo_Domingo] archivo guardado en : C:\proyectos\repositorios\stonewood-app\Data\ftpFiles\/Exportacion_out_MSDU1280729.edi
+[31-Jul-2025 13:29:58 America/Santo_Domingo] INFO - Conectado al servidor SFTP: 192.168.20.221:2222
+[31-Jul-2025 13:29:58 America/Santo_Domingo] INFO - Subiendo Exportacion_out_MSDU1280729.edi (398 B) a /uploads/Exportacion_out_MSDU1280729.edi
+[31-Jul-2025 13:29:58 America/Santo_Domingo] INFO - Archivo subido exitosamente: Exportacion_out_MSDU1280729.edi
+[31-Jul-2025 13:29:58 America/Santo_Domingo] INFO - Desconectado del servidor SFTP
+[31-Jul-2025 13:29:58 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 13:29:58 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CE000727282H895
+[31-Jul-2025 13:29:58 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_linea_despacho = :edi_file_linea_despacho, edi_file_linea_despacho_intentos = :edi_file_linea_despacho_intentos WHERE FCNUEMRO = :numero
+[31-Jul-2025 13:29:58 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho
+[31-Jul-2025 13:29:58 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho_intentos
+[31-Jul-2025 13:29:58 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CE000727282H895
+[31-Jul-2025 13:29:59 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 13:29:59 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 13:29:59 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 13:29:59 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CE000727282H895
+[31-Jul-2025 13:29:59 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_dph_despacho_intentos = :edi_file_dph_despacho_intentos, edi_file_linea_despacho = :edi_file_linea_despacho, edi_file_linea_despacho_intentos = :edi_file_linea_despacho_intentos WHERE FCNUEMRO = :numero
+[31-Jul-2025 13:29:59 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_dph_despacho_intentos
+[31-Jul-2025 13:29:59 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho
+[31-Jul-2025 13:29:59 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho_intentos
+[31-Jul-2025 13:29:59 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CE000727282H895
+[31-Jul-2025 13:29:59 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 13:29:59 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 13:29:59 America/Santo_Domingo] Sending FTP to DPH at 192.168.20.183 with user DPHFTP: //DPH/D_CE000727281H895.txt
+[31-Jul-2025 13:30:01 America/Santo_Domingo] Error al conectar con el servidor FTP: 192.168.20.183 para enviar archivo: //DPH/D_CE000727281H895.txtError al conectar con el servidor FTP: 192.168.20.183 para enviar archivo: //DPH/D_CE000727281H895.txt
+
+
+\Sending...n
+
+Tipo Transaccion:DESPACHO
+Conduce No:CE000727281H895
+Modulo I/E:EXPORT
+Chassis No:CHASSIS PROPIO
+Tamano Chassis: 20
+Agencia:MADO
+Cedido a:
+Contenedor No:LYGU0122892
+Tipo Contenedor:20DC
+Linea:MSCSHI
+Genset No:
+RNC:131210406
+Nombre Cliente:MSC MEDITERRANEAN SHIPPING COMPANY S A
+BL No:
+Booking No:EDOEVA20
+Fecha:2025-06-27
+Hora:07:50:00.00
+Terminal:01-STW CAUCEDO
+Chassis Alquilado:NO
+Cola Privada:SI
+
+[31-Jul-2025 13:30:01 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 13:30:01 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CE000727281H895
+[31-Jul-2025 13:30:01 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_dph_despacho = :edi_file_dph_despacho WHERE FCNUEMRO = :numero
+[31-Jul-2025 13:30:01 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_dph_despacho
+[31-Jul-2025 13:30:01 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CE000727281H895
+[31-Jul-2025 13:30:01 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 13:30:01 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 13:30:01 America/Santo_Domingo] Remote file name: Exportacion_out_LYGU0122892.edi
+[31-Jul-2025 13:30:01 America/Santo_Domingo] Forma de generación: 
+[31-Jul-2025 13:30:01 America/Santo_Domingo] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in C:\proyectos\repositorios\stonewood-lib\src\Conduce\StoneConduce.php on line 4875
+[31-Jul-2025 13:30:01 America/Santo_Domingo] Guardando archivo en disco: Exportacion_out_LYGU0122892.edi
+[31-Jul-2025 13:30:01 America/Santo_Domingo] Guardando archivo en disco: Exportacion_out_LYGU0122892.edi
+[31-Jul-2025 13:30:01 America/Santo_Domingo] archivo guardado en : C:\proyectos\repositorios\stonewood-app\Data\ftpFiles\/Exportacion_out_LYGU0122892.edi
+[31-Jul-2025 13:30:01 America/Santo_Domingo] INFO - Conectado al servidor SFTP: 192.168.20.221:2222
+[31-Jul-2025 13:30:01 America/Santo_Domingo] INFO - Subiendo Exportacion_out_LYGU0122892.edi (406 B) a /uploads/Exportacion_out_LYGU0122892.edi
+[31-Jul-2025 13:30:01 America/Santo_Domingo] INFO - Archivo subido exitosamente: Exportacion_out_LYGU0122892.edi
+[31-Jul-2025 13:30:01 America/Santo_Domingo] INFO - Desconectado del servidor SFTP
+[31-Jul-2025 13:30:01 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 13:30:01 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CE000727281H895
+[31-Jul-2025 13:30:01 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_linea_despacho = :edi_file_linea_despacho, edi_file_linea_despacho_intentos = :edi_file_linea_despacho_intentos WHERE FCNUEMRO = :numero
+[31-Jul-2025 13:30:01 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho
+[31-Jul-2025 13:30:01 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho_intentos
+[31-Jul-2025 13:30:01 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CE000727281H895
+[31-Jul-2025 13:30:01 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 13:30:01 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 13:30:01 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 13:30:01 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CE000727281H895
+[31-Jul-2025 13:30:01 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_dph_despacho_intentos = :edi_file_dph_despacho_intentos, edi_file_linea_despacho = :edi_file_linea_despacho, edi_file_linea_despacho_intentos = :edi_file_linea_despacho_intentos WHERE FCNUEMRO = :numero
+[31-Jul-2025 13:30:01 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_dph_despacho_intentos
+[31-Jul-2025 13:30:01 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho
+[31-Jul-2025 13:30:01 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho_intentos
+[31-Jul-2025 13:30:01 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CE000727281H895
+[31-Jul-2025 13:30:01 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 13:30:01 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 13:30:01 America/Santo_Domingo] Sending FTP to DPH at 192.168.20.183 with user DPHFTP: //DPH/D_CE000727280H895.txt
+[31-Jul-2025 13:30:03 America/Santo_Domingo] Error al conectar con el servidor FTP: 192.168.20.183 para enviar archivo: //DPH/D_CE000727280H895.txtError al conectar con el servidor FTP: 192.168.20.183 para enviar archivo: //DPH/D_CE000727280H895.txt
+
+
+\Sending...n
+
+Tipo Transaccion:DESPACHO
+Conduce No:CE000727280H895
+Modulo I/E:EXPORT
+Chassis No:CHASSIS PROPIO
+Tamano Chassis: 20
+Agencia:MADO
+Cedido a:
+Contenedor No:CAIU3747964
+Tipo Contenedor:20DC
+Linea:MSCSHI
+Genset No:
+RNC:131210406
+Nombre Cliente:MSC MEDITERRANEAN SHIPPING COMPANY S A
+BL No:
+Booking No:EDOEVA20
+Fecha:2025-06-27
+Hora:07:49:00.00
+Terminal:01-STW CAUCEDO
+Chassis Alquilado:NO
+Cola Privada:SI
+
+[31-Jul-2025 13:30:03 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 13:30:03 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CE000727280H895
+[31-Jul-2025 13:30:03 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_dph_despacho = :edi_file_dph_despacho WHERE FCNUEMRO = :numero
+[31-Jul-2025 13:30:03 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_dph_despacho
+[31-Jul-2025 13:30:03 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CE000727280H895
+[31-Jul-2025 13:30:03 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 13:30:03 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 13:30:03 America/Santo_Domingo] Remote file name: Exportacion_out_CAIU3747964.edi
+[31-Jul-2025 13:30:03 America/Santo_Domingo] Forma de generación: 
+[31-Jul-2025 13:30:03 America/Santo_Domingo] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in C:\proyectos\repositorios\stonewood-lib\src\Conduce\StoneConduce.php on line 4875
+[31-Jul-2025 13:30:03 America/Santo_Domingo] Guardando archivo en disco: Exportacion_out_CAIU3747964.edi
+[31-Jul-2025 13:30:03 America/Santo_Domingo] Guardando archivo en disco: Exportacion_out_CAIU3747964.edi
+[31-Jul-2025 13:30:03 America/Santo_Domingo] archivo guardado en : C:\proyectos\repositorios\stonewood-app\Data\ftpFiles\/Exportacion_out_CAIU3747964.edi
+[31-Jul-2025 13:30:03 America/Santo_Domingo] INFO - Conectado al servidor SFTP: 192.168.20.221:2222
+[31-Jul-2025 13:30:03 America/Santo_Domingo] INFO - Subiendo Exportacion_out_CAIU3747964.edi (406 B) a /uploads/Exportacion_out_CAIU3747964.edi
+[31-Jul-2025 13:30:03 America/Santo_Domingo] INFO - Archivo subido exitosamente: Exportacion_out_CAIU3747964.edi
+[31-Jul-2025 13:30:03 America/Santo_Domingo] INFO - Desconectado del servidor SFTP
+[31-Jul-2025 13:30:03 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 13:30:03 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CE000727280H895
+[31-Jul-2025 13:30:03 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_linea_despacho = :edi_file_linea_despacho, edi_file_linea_despacho_intentos = :edi_file_linea_despacho_intentos WHERE FCNUEMRO = :numero
+[31-Jul-2025 13:30:03 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho
+[31-Jul-2025 13:30:03 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho_intentos
+[31-Jul-2025 13:30:03 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CE000727280H895
+[31-Jul-2025 13:30:04 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 13:30:04 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 13:30:04 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 13:30:04 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CE000727280H895
+[31-Jul-2025 13:30:04 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_dph_despacho_intentos = :edi_file_dph_despacho_intentos, edi_file_linea_despacho = :edi_file_linea_despacho, edi_file_linea_despacho_intentos = :edi_file_linea_despacho_intentos WHERE FCNUEMRO = :numero
+[31-Jul-2025 13:30:04 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_dph_despacho_intentos
+[31-Jul-2025 13:30:04 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho
+[31-Jul-2025 13:30:04 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho_intentos
+[31-Jul-2025 13:30:04 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CE000727280H895
+[31-Jul-2025 13:30:04 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 13:30:04 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 13:30:04 America/Santo_Domingo] Proceso de envío de archivos EDI linea Despacho finalizado
+[31-Jul-2025 13:30:04 America/Santo_Domingo] Iniciando proceso de envío de archivos EDI linea Retorno. Buscando conduces pendientes de enviar.
+[31-Jul-2025 13:30:04 America/Santo_Domingo] Conduces pendientes de enviar EDI Despacho: 5
+[31-Jul-2025 13:30:04 America/Santo_Domingo] Sending FTP to DPH at 192.168.20.183 with user DPHFTP: //DPH/D_CA000727926S630.txt
+[31-Jul-2025 13:30:06 America/Santo_Domingo] Error al conectar con el servidor FTP: 192.168.20.183 para enviar archivo: //DPH/D_CA000727926S630.txtError al conectar con el servidor FTP: 192.168.20.183 para enviar archivo: //DPH/D_CA000727926S630.txt
+
+
+\Sending...n
+
+Tipo Transaccion:DESPACHO
+Conduce No:CA000727926S630
+Modulo I/E:NA
+Chassis No:MDCH2427
+Tamano Chassis: 20
+Agencia:MADO
+Cedido a:
+Contenedor No:MSDU1631103
+Tipo Contenedor:20DC
+Linea:MSCSHI
+Genset No:
+RNC:101029609
+Nombre Cliente:MARITIMA DOMINICANA
+BL No:
+Booking No:
+Fecha:2025-06-27
+Hora:18:43:00.00
+Terminal:01-STW CAUCEDO
+Chassis Alquilado:SI
+Cola Privada:NO
+
+[31-Jul-2025 13:30:06 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 13:30:06 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CA000727926S630
+[31-Jul-2025 13:30:06 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_dph_despacho = :edi_file_dph_despacho WHERE FCNUEMRO = :numero
+[31-Jul-2025 13:30:06 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_dph_despacho
+[31-Jul-2025 13:30:06 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CA000727926S630
+[31-Jul-2025 13:30:06 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 13:30:06 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 13:30:06 America/Santo_Domingo] Remote file name: Alquiler_out_MSDU1631103.edi
+[31-Jul-2025 13:30:06 America/Santo_Domingo] Forma de generación: 
+[31-Jul-2025 13:30:06 America/Santo_Domingo] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in C:\proyectos\repositorios\stonewood-lib\src\Conduce\StoneConduce.php on line 4875
+[31-Jul-2025 13:30:06 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 13:30:06 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CA000727926S630
+[31-Jul-2025 13:30:06 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_dph_despacho_intentos = :edi_file_dph_despacho_intentos, edi_file_linea_despacho_intentos = :edi_file_linea_despacho_intentos WHERE FCNUEMRO = :numero
+[31-Jul-2025 13:30:06 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_dph_despacho_intentos
+[31-Jul-2025 13:30:06 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho_intentos
+[31-Jul-2025 13:30:06 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CA000727926S630
+[31-Jul-2025 13:30:06 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 13:30:06 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 13:30:06 America/Santo_Domingo] Sending FTP to DPH at 192.168.20.183 with user DPHFTP: //DPH/D_CA000727904S776.txt
+[31-Jul-2025 13:30:08 America/Santo_Domingo] Error al conectar con el servidor FTP: 192.168.20.183 para enviar archivo: //DPH/D_CA000727904S776.txtError al conectar con el servidor FTP: 192.168.20.183 para enviar archivo: //DPH/D_CA000727904S776.txt
+
+
+\Sending...n
+
+Tipo Transaccion:DESPACHO
+Conduce No:CA000727904S776
+Modulo I/E:NA
+Chassis No:MDCH2438
+Tamano Chassis: 20
+Agencia:MADO
+Cedido a:
+Contenedor No:MEDU6418876
+Tipo Contenedor:20DC
+Linea:MSCSHI
+Genset No:
+RNC:101029609
+Nombre Cliente:MARITIMA DOMINICANA
+BL No:
+Booking No:
+Fecha:2025-06-27
+Hora:18:25:00.00
+Terminal:01-STW CAUCEDO
+Chassis Alquilado:SI
+Cola Privada:NO
+
+[31-Jul-2025 13:30:08 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 13:30:08 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CA000727904S776
+[31-Jul-2025 13:30:08 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_dph_despacho = :edi_file_dph_despacho WHERE FCNUEMRO = :numero
+[31-Jul-2025 13:30:08 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_dph_despacho
+[31-Jul-2025 13:30:08 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CA000727904S776
+[31-Jul-2025 13:30:08 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 13:30:08 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 13:30:08 America/Santo_Domingo] Remote file name: Alquiler_out_MEDU6418876.edi
+[31-Jul-2025 13:30:08 America/Santo_Domingo] Forma de generación: 
+[31-Jul-2025 13:30:08 America/Santo_Domingo] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in C:\proyectos\repositorios\stonewood-lib\src\Conduce\StoneConduce.php on line 4875
+[31-Jul-2025 13:30:08 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 13:30:08 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CA000727904S776
+[31-Jul-2025 13:30:08 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_dph_despacho_intentos = :edi_file_dph_despacho_intentos, edi_file_linea_despacho_intentos = :edi_file_linea_despacho_intentos WHERE FCNUEMRO = :numero
+[31-Jul-2025 13:30:08 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_dph_despacho_intentos
+[31-Jul-2025 13:30:08 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho_intentos
+[31-Jul-2025 13:30:08 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CA000727904S776
+[31-Jul-2025 13:30:08 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 13:30:08 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 13:30:08 America/Santo_Domingo] Sending FTP to DPH at 192.168.20.183 with user DPHFTP: //DPH/D_CA000727982S629.txt
+[31-Jul-2025 13:30:10 America/Santo_Domingo] Error al conectar con el servidor FTP: 192.168.20.183 para enviar archivo: //DPH/D_CA000727982S629.txtError al conectar con el servidor FTP: 192.168.20.183 para enviar archivo: //DPH/D_CA000727982S629.txt
+
+
+\Sending...n
+
+Tipo Transaccion:DESPACHO
+Conduce No:CA000727982S629
+Modulo I/E:NA
+Chassis No:MDCH2279
+Tamano Chassis: 20
+Agencia:MADO
+Cedido a:
+Contenedor No:DFSU1489564
+Tipo Contenedor:20DC
+Linea:MSCSHI
+Genset No:
+RNC:101029609
+Nombre Cliente:MARITIMA DOMINICANA
+BL No:
+Booking No:
+Fecha:2025-06-27
+Hora:19:23:00.00
+Terminal:01-STW CAUCEDO
+Chassis Alquilado:SI
+Cola Privada:NO
+
+[31-Jul-2025 13:30:10 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 13:30:10 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CA000727982S629
+[31-Jul-2025 13:30:10 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_dph_despacho = :edi_file_dph_despacho WHERE FCNUEMRO = :numero
+[31-Jul-2025 13:30:10 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_dph_despacho
+[31-Jul-2025 13:30:10 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CA000727982S629
+[31-Jul-2025 13:30:10 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 13:30:10 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 13:30:10 America/Santo_Domingo] Remote file name: Alquiler_out_DFSU1489564.edi
+[31-Jul-2025 13:30:10 America/Santo_Domingo] Forma de generación: 
+[31-Jul-2025 13:30:10 America/Santo_Domingo] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in C:\proyectos\repositorios\stonewood-lib\src\Conduce\StoneConduce.php on line 4875
+[31-Jul-2025 13:30:10 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 13:30:10 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CA000727982S629
+[31-Jul-2025 13:30:10 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_dph_despacho_intentos = :edi_file_dph_despacho_intentos, edi_file_linea_despacho_intentos = :edi_file_linea_despacho_intentos WHERE FCNUEMRO = :numero
+[31-Jul-2025 13:30:10 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_dph_despacho_intentos
+[31-Jul-2025 13:30:10 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho_intentos
+[31-Jul-2025 13:30:10 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CA000727982S629
+[31-Jul-2025 13:30:10 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 13:30:10 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 13:30:10 America/Santo_Domingo] Sending FTP to DPH at 192.168.20.183 with user DPHFTP: //DPH/D_CA000727420D710.txt
+[31-Jul-2025 13:30:12 America/Santo_Domingo] Error al conectar con el servidor FTP: 192.168.20.183 para enviar archivo: //DPH/D_CA000727420D710.txtError al conectar con el servidor FTP: 192.168.20.183 para enviar archivo: //DPH/D_CA000727420D710.txt
+
+
+\Sending...n
+
+Tipo Transaccion:DESPACHO
+Conduce No:CA000727420D710
+Modulo I/E:NA
+Chassis No:CSTD-02
+Tamano Chassis: 40
+Agencia:STWD
+Cedido a:
+Contenedor No:MSNU5627077
+Tipo Contenedor:40HC
+Linea:MSCSHI
+Genset No:
+RNC:101029609
+Nombre Cliente:MARITIMA DOMINICANA
+BL No:
+Booking No:
+Fecha:2025-06-27
+Hora:10:04:00.00
+Terminal:01-STW CAUCEDO
+Chassis Alquilado:SI
+Cola Privada:NO
+
+[31-Jul-2025 13:30:12 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 13:30:12 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CA000727420D710
+[31-Jul-2025 13:30:12 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_dph_despacho = :edi_file_dph_despacho WHERE FCNUEMRO = :numero
+[31-Jul-2025 13:30:12 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_dph_despacho
+[31-Jul-2025 13:30:12 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CA000727420D710
+[31-Jul-2025 13:30:12 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 13:30:12 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 13:30:12 America/Santo_Domingo] Remote file name: Alquiler_out_MSNU5627077.edi
+[31-Jul-2025 13:30:12 America/Santo_Domingo] Forma de generación: 
+[31-Jul-2025 13:30:12 America/Santo_Domingo] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in C:\proyectos\repositorios\stonewood-lib\src\Conduce\StoneConduce.php on line 4875
+[31-Jul-2025 13:30:12 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 13:30:12 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CA000727420D710
+[31-Jul-2025 13:30:12 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_dph_despacho_intentos = :edi_file_dph_despacho_intentos, edi_file_linea_despacho_intentos = :edi_file_linea_despacho_intentos WHERE FCNUEMRO = :numero
+[31-Jul-2025 13:30:12 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_dph_despacho_intentos
+[31-Jul-2025 13:30:12 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho_intentos
+[31-Jul-2025 13:30:12 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CA000727420D710
+[31-Jul-2025 13:30:12 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 13:30:12 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 13:30:12 America/Santo_Domingo] Sending FTP to DPH at 192.168.20.183 with user DPHFTP: //DPH/D_CA000727358I366.txt
+[31-Jul-2025 13:30:14 America/Santo_Domingo] Error al conectar con el servidor FTP: 192.168.20.183 para enviar archivo: //DPH/D_CA000727358I366.txtError al conectar con el servidor FTP: 192.168.20.183 para enviar archivo: //DPH/D_CA000727358I366.txt
+
+
+\Sending...n
+
+Tipo Transaccion:DESPACHO
+Conduce No:CA000727358I366
+Modulo I/E:NA
+Chassis No:CSTD-02
+Tamano Chassis: 40
+Agencia:STWD
+Cedido a:
+Contenedor No:UETU6767711
+Tipo Contenedor:40HC
+Linea:MSCSHI
+Genset No:
+RNC:101029609
+Nombre Cliente:MARITIMA DOMINICANA
+BL No:
+Booking No:
+Fecha:2025-06-27
+Hora:08:41:00.00
+Terminal:01-STW CAUCEDO
+Chassis Alquilado:SI
+Cola Privada:NO
+
+[31-Jul-2025 13:30:14 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 13:30:14 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CA000727358I366
+[31-Jul-2025 13:30:14 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_dph_despacho = :edi_file_dph_despacho WHERE FCNUEMRO = :numero
+[31-Jul-2025 13:30:14 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_dph_despacho
+[31-Jul-2025 13:30:14 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CA000727358I366
+[31-Jul-2025 13:30:14 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 13:30:14 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 13:30:14 America/Santo_Domingo] Remote file name: Alquiler_out_UETU6767711.edi
+[31-Jul-2025 13:30:14 America/Santo_Domingo] Forma de generación: 
+[31-Jul-2025 13:30:14 America/Santo_Domingo] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in C:\proyectos\repositorios\stonewood-lib\src\Conduce\StoneConduce.php on line 4875
+[31-Jul-2025 13:30:14 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 13:30:14 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CA000727358I366
+[31-Jul-2025 13:30:14 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_dph_despacho_intentos = :edi_file_dph_despacho_intentos, edi_file_linea_despacho_intentos = :edi_file_linea_despacho_intentos WHERE FCNUEMRO = :numero
+[31-Jul-2025 13:30:14 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_dph_despacho_intentos
+[31-Jul-2025 13:30:14 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho_intentos
+[31-Jul-2025 13:30:14 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CA000727358I366
+[31-Jul-2025 13:30:15 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 13:30:15 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 13:30:15 America/Santo_Domingo] Proceso de envío de archivos EDI Retorno linea finalizado
+[31-Jul-2025 13:36:19 America/Santo_Domingo] Iniciando proceso de envío de archivos EDI linea Retorno. Buscando conduces pendientes de enviar.
+[31-Jul-2025 13:36:20 America/Santo_Domingo] Conduces pendientes de enviar EDI Despacho: 5
+[31-Jul-2025 13:36:20 America/Santo_Domingo] Sending FTP to DPH at 192.168.20.183 with user DPHFTP: //DPH/D_CA000728010S338.txt
+[31-Jul-2025 13:36:22 America/Santo_Domingo] Error al conectar con el servidor FTP: 192.168.20.183 para enviar archivo: //DPH/D_CA000728010S338.txtError al conectar con el servidor FTP: 192.168.20.183 para enviar archivo: //DPH/D_CA000728010S338.txt
+
+
+\Sending...n
+
+Tipo Transaccion:DESPACHO
+Conduce No:CA000728010S338
+Modulo I/E:NA
+Chassis No:MDCH2419
+Tamano Chassis: 20
+Agencia:MADO
+Cedido a:
+Contenedor No:MEDU5438862
+Tipo Contenedor:20DC
+Linea:MSCSHI
+Genset No:
+RNC:101029609
+Nombre Cliente:MARITIMA DOMINICANA
+BL No:
+Booking No:
+Fecha:2025-06-27
+Hora:19:51:00.00
+Terminal:01-STW CAUCEDO
+Chassis Alquilado:SI
+Cola Privada:NO
+
+[31-Jul-2025 13:36:22 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 13:36:22 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CA000728010S338
+[31-Jul-2025 13:36:22 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_dph_despacho = :edi_file_dph_despacho WHERE FCNUEMRO = :numero
+[31-Jul-2025 13:36:22 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_dph_despacho
+[31-Jul-2025 13:36:22 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CA000728010S338
+[31-Jul-2025 13:36:22 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 13:36:22 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 13:36:22 America/Santo_Domingo] Remote file name: Alquiler_out_MEDU5438862.edi
+[31-Jul-2025 13:36:22 America/Santo_Domingo] Forma de generación: 
+[31-Jul-2025 13:36:22 America/Santo_Domingo] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in C:\proyectos\repositorios\stonewood-lib\src\Conduce\StoneConduce.php on line 4875
+[31-Jul-2025 13:36:22 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 13:36:22 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CA000728010S338
+[31-Jul-2025 13:36:22 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_dph_despacho_intentos = :edi_file_dph_despacho_intentos, edi_file_linea_despacho_intentos = :edi_file_linea_despacho_intentos WHERE FCNUEMRO = :numero
+[31-Jul-2025 13:36:22 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_dph_despacho_intentos
+[31-Jul-2025 13:36:22 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho_intentos
+[31-Jul-2025 13:36:22 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CA000728010S338
+[31-Jul-2025 13:36:22 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 13:36:22 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 13:36:22 America/Santo_Domingo] Remote file name: Alquiler_out_MSNU5627077.edi
+[31-Jul-2025 13:36:22 America/Santo_Domingo] Forma de generación: 
+[31-Jul-2025 13:36:22 America/Santo_Domingo] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in C:\proyectos\repositorios\stonewood-lib\src\Conduce\StoneConduce.php on line 4875
+[31-Jul-2025 13:36:22 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 13:36:22 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CA000727420D710
+[31-Jul-2025 13:36:22 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_linea_despacho_intentos = :edi_file_linea_despacho_intentos WHERE FCNUEMRO = :numero
+[31-Jul-2025 13:36:22 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho_intentos
+[31-Jul-2025 13:36:22 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CA000727420D710
+[31-Jul-2025 13:36:22 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 13:36:22 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 13:36:22 America/Santo_Domingo] Remote file name: Alquiler_out_UETU6767711.edi
+[31-Jul-2025 13:36:22 America/Santo_Domingo] Forma de generación: 
+[31-Jul-2025 13:36:22 America/Santo_Domingo] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in C:\proyectos\repositorios\stonewood-lib\src\Conduce\StoneConduce.php on line 4875
+[31-Jul-2025 13:36:22 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 13:36:22 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CA000727358I366
+[31-Jul-2025 13:36:22 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_linea_despacho_intentos = :edi_file_linea_despacho_intentos WHERE FCNUEMRO = :numero
+[31-Jul-2025 13:36:22 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho_intentos
+[31-Jul-2025 13:36:22 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CA000727358I366
+[31-Jul-2025 13:36:22 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 13:36:22 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 13:36:22 America/Santo_Domingo] Remote file name: Alquiler_out_DFSU1489564.edi
+[31-Jul-2025 13:36:22 America/Santo_Domingo] Forma de generación: 
+[31-Jul-2025 13:36:22 America/Santo_Domingo] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in C:\proyectos\repositorios\stonewood-lib\src\Conduce\StoneConduce.php on line 4875
+[31-Jul-2025 13:36:22 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 13:36:22 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CA000727982S629
+[31-Jul-2025 13:36:22 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_linea_despacho_intentos = :edi_file_linea_despacho_intentos WHERE FCNUEMRO = :numero
+[31-Jul-2025 13:36:22 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho_intentos
+[31-Jul-2025 13:36:22 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CA000727982S629
+[31-Jul-2025 13:36:22 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 13:36:22 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 13:36:22 America/Santo_Domingo] Remote file name: Alquiler_out_MSDU1631103.edi
+[31-Jul-2025 13:36:22 America/Santo_Domingo] Forma de generación: 
+[31-Jul-2025 13:36:22 America/Santo_Domingo] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in C:\proyectos\repositorios\stonewood-lib\src\Conduce\StoneConduce.php on line 4875
+[31-Jul-2025 13:36:22 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 13:36:22 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CA000727926S630
+[31-Jul-2025 13:36:22 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_linea_despacho_intentos = :edi_file_linea_despacho_intentos WHERE FCNUEMRO = :numero
+[31-Jul-2025 13:36:22 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho_intentos
+[31-Jul-2025 13:36:22 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CA000727926S630
+[31-Jul-2025 13:36:22 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 13:36:22 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 13:36:22 America/Santo_Domingo] Proceso de envío de archivos EDI Retorno linea finalizado
+[31-Jul-2025 14:13:04 America/Santo_Domingo] Iniciando proceso de envío de archivos EDI linea Retorno. Buscando conduces pendientes de enviar.
+[31-Jul-2025 14:13:04 America/Santo_Domingo] Conduces pendientes de enviar EDI Despacho: 5
+[31-Jul-2025 14:13:04 America/Santo_Domingo] Remote file name: Alquiler_out_MSDU1631103.edi
+[31-Jul-2025 14:13:04 America/Santo_Domingo] What was written: 
+[31-Jul-2025 14:13:04 America/Santo_Domingo] Forma de generación: 
+[31-Jul-2025 14:13:04 America/Santo_Domingo] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in C:\proyectos\repositorios\stonewood-lib\src\Conduce\StoneConduce.php on line 4876
+[31-Jul-2025 14:13:04 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 14:13:04 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CA000727926S630
+[31-Jul-2025 14:13:04 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_linea_despacho_intentos = :edi_file_linea_despacho_intentos WHERE FCNUEMRO = :numero
+[31-Jul-2025 14:13:04 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho_intentos
+[31-Jul-2025 14:13:04 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CA000727926S630
+[31-Jul-2025 14:13:04 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 14:13:04 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 14:13:04 America/Santo_Domingo] Remote file name: Alquiler_out_MEDU6418876.edi
+[31-Jul-2025 14:13:04 America/Santo_Domingo] What was written: 
+[31-Jul-2025 14:13:04 America/Santo_Domingo] Forma de generación: 
+[31-Jul-2025 14:13:04 America/Santo_Domingo] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in C:\proyectos\repositorios\stonewood-lib\src\Conduce\StoneConduce.php on line 4876
+[31-Jul-2025 14:13:04 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 14:13:04 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CA000727904S776
+[31-Jul-2025 14:13:04 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_linea_despacho_intentos = :edi_file_linea_despacho_intentos WHERE FCNUEMRO = :numero
+[31-Jul-2025 14:13:04 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho_intentos
+[31-Jul-2025 14:13:04 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CA000727904S776
+[31-Jul-2025 14:13:04 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 14:13:04 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 14:13:04 America/Santo_Domingo] Remote file name: Alquiler_out_UETU6767711.edi
+[31-Jul-2025 14:13:04 America/Santo_Domingo] What was written: 
+[31-Jul-2025 14:13:04 America/Santo_Domingo] Forma de generación: 
+[31-Jul-2025 14:13:04 America/Santo_Domingo] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in C:\proyectos\repositorios\stonewood-lib\src\Conduce\StoneConduce.php on line 4876
+[31-Jul-2025 14:13:04 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 14:13:04 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CA000727358I366
+[31-Jul-2025 14:13:04 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_linea_despacho_intentos = :edi_file_linea_despacho_intentos WHERE FCNUEMRO = :numero
+[31-Jul-2025 14:13:04 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho_intentos
+[31-Jul-2025 14:13:04 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CA000727358I366
+[31-Jul-2025 14:13:04 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 14:13:04 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 14:13:04 America/Santo_Domingo] Remote file name: Alquiler_out_DFSU1489564.edi
+[31-Jul-2025 14:13:04 America/Santo_Domingo] What was written: 
+[31-Jul-2025 14:13:04 America/Santo_Domingo] Forma de generación: 
+[31-Jul-2025 14:13:04 America/Santo_Domingo] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in C:\proyectos\repositorios\stonewood-lib\src\Conduce\StoneConduce.php on line 4876
+[31-Jul-2025 14:13:04 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 14:13:04 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CA000727982S629
+[31-Jul-2025 14:13:04 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_linea_despacho_intentos = :edi_file_linea_despacho_intentos WHERE FCNUEMRO = :numero
+[31-Jul-2025 14:13:04 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho_intentos
+[31-Jul-2025 14:13:04 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CA000727982S629
+[31-Jul-2025 14:13:04 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 14:13:04 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 14:13:04 America/Santo_Domingo] Remote file name: Alquiler_out_MEDU5438862.edi
+[31-Jul-2025 14:13:04 America/Santo_Domingo] What was written: 
+[31-Jul-2025 14:13:04 America/Santo_Domingo] Forma de generación: 
+[31-Jul-2025 14:13:04 America/Santo_Domingo] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in C:\proyectos\repositorios\stonewood-lib\src\Conduce\StoneConduce.php on line 4876
+[31-Jul-2025 14:13:04 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 14:13:04 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CA000728010S338
+[31-Jul-2025 14:13:04 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_linea_despacho_intentos = :edi_file_linea_despacho_intentos WHERE FCNUEMRO = :numero
+[31-Jul-2025 14:13:04 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho_intentos
+[31-Jul-2025 14:13:04 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CA000728010S338
+[31-Jul-2025 14:13:04 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 14:13:04 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 14:13:04 America/Santo_Domingo] Proceso de envío de archivos EDI Retorno linea finalizado
+[31-Jul-2025 14:17:16 America/Santo_Domingo] Iniciando proceso de envío de archivos EDI linea Despacho. Buscando conduces pendientes de enviar.
+[31-Jul-2025 14:17:16 America/Santo_Domingo] Conduces pendientes de enviar EDI Despacho: 5
+[31-Jul-2025 14:17:16 America/Santo_Domingo] Sending FTP to DPH at 192.168.20.183 with user DPHFTP: //DPH/D_CE000726576H895.txt
+[31-Jul-2025 14:17:18 America/Santo_Domingo] Error al conectar con el servidor FTP: 192.168.20.183 para enviar archivo: //DPH/D_CE000726576H895.txtError al conectar con el servidor FTP: 192.168.20.183 para enviar archivo: //DPH/D_CE000726576H895.txt
+
+
+\Sending...n
+
+Tipo Transaccion:DESPACHO
+Conduce No:CE000726576H895
+Modulo I/E:EXPORT
+Chassis No:CHASSIS PROPIO
+Tamano Chassis: 20
+Agencia:MADO
+Cedido a:
+Contenedor No:MSMU2477787
+Tipo Contenedor:20DC
+Linea:MSCSHI
+Genset No:
+RNC:131210406
+Nombre Cliente:MSC MEDITERRANEAN SHIPPING COMPANY S A
+BL No:
+Booking No:EDOEVA20
+Fecha:2025-06-27
+Hora:07:48:00.00
+Terminal:01-STW CAUCEDO
+Chassis Alquilado:NO
+Cola Privada:SI
+
+[31-Jul-2025 14:17:18 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 14:17:18 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CE000726576H895
+[31-Jul-2025 14:17:18 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_dph_despacho = :edi_file_dph_despacho WHERE FCNUEMRO = :numero
+[31-Jul-2025 14:17:18 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_dph_despacho
+[31-Jul-2025 14:17:18 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CE000726576H895
+[31-Jul-2025 14:17:19 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 14:17:19 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 14:17:19 America/Santo_Domingo] Remote file name: Exportacion_out_MSMU2477787.edi
+[31-Jul-2025 14:17:19 America/Santo_Domingo] What was written: UNB+UNOA:2+STW+MSC+202507311417+CE000726576H895'
+UNH+0031+CODECO:D:95B:UN:ITG13'
+BGM+36++9'
+TDT+20++1++:172:ZZZ+++146'
+NAD+CF+MSC:160:166'
+EQD+CN+MSMU2477787+20G1:102:5+++4'
+RFF+BN:EDOEVA20'
+TMD+2'
+DTM+7:202506270748:203'
+MEA+AAE+T+KGM:1900'
+TDT+1++3++001-0683233-0:172:ZZZ+++001-0683233-0:146::WILLIANS LIRIANO DE  LA ROSA'
+LOC+165+STW:139:6:STW+TER:ZZZ'
+CNT+16:1'
+UNT+000012+0031'
+UNZ+1+CE000726576H895'
+
+[31-Jul-2025 14:17:19 America/Santo_Domingo] Forma de generación: 
+[31-Jul-2025 14:17:19 America/Santo_Domingo] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in C:\proyectos\repositorios\stonewood-lib\src\Conduce\StoneConduce.php on line 4876
+[31-Jul-2025 14:17:19 America/Santo_Domingo] Guardando archivo en disco: Exportacion_out_MSMU2477787.edi
+[31-Jul-2025 14:17:19 America/Santo_Domingo] Forma de generación: 
+[31-Jul-2025 14:17:19 America/Santo_Domingo] Tipo: out
+[31-Jul-2025 14:17:19 America/Santo_Domingo] Guardando archivo en disco: Exportacion_out_MSMU2477787.edi
+[31-Jul-2025 14:17:19 America/Santo_Domingo] archivo guardado en : C:\proyectos\repositorios\stonewood-app\Data\ftpFiles\/Exportacion_out_MSMU2477787.edi
+[31-Jul-2025 14:17:19 America/Santo_Domingo] PHP Deprecated:  Optional parameter $port declared before required parameter $password is implicitly treated as a required parameter in C:\proyectos\repositorios\stonewood-lib\src\Utils\SftpFileTransfer.php on line 14
+[31-Jul-2025 14:17:19 America/Santo_Domingo] INFO - Conectado al servidor SFTP: 192.168.20.221:2222
+[31-Jul-2025 14:17:19 America/Santo_Domingo] INFO - Subiendo Exportacion_out_MSMU2477787.edi (406 B) a /uploads/Exportacion_out_MSMU2477787.edi
+[31-Jul-2025 14:17:19 America/Santo_Domingo] INFO - Archivo subido exitosamente: Exportacion_out_MSMU2477787.edi
+[31-Jul-2025 14:17:19 America/Santo_Domingo] INFO - Desconectado del servidor SFTP
+[31-Jul-2025 14:17:19 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 14:17:19 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CE000726576H895
+[31-Jul-2025 14:17:19 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_linea_despacho = :edi_file_linea_despacho, edi_file_linea_despacho_intentos = :edi_file_linea_despacho_intentos WHERE FCNUEMRO = :numero
+[31-Jul-2025 14:17:19 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho
+[31-Jul-2025 14:17:19 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho_intentos
+[31-Jul-2025 14:17:19 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CE000726576H895
+[31-Jul-2025 14:17:19 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 14:17:19 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 14:17:19 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 14:17:19 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CE000726576H895
+[31-Jul-2025 14:17:19 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_dph_despacho_intentos = :edi_file_dph_despacho_intentos, edi_file_linea_despacho = :edi_file_linea_despacho, edi_file_linea_despacho_intentos = :edi_file_linea_despacho_intentos WHERE FCNUEMRO = :numero
+[31-Jul-2025 14:17:19 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_dph_despacho_intentos
+[31-Jul-2025 14:17:19 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho
+[31-Jul-2025 14:17:19 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho_intentos
+[31-Jul-2025 14:17:19 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CE000726576H895
+[31-Jul-2025 14:17:19 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 14:17:19 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 14:17:19 America/Santo_Domingo] Sending FTP to DPH at 192.168.20.183 with user DPHFTP: //DPH/D_CE000727319D473.txt
+[31-Jul-2025 14:17:21 America/Santo_Domingo] Error al conectar con el servidor FTP: 192.168.20.183 para enviar archivo: //DPH/D_CE000727319D473.txtError al conectar con el servidor FTP: 192.168.20.183 para enviar archivo: //DPH/D_CE000727319D473.txt
+
+
+\Sending...n
+
+Tipo Transaccion:DESPACHO
+Conduce No:CE000727319D473
+Modulo I/E:EXPORT
+Chassis No:CHASSIS PROPIO
+Tamano Chassis: 20
+Agencia:MADO
+Cedido a:
+Contenedor No:FCIU3623241
+Tipo Contenedor:20DC
+Linea:MSCSHI
+Genset No:
+RNC:131210406
+Nombre Cliente:MSC MEDITERRANEAN SHIPPING COMPANY S A
+BL No:
+Booking No:EDOEVA20
+Fecha:2025-06-27
+Hora:07:41:00.00
+Terminal:01-STW CAUCEDO
+Chassis Alquilado:NO
+Cola Privada:SI
+
+[31-Jul-2025 14:17:21 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 14:17:21 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CE000727319D473
+[31-Jul-2025 14:17:21 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_dph_despacho = :edi_file_dph_despacho WHERE FCNUEMRO = :numero
+[31-Jul-2025 14:17:21 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_dph_despacho
+[31-Jul-2025 14:17:21 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CE000727319D473
+[31-Jul-2025 14:17:21 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 14:17:21 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 14:17:21 America/Santo_Domingo] Remote file name: Exportacion_out_FCIU3623241.edi
+[31-Jul-2025 14:17:21 America/Santo_Domingo] What was written: UNB+UNOA:2+STW+MSC+202507311417+CE000727319D473'
+UNH+0031+CODECO:D:95B:UN:ITG13'
+BGM+36++9'
+TDT+20++1++:172:ZZZ+++146'
+NAD+CF+MSC:160:166'
+EQD+CN+FCIU3623241+22G1:102:5+++4'
+RFF+BN:EDOEVA20'
+TMD+2'
+DTM+7:202506270741:203'
+MEA+AAE+T+KGM:1900'
+TDT+1++3++226-0012644-9:172:ZZZ+++226-0012644-9:146::JORDANY FABIAN TERRERO'
+LOC+165+STW:139:6:STW+TER:ZZZ'
+CNT+16:1'
+UNT+000012+0031'
+UNZ+1+CE000727319D473'
+
+[31-Jul-2025 14:17:21 America/Santo_Domingo] Forma de generación: 
+[31-Jul-2025 14:17:21 America/Santo_Domingo] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in C:\proyectos\repositorios\stonewood-lib\src\Conduce\StoneConduce.php on line 4876
+[31-Jul-2025 14:17:21 America/Santo_Domingo] Guardando archivo en disco: Exportacion_out_FCIU3623241.edi
+[31-Jul-2025 14:17:21 America/Santo_Domingo] Forma de generación: 
+[31-Jul-2025 14:17:21 America/Santo_Domingo] Tipo: out
+[31-Jul-2025 14:17:21 America/Santo_Domingo] Guardando archivo en disco: Exportacion_out_FCIU3623241.edi
+[31-Jul-2025 14:17:21 America/Santo_Domingo] archivo guardado en : C:\proyectos\repositorios\stonewood-app\Data\ftpFiles\/Exportacion_out_FCIU3623241.edi
+[31-Jul-2025 14:17:21 America/Santo_Domingo] INFO - Conectado al servidor SFTP: 192.168.20.221:2222
+[31-Jul-2025 14:17:21 America/Santo_Domingo] INFO - Subiendo Exportacion_out_FCIU3623241.edi (400 B) a /uploads/Exportacion_out_FCIU3623241.edi
+[31-Jul-2025 14:17:21 America/Santo_Domingo] INFO - Archivo subido exitosamente: Exportacion_out_FCIU3623241.edi
+[31-Jul-2025 14:17:21 America/Santo_Domingo] INFO - Desconectado del servidor SFTP
+[31-Jul-2025 14:17:21 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 14:17:21 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CE000727319D473
+[31-Jul-2025 14:17:21 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_linea_despacho = :edi_file_linea_despacho, edi_file_linea_despacho_intentos = :edi_file_linea_despacho_intentos WHERE FCNUEMRO = :numero
+[31-Jul-2025 14:17:21 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho
+[31-Jul-2025 14:17:21 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho_intentos
+[31-Jul-2025 14:17:21 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CE000727319D473
+[31-Jul-2025 14:17:21 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 14:17:21 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 14:17:21 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 14:17:21 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CE000727319D473
+[31-Jul-2025 14:17:21 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_dph_despacho_intentos = :edi_file_dph_despacho_intentos, edi_file_linea_despacho = :edi_file_linea_despacho, edi_file_linea_despacho_intentos = :edi_file_linea_despacho_intentos WHERE FCNUEMRO = :numero
+[31-Jul-2025 14:17:21 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_dph_despacho_intentos
+[31-Jul-2025 14:17:21 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho
+[31-Jul-2025 14:17:21 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho_intentos
+[31-Jul-2025 14:17:21 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CE000727319D473
+[31-Jul-2025 14:17:21 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 14:17:21 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 14:17:21 America/Santo_Domingo] Sending FTP to DPH at 192.168.20.183 with user DPHFTP: //DPH/D_CE000727318D473.txt
+[31-Jul-2025 14:17:24 America/Santo_Domingo] Error al conectar con el servidor FTP: 192.168.20.183 para enviar archivo: //DPH/D_CE000727318D473.txtError al conectar con el servidor FTP: 192.168.20.183 para enviar archivo: //DPH/D_CE000727318D473.txt
+
+
+\Sending...n
+
+Tipo Transaccion:DESPACHO
+Conduce No:CE000727318D473
+Modulo I/E:EXPORT
+Chassis No:CHASSIS PROPIO
+Tamano Chassis: 20
+Agencia:MADO
+Cedido a:
+Contenedor No:FCIU2699108
+Tipo Contenedor:20DC
+Linea:MSCSHI
+Genset No:
+RNC:131210406
+Nombre Cliente:MSC MEDITERRANEAN SHIPPING COMPANY S A
+BL No:
+Booking No:EDOEVA20
+Fecha:2025-06-27
+Hora:07:41:00.00
+Terminal:01-STW CAUCEDO
+Chassis Alquilado:NO
+Cola Privada:SI
+
+[31-Jul-2025 14:17:24 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 14:17:24 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CE000727318D473
+[31-Jul-2025 14:17:24 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_dph_despacho = :edi_file_dph_despacho WHERE FCNUEMRO = :numero
+[31-Jul-2025 14:17:24 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_dph_despacho
+[31-Jul-2025 14:17:24 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CE000727318D473
+[31-Jul-2025 14:17:24 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 14:17:24 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 14:17:24 America/Santo_Domingo] Remote file name: Exportacion_out_FCIU2699108.edi
+[31-Jul-2025 14:17:24 America/Santo_Domingo] What was written: UNB+UNOA:2+STW+MSC+202507311417+CE000727318D473'
+UNH+0031+CODECO:D:95B:UN:ITG13'
+BGM+36++9'
+TDT+20++1++:172:ZZZ+++146'
+NAD+CF+MSC:160:166'
+EQD+CN+FCIU2699108+22G1:102:5+++4'
+RFF+BN:EDOEVA20'
+TMD+2'
+DTM+7:202506270741:203'
+MEA+AAE+T+KGM:1900'
+TDT+1++3++226-0012644-9:172:ZZZ+++226-0012644-9:146::JORDANY FABIAN TERRERO'
+LOC+165+STW:139:6:STW+TER:ZZZ'
+CNT+16:1'
+UNT+000012+0031'
+UNZ+1+CE000727318D473'
+
+[31-Jul-2025 14:17:24 America/Santo_Domingo] Forma de generación: 
+[31-Jul-2025 14:17:24 America/Santo_Domingo] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in C:\proyectos\repositorios\stonewood-lib\src\Conduce\StoneConduce.php on line 4876
+[31-Jul-2025 14:17:24 America/Santo_Domingo] Guardando archivo en disco: Exportacion_out_FCIU2699108.edi
+[31-Jul-2025 14:17:24 America/Santo_Domingo] Forma de generación: 
+[31-Jul-2025 14:17:24 America/Santo_Domingo] Tipo: out
+[31-Jul-2025 14:17:24 America/Santo_Domingo] Guardando archivo en disco: Exportacion_out_FCIU2699108.edi
+[31-Jul-2025 14:17:24 America/Santo_Domingo] archivo guardado en : C:\proyectos\repositorios\stonewood-app\Data\ftpFiles\/Exportacion_out_FCIU2699108.edi
+[31-Jul-2025 14:17:24 America/Santo_Domingo] INFO - Conectado al servidor SFTP: 192.168.20.221:2222
+[31-Jul-2025 14:17:24 America/Santo_Domingo] INFO - Subiendo Exportacion_out_FCIU2699108.edi (400 B) a /uploads/Exportacion_out_FCIU2699108.edi
+[31-Jul-2025 14:17:24 America/Santo_Domingo] INFO - Archivo subido exitosamente: Exportacion_out_FCIU2699108.edi
+[31-Jul-2025 14:17:24 America/Santo_Domingo] INFO - Desconectado del servidor SFTP
+[31-Jul-2025 14:17:24 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 14:17:24 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CE000727318D473
+[31-Jul-2025 14:17:24 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_linea_despacho = :edi_file_linea_despacho, edi_file_linea_despacho_intentos = :edi_file_linea_despacho_intentos WHERE FCNUEMRO = :numero
+[31-Jul-2025 14:17:24 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho
+[31-Jul-2025 14:17:24 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho_intentos
+[31-Jul-2025 14:17:24 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CE000727318D473
+[31-Jul-2025 14:17:24 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 14:17:24 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 14:17:24 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 14:17:24 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CE000727318D473
+[31-Jul-2025 14:17:24 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_dph_despacho_intentos = :edi_file_dph_despacho_intentos, edi_file_linea_despacho = :edi_file_linea_despacho, edi_file_linea_despacho_intentos = :edi_file_linea_despacho_intentos WHERE FCNUEMRO = :numero
+[31-Jul-2025 14:17:24 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_dph_despacho_intentos
+[31-Jul-2025 14:17:24 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho
+[31-Jul-2025 14:17:24 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho_intentos
+[31-Jul-2025 14:17:24 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CE000727318D473
+[31-Jul-2025 14:17:24 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 14:17:24 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 14:17:24 America/Santo_Domingo] Sending FTP to DPH at 192.168.20.183 with user DPHFTP: //DPH/D_CE000727285H895.txt
+[31-Jul-2025 14:17:26 America/Santo_Domingo] Error al conectar con el servidor FTP: 192.168.20.183 para enviar archivo: //DPH/D_CE000727285H895.txtError al conectar con el servidor FTP: 192.168.20.183 para enviar archivo: //DPH/D_CE000727285H895.txt
+
+
+\Sending...n
+
+Tipo Transaccion:DESPACHO
+Conduce No:CE000727285H895
+Modulo I/E:EXPORT
+Chassis No:CHASSIS PROPIO
+Tamano Chassis: 20
+Agencia:MADO
+Cedido a:
+Contenedor No:MSDU1781818
+Tipo Contenedor:20DC
+Linea:MSCSHI
+Genset No:
+RNC:131210406
+Nombre Cliente:MSC MEDITERRANEAN SHIPPING COMPANY S A
+BL No:
+Booking No:EDOEVA20
+Fecha:2025-06-27
+Hora:11:22:00.00
+Terminal:01-STW CAUCEDO
+Chassis Alquilado:NO
+Cola Privada:SI
+
+[31-Jul-2025 14:17:26 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 14:17:26 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CE000727285H895
+[31-Jul-2025 14:17:26 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_dph_despacho = :edi_file_dph_despacho WHERE FCNUEMRO = :numero
+[31-Jul-2025 14:17:26 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_dph_despacho
+[31-Jul-2025 14:17:26 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CE000727285H895
+[31-Jul-2025 14:17:26 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 14:17:26 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 14:17:26 America/Santo_Domingo] Remote file name: Exportacion_out_MSDU1781818.edi
+[31-Jul-2025 14:17:26 America/Santo_Domingo] What was written: UNB+UNOA:2+STW+MSC+202507311417+CE000727285H895'
+UNH+0031+CODECO:D:95B:UN:ITG13'
+BGM+36++9'
+TDT+20++1++:172:ZZZ+++146'
+NAD+CF+MSC:160:166'
+EQD+CN+MSDU1781818+22G1:102:5+++4'
+RFF+BN:EDOEVA20'
+TMD+2'
+DTM+7:202506271122:203'
+MEA+AAE+T+KGM:1900'
+TDT+1++3++023-0134208-1:172:ZZZ+++023-0134208-1:146::EDDY RUIZ ACOSTA'
+LOC+165+STW:139:6:STW+TER:ZZZ'
+CNT+16:1'
+UNT+000012+0031'
+UNZ+1+CE000727285H895'
+
+[31-Jul-2025 14:17:26 America/Santo_Domingo] Forma de generación: 
+[31-Jul-2025 14:17:26 America/Santo_Domingo] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in C:\proyectos\repositorios\stonewood-lib\src\Conduce\StoneConduce.php on line 4876
+[31-Jul-2025 14:17:26 America/Santo_Domingo] Guardando archivo en disco: Exportacion_out_MSDU1781818.edi
+[31-Jul-2025 14:17:26 America/Santo_Domingo] Forma de generación: 
+[31-Jul-2025 14:17:26 America/Santo_Domingo] Tipo: out
+[31-Jul-2025 14:17:26 America/Santo_Domingo] Guardando archivo en disco: Exportacion_out_MSDU1781818.edi
+[31-Jul-2025 14:17:26 America/Santo_Domingo] archivo guardado en : C:\proyectos\repositorios\stonewood-app\Data\ftpFiles\/Exportacion_out_MSDU1781818.edi
+[31-Jul-2025 14:17:26 America/Santo_Domingo] INFO - Conectado al servidor SFTP: 192.168.20.221:2222
+[31-Jul-2025 14:17:26 America/Santo_Domingo] INFO - Subiendo Exportacion_out_MSDU1781818.edi (394 B) a /uploads/Exportacion_out_MSDU1781818.edi
+[31-Jul-2025 14:17:26 America/Santo_Domingo] INFO - Archivo subido exitosamente: Exportacion_out_MSDU1781818.edi
+[31-Jul-2025 14:17:26 America/Santo_Domingo] INFO - Desconectado del servidor SFTP
+[31-Jul-2025 14:17:26 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 14:17:26 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CE000727285H895
+[31-Jul-2025 14:17:26 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_linea_despacho = :edi_file_linea_despacho, edi_file_linea_despacho_intentos = :edi_file_linea_despacho_intentos WHERE FCNUEMRO = :numero
+[31-Jul-2025 14:17:26 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho
+[31-Jul-2025 14:17:26 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho_intentos
+[31-Jul-2025 14:17:26 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CE000727285H895
+[31-Jul-2025 14:17:26 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 14:17:26 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 14:17:26 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 14:17:26 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CE000727285H895
+[31-Jul-2025 14:17:26 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_dph_despacho_intentos = :edi_file_dph_despacho_intentos, edi_file_linea_despacho = :edi_file_linea_despacho, edi_file_linea_despacho_intentos = :edi_file_linea_despacho_intentos WHERE FCNUEMRO = :numero
+[31-Jul-2025 14:17:26 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_dph_despacho_intentos
+[31-Jul-2025 14:17:26 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho
+[31-Jul-2025 14:17:26 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho_intentos
+[31-Jul-2025 14:17:26 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CE000727285H895
+[31-Jul-2025 14:17:26 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 14:17:26 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 14:17:26 America/Santo_Domingo] Sending FTP to DPH at 192.168.20.183 with user DPHFTP: //DPH/D_CE000727320D473.txt
+[31-Jul-2025 14:17:29 America/Santo_Domingo] Error al conectar con el servidor FTP: 192.168.20.183 para enviar archivo: //DPH/D_CE000727320D473.txtError al conectar con el servidor FTP: 192.168.20.183 para enviar archivo: //DPH/D_CE000727320D473.txt
+
+
+\Sending...n
+
+Tipo Transaccion:DESPACHO
+Conduce No:CE000727320D473
+Modulo I/E:EXPORT
+Chassis No:CHASSIS PROPIO
+Tamano Chassis: 20
+Agencia:MADO
+Cedido a:
+Contenedor No:MSDU2581075
+Tipo Contenedor:20DC
+Linea:MSCSHI
+Genset No:
+RNC:131210406
+Nombre Cliente:MSC MEDITERRANEAN SHIPPING COMPANY S A
+BL No:
+Booking No:EDOEVA20
+Fecha:2025-06-27
+Hora:10:06:00.00
+Terminal:01-STW CAUCEDO
+Chassis Alquilado:NO
+Cola Privada:SI
+
+[31-Jul-2025 14:17:29 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 14:17:29 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CE000727320D473
+[31-Jul-2025 14:17:29 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_dph_despacho = :edi_file_dph_despacho WHERE FCNUEMRO = :numero
+[31-Jul-2025 14:17:29 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_dph_despacho
+[31-Jul-2025 14:17:29 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CE000727320D473
+[31-Jul-2025 14:17:29 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 14:17:29 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 14:17:29 America/Santo_Domingo] Remote file name: Exportacion_out_MSDU2581075.edi
+[31-Jul-2025 14:17:29 America/Santo_Domingo] What was written: UNB+UNOA:2+STW+MSC+202507311417+CE000727320D473'
+UNH+0031+CODECO:D:95B:UN:ITG13'
+BGM+36++9'
+TDT+20++1++:172:ZZZ+++146'
+NAD+CF+MSC:160:166'
+EQD+CN+MSDU2581075+22G1:102:5+++4'
+RFF+BN:EDOEVA20'
+TMD+2'
+DTM+7:202506271006:203'
+MEA+AAE+T+KGM:1900'
+TDT+1++3++226-0012644-9:172:ZZZ+++226-0012644-9:146::JORDANY FABIAN TERRERO'
+LOC+165+STW:139:6:STW+TER:ZZZ'
+CNT+16:1'
+UNT+000012+0031'
+UNZ+1+CE000727320D473'
+
+[31-Jul-2025 14:17:29 America/Santo_Domingo] Forma de generación: 
+[31-Jul-2025 14:17:29 America/Santo_Domingo] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in C:\proyectos\repositorios\stonewood-lib\src\Conduce\StoneConduce.php on line 4876
+[31-Jul-2025 14:17:29 America/Santo_Domingo] Guardando archivo en disco: Exportacion_out_MSDU2581075.edi
+[31-Jul-2025 14:17:29 America/Santo_Domingo] Forma de generación: 
+[31-Jul-2025 14:17:29 America/Santo_Domingo] Tipo: out
+[31-Jul-2025 14:17:29 America/Santo_Domingo] Guardando archivo en disco: Exportacion_out_MSDU2581075.edi
+[31-Jul-2025 14:17:29 America/Santo_Domingo] archivo guardado en : C:\proyectos\repositorios\stonewood-app\Data\ftpFiles\/Exportacion_out_MSDU2581075.edi
+[31-Jul-2025 14:17:29 America/Santo_Domingo] INFO - Conectado al servidor SFTP: 192.168.20.221:2222
+[31-Jul-2025 14:17:29 America/Santo_Domingo] INFO - Subiendo Exportacion_out_MSDU2581075.edi (400 B) a /uploads/Exportacion_out_MSDU2581075.edi
+[31-Jul-2025 14:17:29 America/Santo_Domingo] INFO - Archivo subido exitosamente: Exportacion_out_MSDU2581075.edi
+[31-Jul-2025 14:17:29 America/Santo_Domingo] INFO - Desconectado del servidor SFTP
+[31-Jul-2025 14:17:29 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 14:17:29 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CE000727320D473
+[31-Jul-2025 14:17:29 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_linea_despacho = :edi_file_linea_despacho, edi_file_linea_despacho_intentos = :edi_file_linea_despacho_intentos WHERE FCNUEMRO = :numero
+[31-Jul-2025 14:17:29 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho
+[31-Jul-2025 14:17:29 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho_intentos
+[31-Jul-2025 14:17:29 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CE000727320D473
+[31-Jul-2025 14:17:29 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 14:17:29 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 14:17:29 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 14:17:29 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CE000727320D473
+[31-Jul-2025 14:17:29 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_dph_despacho_intentos = :edi_file_dph_despacho_intentos, edi_file_linea_despacho = :edi_file_linea_despacho, edi_file_linea_despacho_intentos = :edi_file_linea_despacho_intentos WHERE FCNUEMRO = :numero
+[31-Jul-2025 14:17:29 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_dph_despacho_intentos
+[31-Jul-2025 14:17:29 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho
+[31-Jul-2025 14:17:29 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho_intentos
+[31-Jul-2025 14:17:29 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CE000727320D473
+[31-Jul-2025 14:17:29 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 14:17:29 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 14:17:29 America/Santo_Domingo] Proceso de envío de archivos EDI linea Despacho finalizado
+[31-Jul-2025 14:21:57 America/Santo_Domingo] Iniciando proceso de envío de archivos EDI linea Retorno. Buscando conduces pendientes de enviar.
+[31-Jul-2025 14:21:57 America/Santo_Domingo] Conduces pendientes de enviar EDI retorno: 5
+[31-Jul-2025 14:21:57 America/Santo_Domingo] =================================== 688bb4457cbc4 ===================================
+[31-Jul-2025 14:21:57 America/Santo_Domingo] 
+
+
+ Exception Occurred 2025-07-31 14:21:57:
+2025-07-31 14:21:57 Message: StoneConduce::sendEDIFileForConduce(): Argument #3 ($whatWasWritten) cannot be passed by reference
+2025-07-31 14:21:57 File: C:\proyectos\repositorios\stonewood-app\src\jobs\EdiFileLinea\StonewoodSendPendingLine_RetornoCodecoEDIFiles.php
+2025-07-31 14:21:57 Line: 60
+2025-07-31 14:21:57 Stack Trace:
+2025-07-31 14:21:57 #0 C:\proyectos\repositorios\gtk-data-access\src\GTKCmdJob.php(264): StonewoodSendPendingLine_RetornoCodecoEDIFiles->main()
+2025-07-31 14:21:57 #1 C:\proyectos\repositorios\stonewood-app\cmd\regulars\everyMinute.php(31): GTKCmdJob->run()
+2025-07-31 14:21:57 #2 C:\proyectos\repositorios\gtk-data-access\configure\functions\www-Debug.php(309): {closure}()
+2025-07-31 14:21:57 #3 C:\proyectos\repositorios\stonewood-app\cmd\regulars\everyMinute.php(28): cmdOrCatchAndReport(Closure)
+
+[31-Jul-2025 14:21:57 America/Santo_Domingo] PHP Warning:  Undefined array key "REQUEST_URI" in C:\proyectos\repositorios\gtk-data-access\configure\functions\www-Debug.php on line 197
+[31-Jul-2025 14:21:57 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 14:21:57 America/Santo_Domingo] Reporting exception:StoneConduce::sendEDIFileForConduce(): Argument #3 ($whatWasWritten) cannot be passed by reference
+[31-Jul-2025 14:22:53 America/Santo_Domingo] Iniciando proceso de envío de archivos EDI linea Despacho. Buscando conduces pendientes de enviar.
+[31-Jul-2025 14:22:53 America/Santo_Domingo] Conduces pendientes de enviar EDI Despacho: 5
+[31-Jul-2025 14:22:53 America/Santo_Domingo] =================================== 688bb47dba307 ===================================
+[31-Jul-2025 14:22:53 America/Santo_Domingo] 
+
+
+ Exception Occurred 2025-07-31 14:22:53:
+2025-07-31 14:22:53 Message: StoneConduce::sendEDIFileForConduce(): Argument #3 ($whatWasWritten) cannot be passed by reference
+2025-07-31 14:22:53 File: C:\proyectos\repositorios\stonewood-app\src\jobs\EdiFileLinea\StonewoodSendPendingLine_DespachoCodecoEDIFiles.php
+2025-07-31 14:22:53 Line: 20
+2025-07-31 14:22:53 Stack Trace:
+2025-07-31 14:22:53 #0 C:\proyectos\repositorios\gtk-data-access\src\GTKCmdJob.php(264): StonewoodSendPendingLine_DespachoCodecoEDIFiles->main()
+2025-07-31 14:22:53 #1 C:\proyectos\repositorios\stonewood-app\cmd\regulars\everyMinute.php(31): GTKCmdJob->run()
+2025-07-31 14:22:53 #2 C:\proyectos\repositorios\gtk-data-access\configure\functions\www-Debug.php(309): {closure}()
+2025-07-31 14:22:53 #3 C:\proyectos\repositorios\stonewood-app\cmd\regulars\everyMinute.php(28): cmdOrCatchAndReport(Closure)
+
+[31-Jul-2025 14:22:53 America/Santo_Domingo] PHP Warning:  Undefined array key "REQUEST_URI" in C:\proyectos\repositorios\gtk-data-access\configure\functions\www-Debug.php on line 197
+[31-Jul-2025 14:22:53 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 14:22:53 America/Santo_Domingo] Reporting exception:StoneConduce::sendEDIFileForConduce(): Argument #3 ($whatWasWritten) cannot be passed by reference
+[31-Jul-2025 14:22:53 America/Santo_Domingo] PHP Warning:  Undefined property: StonewoodSendPendingLine_RetornoCodecoEDIFiles::$className in C:\proyectos\repositorios\gtk-data-access\src\GTKCmdJob.php on line 236
+[31-Jul-2025 14:22:53 America/Santo_Domingo] PHP Warning:  Undefined property: StonewoodSendPendingLine_RetornoCodecoEDIFiles::$className in C:\proyectos\repositorios\gtk-data-access\src\GTKCmdJob.php on line 243
+[31-Jul-2025 14:22:53 America/Santo_Domingo] PHP Warning:  Undefined property: StonewoodSendPendingLine_RetornoCodecoEDIFiles::$date in C:\proyectos\repositorios\gtk-data-access\src\GTKCmdJob.php on line 243
+[31-Jul-2025 14:22:53 America/Santo_Domingo] Iniciando proceso de envío de archivos EDI linea Retorno. Buscando conduces pendientes de enviar.
+[31-Jul-2025 14:22:53 America/Santo_Domingo] Conduces pendientes de enviar EDI retorno: 5
+[31-Jul-2025 14:22:53 America/Santo_Domingo] =================================== 688bb47decc89 ===================================
+[31-Jul-2025 14:22:53 America/Santo_Domingo] 
+
+
+ Exception Occurred 2025-07-31 14:22:53:
+2025-07-31 14:22:53 Message: StoneConduce::sendEDIFileForConduce(): Argument #3 ($whatWasWritten) cannot be passed by reference
+2025-07-31 14:22:53 File: C:\proyectos\repositorios\stonewood-app\src\jobs\EdiFileLinea\StonewoodSendPendingLine_RetornoCodecoEDIFiles.php
+2025-07-31 14:22:53 Line: 60
+2025-07-31 14:22:53 Stack Trace:
+2025-07-31 14:22:53 #0 C:\proyectos\repositorios\gtk-data-access\src\GTKCmdJob.php(264): StonewoodSendPendingLine_RetornoCodecoEDIFiles->main()
+2025-07-31 14:22:53 #1 C:\proyectos\repositorios\stonewood-app\cmd\regulars\everyMinute.php(31): GTKCmdJob->run()
+2025-07-31 14:22:53 #2 C:\proyectos\repositorios\gtk-data-access\configure\functions\www-Debug.php(309): {closure}()
+2025-07-31 14:22:53 #3 C:\proyectos\repositorios\stonewood-app\cmd\regulars\everyMinute.php(28): cmdOrCatchAndReport(Closure)
+
+[31-Jul-2025 14:22:53 America/Santo_Domingo] PHP Warning:  Undefined array key "REQUEST_URI" in C:\proyectos\repositorios\gtk-data-access\configure\functions\www-Debug.php on line 197
+[31-Jul-2025 14:22:53 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 14:22:53 America/Santo_Domingo] Reporting exception:StoneConduce::sendEDIFileForConduce(): Argument #3 ($whatWasWritten) cannot be passed by reference
+[31-Jul-2025 14:34:42 America/Santo_Domingo] Iniciando proceso de envío de archivos EDI linea Despacho. Buscando conduces pendientes de enviar.
+[31-Jul-2025 14:34:42 America/Santo_Domingo] Conduces pendientes de enviar EDI Despacho: 5
+[31-Jul-2025 14:34:42 America/Santo_Domingo] =================================== 688bb74295dbf ===================================
+[31-Jul-2025 14:34:42 America/Santo_Domingo] 
+
+
+ Exception Occurred 2025-07-31 14:34:42:
+2025-07-31 14:34:42 Message: StoneConduce::sendEDIFileForConduce(): Argument #3 ($whatWasWritten) cannot be passed by reference
+2025-07-31 14:34:42 File: C:\proyectos\repositorios\stonewood-app\src\jobs\EdiFileLinea\StonewoodSendPendingLine_DespachoCodecoEDIFiles.php
+2025-07-31 14:34:42 Line: 23
+2025-07-31 14:34:42 Stack Trace:
+2025-07-31 14:34:42 #0 C:\proyectos\repositorios\gtk-data-access\src\GTKCmdJob.php(264): StonewoodSendPendingLine_DespachoCodecoEDIFiles->main()
+2025-07-31 14:34:42 #1 C:\proyectos\repositorios\stonewood-app\cmd\regulars\everyMinute.php(31): GTKCmdJob->run()
+2025-07-31 14:34:42 #2 C:\proyectos\repositorios\gtk-data-access\configure\functions\www-Debug.php(309): {closure}()
+2025-07-31 14:34:42 #3 C:\proyectos\repositorios\stonewood-app\cmd\regulars\everyMinute.php(28): cmdOrCatchAndReport(Closure)
+
+[31-Jul-2025 14:34:42 America/Santo_Domingo] PHP Warning:  Undefined array key "REQUEST_URI" in C:\proyectos\repositorios\gtk-data-access\configure\functions\www-Debug.php on line 197
+[31-Jul-2025 14:34:42 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 14:34:42 America/Santo_Domingo] Reporting exception:StoneConduce::sendEDIFileForConduce(): Argument #3 ($whatWasWritten) cannot be passed by reference
+[31-Jul-2025 14:34:42 America/Santo_Domingo] PHP Warning:  Undefined property: StonewoodSendPendingLine_RetornoCodecoEDIFiles::$className in C:\proyectos\repositorios\gtk-data-access\src\GTKCmdJob.php on line 236
+[31-Jul-2025 14:34:42 America/Santo_Domingo] PHP Warning:  Undefined property: StonewoodSendPendingLine_RetornoCodecoEDIFiles::$className in C:\proyectos\repositorios\gtk-data-access\src\GTKCmdJob.php on line 243
+[31-Jul-2025 14:34:42 America/Santo_Domingo] PHP Warning:  Undefined property: StonewoodSendPendingLine_RetornoCodecoEDIFiles::$date in C:\proyectos\repositorios\gtk-data-access\src\GTKCmdJob.php on line 243
+[31-Jul-2025 14:34:42 America/Santo_Domingo] Iniciando proceso de envío de archivos EDI linea Retorno. Buscando conduces pendientes de enviar.
+[31-Jul-2025 14:34:42 America/Santo_Domingo] Conduces pendientes de enviar EDI retorno: 5
+[31-Jul-2025 14:34:42 America/Santo_Domingo] =================================== 688bb742dcc2a ===================================
+[31-Jul-2025 14:34:42 America/Santo_Domingo] 
+
+
+ Exception Occurred 2025-07-31 14:34:42:
+2025-07-31 14:34:42 Message: StoneConduce::sendEDIFileForConduce(): Argument #3 ($whatWasWritten) cannot be passed by reference
+2025-07-31 14:34:42 File: C:\proyectos\repositorios\stonewood-app\src\jobs\EdiFileLinea\StonewoodSendPendingLine_RetornoCodecoEDIFiles.php
+2025-07-31 14:34:42 Line: 23
+2025-07-31 14:34:42 Stack Trace:
+2025-07-31 14:34:42 #0 C:\proyectos\repositorios\gtk-data-access\src\GTKCmdJob.php(264): StonewoodSendPendingLine_RetornoCodecoEDIFiles->main()
+2025-07-31 14:34:42 #1 C:\proyectos\repositorios\stonewood-app\cmd\regulars\everyMinute.php(31): GTKCmdJob->run()
+2025-07-31 14:34:42 #2 C:\proyectos\repositorios\gtk-data-access\configure\functions\www-Debug.php(309): {closure}()
+2025-07-31 14:34:42 #3 C:\proyectos\repositorios\stonewood-app\cmd\regulars\everyMinute.php(28): cmdOrCatchAndReport(Closure)
+
+[31-Jul-2025 14:34:42 America/Santo_Domingo] PHP Warning:  Undefined array key "REQUEST_URI" in C:\proyectos\repositorios\gtk-data-access\configure\functions\www-Debug.php on line 197
+[31-Jul-2025 14:34:42 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 14:34:42 America/Santo_Domingo] Reporting exception:StoneConduce::sendEDIFileForConduce(): Argument #3 ($whatWasWritten) cannot be passed by reference
+[31-Jul-2025 14:37:46 America/Santo_Domingo] Iniciando proceso de envío de archivos EDI linea Despacho. Buscando conduces pendientes de enviar.
+[31-Jul-2025 14:37:46 America/Santo_Domingo] Conduces pendientes de enviar EDI Despacho: 5
+[31-Jul-2025 14:37:46 America/Santo_Domingo] =================================== 688bb7fa4194b ===================================
+[31-Jul-2025 14:37:46 America/Santo_Domingo] 
+
+
+ Exception Occurred 2025-07-31 14:37:46:
+2025-07-31 14:37:46 Message: StoneConduce::sendEDIFileForConduce(): Argument #3 ($whatWasWritten) cannot be passed by reference
+2025-07-31 14:37:46 File: C:\proyectos\repositorios\stonewood-app\src\jobs\EdiFileLinea\StonewoodSendPendingLine_DespachoCodecoEDIFiles.php
+2025-07-31 14:37:46 Line: 23
+2025-07-31 14:37:46 Stack Trace:
+2025-07-31 14:37:46 #0 C:\proyectos\repositorios\gtk-data-access\src\GTKCmdJob.php(264): StonewoodSendPendingLine_DespachoCodecoEDIFiles->main()
+2025-07-31 14:37:46 #1 C:\proyectos\repositorios\stonewood-app\cmd\regulars\everyMinute.php(31): GTKCmdJob->run()
+2025-07-31 14:37:46 #2 C:\proyectos\repositorios\gtk-data-access\configure\functions\www-Debug.php(309): {closure}()
+2025-07-31 14:37:46 #3 C:\proyectos\repositorios\stonewood-app\cmd\regulars\everyMinute.php(28): cmdOrCatchAndReport(Closure)
+
+[31-Jul-2025 14:37:46 America/Santo_Domingo] PHP Warning:  Undefined array key "REQUEST_URI" in C:\proyectos\repositorios\gtk-data-access\configure\functions\www-Debug.php on line 197
+[31-Jul-2025 14:37:46 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 14:37:46 America/Santo_Domingo] Reporting exception:StoneConduce::sendEDIFileForConduce(): Argument #3 ($whatWasWritten) cannot be passed by reference
+[31-Jul-2025 14:37:46 America/Santo_Domingo] PHP Warning:  Undefined property: StonewoodSendPendingLine_RetornoCodecoEDIFiles::$className in C:\proyectos\repositorios\gtk-data-access\src\GTKCmdJob.php on line 236
+[31-Jul-2025 14:37:46 America/Santo_Domingo] PHP Warning:  Undefined property: StonewoodSendPendingLine_RetornoCodecoEDIFiles::$className in C:\proyectos\repositorios\gtk-data-access\src\GTKCmdJob.php on line 243
+[31-Jul-2025 14:37:46 America/Santo_Domingo] PHP Warning:  Undefined property: StonewoodSendPendingLine_RetornoCodecoEDIFiles::$date in C:\proyectos\repositorios\gtk-data-access\src\GTKCmdJob.php on line 243
+[31-Jul-2025 14:37:46 America/Santo_Domingo] Iniciando proceso de envío de archivos EDI linea Retorno. Buscando conduces pendientes de enviar.
+[31-Jul-2025 14:37:46 America/Santo_Domingo] Conduces pendientes de enviar EDI retorno: 5
+[31-Jul-2025 14:37:46 America/Santo_Domingo] =================================== 688bb7fa733ba ===================================
+[31-Jul-2025 14:37:46 America/Santo_Domingo] 
+
+
+ Exception Occurred 2025-07-31 14:37:46:
+2025-07-31 14:37:46 Message: StoneConduce::sendEDIFileForConduce(): Argument #3 ($whatWasWritten) cannot be passed by reference
+2025-07-31 14:37:46 File: C:\proyectos\repositorios\stonewood-app\src\jobs\EdiFileLinea\StonewoodSendPendingLine_RetornoCodecoEDIFiles.php
+2025-07-31 14:37:46 Line: 23
+2025-07-31 14:37:46 Stack Trace:
+2025-07-31 14:37:46 #0 C:\proyectos\repositorios\gtk-data-access\src\GTKCmdJob.php(264): StonewoodSendPendingLine_RetornoCodecoEDIFiles->main()
+2025-07-31 14:37:46 #1 C:\proyectos\repositorios\stonewood-app\cmd\regulars\everyMinute.php(31): GTKCmdJob->run()
+2025-07-31 14:37:46 #2 C:\proyectos\repositorios\gtk-data-access\configure\functions\www-Debug.php(309): {closure}()
+2025-07-31 14:37:46 #3 C:\proyectos\repositorios\stonewood-app\cmd\regulars\everyMinute.php(28): cmdOrCatchAndReport(Closure)
+
+[31-Jul-2025 14:37:46 America/Santo_Domingo] PHP Warning:  Undefined array key "REQUEST_URI" in C:\proyectos\repositorios\gtk-data-access\configure\functions\www-Debug.php on line 197
+[31-Jul-2025 14:37:46 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 14:37:46 America/Santo_Domingo] Reporting exception:StoneConduce::sendEDIFileForConduce(): Argument #3 ($whatWasWritten) cannot be passed by reference
+[31-Jul-2025 14:38:27 America/Santo_Domingo] Iniciando proceso de envío de archivos EDI linea Despacho. Buscando conduces pendientes de enviar.
+[31-Jul-2025 14:38:28 America/Santo_Domingo] Conduces pendientes de enviar EDI Despacho: 5
+[31-Jul-2025 14:38:28 America/Santo_Domingo] =================================== 688bb8243ed5a ===================================
+[31-Jul-2025 14:38:28 America/Santo_Domingo] 
+
+
+ Exception Occurred 2025-07-31 14:38:28:
+2025-07-31 14:38:28 Message: StoneConduce::sendEDIFileForConduce(): Argument #3 ($whatWasWritten) cannot be passed by reference
+2025-07-31 14:38:28 File: C:\proyectos\repositorios\stonewood-app\src\jobs\EdiFileLinea\StonewoodSendPendingLine_DespachoCodecoEDIFiles.php
+2025-07-31 14:38:28 Line: 23
+2025-07-31 14:38:28 Stack Trace:
+2025-07-31 14:38:28 #0 C:\proyectos\repositorios\gtk-data-access\src\GTKCmdJob.php(264): StonewoodSendPendingLine_DespachoCodecoEDIFiles->main()
+2025-07-31 14:38:28 #1 C:\proyectos\repositorios\stonewood-app\cmd\regulars\everyMinute.php(31): GTKCmdJob->run()
+2025-07-31 14:38:28 #2 C:\proyectos\repositorios\gtk-data-access\configure\functions\www-Debug.php(309): {closure}()
+2025-07-31 14:38:28 #3 C:\proyectos\repositorios\stonewood-app\cmd\regulars\everyMinute.php(28): cmdOrCatchAndReport(Closure)
+
+[31-Jul-2025 14:38:28 America/Santo_Domingo] PHP Warning:  Undefined array key "REQUEST_URI" in C:\proyectos\repositorios\gtk-data-access\configure\functions\www-Debug.php on line 197
+[31-Jul-2025 14:38:28 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 14:38:28 America/Santo_Domingo] Reporting exception:StoneConduce::sendEDIFileForConduce(): Argument #3 ($whatWasWritten) cannot be passed by reference
+[31-Jul-2025 14:38:28 America/Santo_Domingo] PHP Warning:  Undefined property: StonewoodSendPendingLine_RetornoCodecoEDIFiles::$className in C:\proyectos\repositorios\gtk-data-access\src\GTKCmdJob.php on line 236
+[31-Jul-2025 14:38:28 America/Santo_Domingo] PHP Warning:  Undefined property: StonewoodSendPendingLine_RetornoCodecoEDIFiles::$className in C:\proyectos\repositorios\gtk-data-access\src\GTKCmdJob.php on line 243
+[31-Jul-2025 14:38:28 America/Santo_Domingo] PHP Warning:  Undefined property: StonewoodSendPendingLine_RetornoCodecoEDIFiles::$date in C:\proyectos\repositorios\gtk-data-access\src\GTKCmdJob.php on line 243
+[31-Jul-2025 14:38:28 America/Santo_Domingo] Iniciando proceso de envío de archivos EDI linea Retorno. Buscando conduces pendientes de enviar.
+[31-Jul-2025 14:38:28 America/Santo_Domingo] Conduces pendientes de enviar EDI retorno: 5
+[31-Jul-2025 14:38:28 America/Santo_Domingo] =================================== 688bb82472623 ===================================
+[31-Jul-2025 14:38:28 America/Santo_Domingo] 
+
+
+ Exception Occurred 2025-07-31 14:38:28:
+2025-07-31 14:38:28 Message: StoneConduce::sendEDIFileForConduce(): Argument #3 ($whatWasWritten) cannot be passed by reference
+2025-07-31 14:38:28 File: C:\proyectos\repositorios\stonewood-app\src\jobs\EdiFileLinea\StonewoodSendPendingLine_RetornoCodecoEDIFiles.php
+2025-07-31 14:38:28 Line: 23
+2025-07-31 14:38:28 Stack Trace:
+2025-07-31 14:38:28 #0 C:\proyectos\repositorios\gtk-data-access\src\GTKCmdJob.php(264): StonewoodSendPendingLine_RetornoCodecoEDIFiles->main()
+2025-07-31 14:38:28 #1 C:\proyectos\repositorios\stonewood-app\cmd\regulars\everyMinute.php(31): GTKCmdJob->run()
+2025-07-31 14:38:28 #2 C:\proyectos\repositorios\gtk-data-access\configure\functions\www-Debug.php(309): {closure}()
+2025-07-31 14:38:28 #3 C:\proyectos\repositorios\stonewood-app\cmd\regulars\everyMinute.php(28): cmdOrCatchAndReport(Closure)
+
+[31-Jul-2025 14:38:28 America/Santo_Domingo] PHP Warning:  Undefined array key "REQUEST_URI" in C:\proyectos\repositorios\gtk-data-access\configure\functions\www-Debug.php on line 197
+[31-Jul-2025 14:38:28 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 14:38:28 America/Santo_Domingo] Reporting exception:StoneConduce::sendEDIFileForConduce(): Argument #3 ($whatWasWritten) cannot be passed by reference
+[31-Jul-2025 14:40:20 America/Santo_Domingo] Iniciando proceso de envío de archivos EDI linea Despacho. Buscando conduces pendientes de enviar.
+[31-Jul-2025 14:40:20 America/Santo_Domingo] Conduces pendientes de enviar EDI Despacho: 5
+[31-Jul-2025 14:40:20 America/Santo_Domingo] =================================== 688bb8948df63 ===================================
+[31-Jul-2025 14:40:20 America/Santo_Domingo] 
+
+
+ Exception Occurred 2025-07-31 14:40:20:
+2025-07-31 14:40:20 Message: StoneConduce::sendEDIFileForConduce(): Argument #3 ($whatWasWritten) cannot be passed by reference
+2025-07-31 14:40:20 File: C:\proyectos\repositorios\stonewood-app\src\jobs\EdiFileLinea\StonewoodSendPendingLine_DespachoCodecoEDIFiles.php
+2025-07-31 14:40:20 Line: 23
+2025-07-31 14:40:20 Stack Trace:
+2025-07-31 14:40:20 #0 C:\proyectos\repositorios\gtk-data-access\src\GTKCmdJob.php(264): StonewoodSendPendingLine_DespachoCodecoEDIFiles->main()
+2025-07-31 14:40:20 #1 C:\proyectos\repositorios\stonewood-app\cmd\regulars\everyMinute.php(31): GTKCmdJob->run()
+2025-07-31 14:40:20 #2 C:\proyectos\repositorios\gtk-data-access\configure\functions\www-Debug.php(309): {closure}()
+2025-07-31 14:40:20 #3 C:\proyectos\repositorios\stonewood-app\cmd\regulars\everyMinute.php(28): cmdOrCatchAndReport(Closure)
+
+[31-Jul-2025 14:40:20 America/Santo_Domingo] PHP Warning:  Undefined array key "REQUEST_URI" in C:\proyectos\repositorios\gtk-data-access\configure\functions\www-Debug.php on line 197
+[31-Jul-2025 14:40:20 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 14:40:20 America/Santo_Domingo] Reporting exception:StoneConduce::sendEDIFileForConduce(): Argument #3 ($whatWasWritten) cannot be passed by reference
+[31-Jul-2025 14:40:20 America/Santo_Domingo] PHP Warning:  Undefined property: StonewoodSendPendingLine_RetornoCodecoEDIFiles::$className in C:\proyectos\repositorios\gtk-data-access\src\GTKCmdJob.php on line 236
+[31-Jul-2025 14:40:20 America/Santo_Domingo] PHP Warning:  Undefined property: StonewoodSendPendingLine_RetornoCodecoEDIFiles::$className in C:\proyectos\repositorios\gtk-data-access\src\GTKCmdJob.php on line 243
+[31-Jul-2025 14:40:20 America/Santo_Domingo] PHP Warning:  Undefined property: StonewoodSendPendingLine_RetornoCodecoEDIFiles::$date in C:\proyectos\repositorios\gtk-data-access\src\GTKCmdJob.php on line 243
+[31-Jul-2025 14:40:20 America/Santo_Domingo] Iniciando proceso de envío de archivos EDI linea Retorno. Buscando conduces pendientes de enviar.
+[31-Jul-2025 14:40:20 America/Santo_Domingo] Conduces pendientes de enviar EDI retorno: 5
+[31-Jul-2025 14:40:20 America/Santo_Domingo] Conduce: Array
+(
+    [FCNUEMRO] => CA000727926S630
+    [FCTIPO] => 3
+    [FCCONTENEDOR] => MSDU1631103
+    [FCTIPOCONT] => 20DC
+    [FCCLIENTE] => 101029609
+    [FCBUQUE] => 
+    [FCTRANSPORTE] => MARITIMA DOMINICANA S.A.S
+    [FCPLACA] => L406398
+    [FCCHOFER] => JUAN ENRIQUE CELEDONIO
+    [FCCEDULA] => 402-2088977-4
+    [FCFECHA] => 2025-06-27 00:00:00.00
+    [FCHORA] => 18:43:00.00
+    [FCSEQ] => 1274304
+    [FCCHASSIS] => MDCH2427
+    [FCSELLO] => 
+    [FCPOSICION] => NA
+    [FCFECHAENTR] => 2025-06-27 00:00:00.00
+    [FNUMCONDENTR] => 
+    [FCTELTRANS] => 809-599-6000
+    [FCLINEA] => MSCSHI
+    [FCANULADO] => 
+    [FCCOLA] => 
+    [FCSTATUS] => 
+    [FCCOMENT] => CON CONTENEDOR
+    [FCIMPRESO] => 
+    [FCUSUARIO] => 22600191062
+    [FCGENSET] => 
+    [FCPOL] => 
+    [FCLOCALIZACION] => 
+    [FHORARECI] => 18:42:00.00
+    [FHORASAL] => 
+    [FHFECHA] => 2025-06-27 18:42:00.00
+    [FHFECHASAL] => 
+    [FHLOCALIZACION] => 
+    [FHRCONTENEDOR] => MSDU1631103
+    [FCONDUCEDESP] => 
+    [FHDESCARGADO] => 
+    [FCDEMDPH] => 
+    [FCCHASSISCONT] => 
+    [FCLOCALIZACIONCHA] => 
+    [FCCONTFECCOND] => 
+    [FCPAGDPH] => 
+    [FCDANADO] => 
+    [FCNODANADO] => 
+    [FCPOSICIONRETORNO] => 
+    [FCSOLAR] => 
+    [FECTRANSPO] => 
+    [FEFECHACOMPENTREGA] => 
+    [FEARMA] => 
+    [FEUSOCONTINUO] => 
+    [FCONDUSO] => 
+    [FCNUMEROTICKET] => 
+    [FCALQUILADO] => 1
+    [FCPERSONALQU] => MADO
+    [FDREPARAGOMA] => 
+    [FDCODIGOUBICACION] => 32
+    [FCKM] => 
+    [FCKMREC] => 
+    [FEPROPIETARIO] => MADO
+    [FCAGENCIA] => 
+    [FPEPOSICION] => S5-2
+    [FNUMERACION] => 
+    [FTCODTRANSP] => MARDOM
+    [FHORAENTRADA] => 18:43:00.00
+    [FCBOOKING] => 
+    [FCTRANSPORTISTARETORNO] => MARITIMA DOMINICANA S.A.S
+    [FCPLACARETORNO] => L374216
+    [FCCHOFERRETORNO] => 402-2088977-4
+    [FCCHOFER1] => 
+    [FCTRANSPORTE1] => 
+    [FCCONDRETORNAR] => 1
+    [FCUSUARIOLIBERO] => 
+    [FCFECHALIBERO] => 
+    [FCUSUARIOMOD] => JANDUJAR
+    [FCFECHAMOD] => 
+    [FCERECIBIDOCONTEN] => 
+    [FCSTATUSDPH] => 
+    [FCAGENCIA1] => 
+    [FCCCODCHEQUEADOR] => 40222493856
+    [FCHORA_LIBER] => 
+    [FDFECHA_ANTERIOR_ENTRADA] => 
+    [FCTINI] => 
+    [FCTFIN] => 
+    [FCTPRO] => 
+    [FCnombreALQ] => 
+    [FCtic] => 
+    [FClistAVE] => 
+    [FCaveCOD] => 
+    [FCCondUsoC] => 
+    [FChoraMD] => 18:43:00.00
+    [FCFechaMD] => 2025-06-27 00:00:00.00
+    [FCSeqEQ] => 
+    [FCfileEDIenv] => 
+    [FCctnSTW] => 20DC
+    [FCctnMSC] => 22G1
+    [FCtipoMSC] => 22G1
+    [FCFileEDIrec] => 
+    [FCtransSTW] => 
+    [FCtransHAI] => 
+    [FClogica] => 
+    [FCalqMado] => 
+    [FChsalida] => 18:43:00.00
+    [FCgot] => 1
+    [FCusrGOT] => JANDUJAR
+    [FCaveCTN] => 
+    [FCrotulo] => S630
+    [FCcortes] => 
+    [FCfuc] => 1900-01-01 00:00:00.00
+    [FCproxCorte] => 1900-01-01 00:00:00.00
+    [Fcsize] => 20
+    [FChoroSalida] => 
+    [FChoroEntrada] => .00
+    [FChoraInicalHoro] => 
+    [FChoraFinalHoro] => 
+    [FCnivelHorometro] => 
+    [FCselloBateriaSal] => 
+    [FCselloCombustibleSal] => 
+    [FCtapaCombustibleSal] => 
+    [FCsikaflexSal] => 
+    [FCnivelCombustibleSal] => 
+    [FCselloBateriaRet] => 
+    [FCselloCombustibleRet] => 
+    [FCtapaCombustibleRet] => 
+    [FCsikaflexRet] => 
+    [FCnivelCombustibleRet] => NONE
+    [FCnumdoc] => 
+    [FClocalidadConduce] => 
+    [FCreservacion] => 1
+    [FCmensajeCtnModificado] => 
+    [FCfechaCtnModificado] => 
+    [FCusuarioCtnModificado] => 
+    [FCnumeroBL] => 
+    [FCidpxycamion] => 
+    [FCrotuloRetorno] => S060
+    [FCnombreChoferRet] => JUAN ENRIQUE CELEDONIO
+    [FCotraslineas] => 
+    [FCapptnbr] => 
+    [FCrntt] => 
+    [FCconduceDPW] => 
+    [FCenvioEDIdpw] => 
+    [FCnuevaCita] => 
+    [FCbilloflanding] => 
+    [FCsalidabolo] => 
+    [fcfechaGateIn] => 
+    [FCnombreCliente] => MARITIMA DOMINICANA SAS
+    [FCnombreLinea] => 
+    [FCfechaGateOut] => 
+    [FCfechaPrn] => 
+    [FCmensajeGOut] => 
+    [FChoraMensajeGOut] => 
+    [FChoraRealSalida] => 
+    [FCcomAsignado] => 
+    [FCtableroMod] => Usuario Inserto: appstonewood	 Fecha: 2025-06-27	 Hora: Jun:42Usuario Modifico: JANDUJAR	 Fecha: 2025-06-27	 Hora: 18:42Usuario Modifico: JANDUJAR	 Fecha: 2025-06-27	 Hora: 18:43
+    [EdiProcesado] => 
+    [EdiRetorno] => 
+    [FCreservaN] => 
+    [rnc_transportista_salida] => 
+    [rnc_transportista_entrada] => 
+    [alquilara_chasis] => 1
+    [evento_despacho_enviado_mardom] => 
+    [evento_retorno_enviado_mardom] => 
+    [tight_rack] => 
+    [solicitud_id] => S2025JUN27AC5A1S630
+    [recibo_de_despacho_enviado] => 
+    [email_cliente] => 
+    [email_transportista] => 
+    [cancelado_en_limpieza_de_sin_despachar_anular] => 
+    [corregido_por_fat_finger_anulado_con_gateout] => 
+    [corregido_anulacion_de_reserva] => 
+    [edi_file_dph_despacho] => Tipo Transaccion:DESPACHO
+Conduce No:CA000727926S630
+Modulo I/E:NA
+Chassis No:MDCH2427
+Tamano Chassis: 20
+Agencia:MADO
+Cedido a:
+Contenedor No:MSDU1631103
+Tipo Contenedor:20DC
+Linea:MSCSHI
+Genset No:
+RNC:101029609
+Nombre Cliente:MARITIMA DOMINICANA
+BL No:
+Booking No:
+Fecha:2025-06-27
+Hora:18:43:00.00
+Terminal:01-STW CAUCEDO
+Chassis Alquilado:SI
+Cola Privada:NO
+
+    [edi_file_dph_retorno] => Tipo Transaccion:RETORNO
+Conduce No:CA000727926S630
+Chassis No:MDCH2427
+Fecha Retorno:2025-06-27
+Hora Retorno:18:43
+Chassis Recibido Con Contenedor:SI
+Contenedor No:MSDU1631103
+Terminal:01-STW CAUCEDO
+
+    [edi_file_linea_despacho] => 
+    [edi_file_linea_retorno] => 
+    [edi_file_dph_despacho_intentos] => 1
+    [edi_file_dph_retorno_intentos] => 
+    [edi_file_linea_despacho_intentos] => 3
+    [edi_file_linea_retorno_intentos] => 
+    [despacho_por_uso_continuo_con_conduce] => 
+    [usuario_aprobador] => 
+    [usuario_chequeador_despacho] => 
+    [usuario_chequeador_retorno] => 
+    [usuario_anulador] => 
+    [retorno_por_uso_continuo_con_conduce] => 
+    [fecha_hora_anulacion] => 
+    [alquiladora_por_defecto_id] => MADO
+    [fecha_impresion_retorno] => 
+    [numero_impresiones_retorno] => 
+    [cobrado_por_id] => MADO
+    [fecha_hora_entrada_terminal] => 
+    [evento_retorno_enviado_dph] => 2025-06-28 07:14:05.00
+    [Impresiones_Por_Trasporte] => 
+)
+
+[31-Jul-2025 14:40:20 America/Santo_Domingo] =================================== 688bb894c0805 ===================================
+[31-Jul-2025 14:40:20 America/Santo_Domingo] 
+
+
+ Exception Occurred 2025-07-31 14:40:20:
+2025-07-31 14:40:20 Message: StoneConduce::sendEDIFileForConduce(): Argument #3 ($whatWasWritten) cannot be passed by reference
+2025-07-31 14:40:20 File: C:\proyectos\repositorios\stonewood-app\src\jobs\EdiFileLinea\StonewoodSendPendingLine_RetornoCodecoEDIFiles.php
+2025-07-31 14:40:20 Line: 22
+2025-07-31 14:40:20 Stack Trace:
+2025-07-31 14:40:20 #0 C:\proyectos\repositorios\gtk-data-access\src\GTKCmdJob.php(264): StonewoodSendPendingLine_RetornoCodecoEDIFiles->main()
+2025-07-31 14:40:20 #1 C:\proyectos\repositorios\stonewood-app\cmd\regulars\everyMinute.php(31): GTKCmdJob->run()
+2025-07-31 14:40:20 #2 C:\proyectos\repositorios\gtk-data-access\configure\functions\www-Debug.php(309): {closure}()
+2025-07-31 14:40:20 #3 C:\proyectos\repositorios\stonewood-app\cmd\regulars\everyMinute.php(28): cmdOrCatchAndReport(Closure)
+
+[31-Jul-2025 14:40:20 America/Santo_Domingo] PHP Warning:  Undefined array key "REQUEST_URI" in C:\proyectos\repositorios\gtk-data-access\configure\functions\www-Debug.php on line 197
+[31-Jul-2025 14:40:20 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 14:40:20 America/Santo_Domingo] Reporting exception:StoneConduce::sendEDIFileForConduce(): Argument #3 ($whatWasWritten) cannot be passed by reference
+[31-Jul-2025 14:44:48 America/Santo_Domingo] Iniciando proceso de envío de archivos EDI linea Despacho. Buscando conduces pendientes de enviar.
+[31-Jul-2025 14:44:48 America/Santo_Domingo] Conduces pendientes de enviar EDI Despacho: 5
+[31-Jul-2025 14:44:48 America/Santo_Domingo] Remote file name: Exportacion_out_TGBU2744820.edi
+[31-Jul-2025 14:44:48 America/Santo_Domingo] What was written: UNB+UNOA:2+STW+MSC+202507311444+CE000727323D473'
+UNH+0031+CODECO:D:95B:UN:ITG13'
+BGM+36++9'
+TDT+20++1++:172:ZZZ+++146'
+NAD+CF+MSC:160:166'
+EQD+CN+TGBU2744820+22G1:102:5+++4'
+RFF+BN:EDOEVA20'
+TMD+2'
+DTM+7:202506271452:203'
+MEA+AAE+T+KGM:1900'
+TDT+1++3++226-0012644-9:172:ZZZ+++226-0012644-9:146::JORDANY FABIAN TERRERO'
+LOC+165+STW:139:6:STW+TER:ZZZ'
+CNT+16:1'
+UNT+000012+0031'
+UNZ+1+CE000727323D473'
+
+[31-Jul-2025 14:44:48 America/Santo_Domingo] Forma de generación: automatico
+[31-Jul-2025 14:44:48 America/Santo_Domingo] Guardando archivo en disco: Exportacion_out_TGBU2744820.edi
+[31-Jul-2025 14:44:48 America/Santo_Domingo] Forma de generación: automatico
+[31-Jul-2025 14:44:48 America/Santo_Domingo] Tipo: out
+[31-Jul-2025 14:44:48 America/Santo_Domingo] Guardando archivo en disco: Exportacion_out_TGBU2744820.edi
+[31-Jul-2025 14:44:48 America/Santo_Domingo] archivo guardado en : C:\proyectos\repositorios\stonewood-app\Data\ftpFiles\/Exportacion_out_TGBU2744820.edi
+[31-Jul-2025 14:44:48 America/Santo_Domingo] PHP Deprecated:  Optional parameter $port declared before required parameter $password is implicitly treated as a required parameter in C:\proyectos\repositorios\stonewood-lib\src\Utils\SftpFileTransfer.php on line 14
+[31-Jul-2025 14:44:48 America/Santo_Domingo] INFO - Conectado al servidor SFTP: 192.168.20.221:2222
+[31-Jul-2025 14:44:48 America/Santo_Domingo] INFO - Subiendo Exportacion_out_TGBU2744820.edi (400 B) a /uploads/Exportacion_out_TGBU2744820.edi
+[31-Jul-2025 14:44:48 America/Santo_Domingo] INFO - Archivo subido exitosamente: Exportacion_out_TGBU2744820.edi
+[31-Jul-2025 14:44:48 America/Santo_Domingo] INFO - Desconectado del servidor SFTP
+[31-Jul-2025 14:44:48 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 14:44:48 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CE000727323D473
+[31-Jul-2025 14:44:48 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_linea_despacho = :edi_file_linea_despacho, edi_file_linea_despacho_intentos = :edi_file_linea_despacho_intentos WHERE FCNUEMRO = :numero
+[31-Jul-2025 14:44:48 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho
+[31-Jul-2025 14:44:48 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho_intentos
+[31-Jul-2025 14:44:48 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CE000727323D473
+[31-Jul-2025 14:44:48 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 14:44:48 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 14:44:48 America/Santo_Domingo] Remote file name: Exportacion_out_MSNU1848790.edi
+[31-Jul-2025 14:44:48 America/Santo_Domingo] What was written: UNB+UNOA:2+STW+MSC+202507311444+CE000727322D473'
+UNH+0031+CODECO:D:95B:UN:ITG13'
+BGM+36++9'
+TDT+20++1++:172:ZZZ+++146'
+NAD+CF+MSC:160:166'
+EQD+CN+MSNU1848790+22G1:102:5+++4'
+RFF+BN:EDOEVA20'
+TMD+2'
+DTM+7:202506271452:203'
+MEA+AAE+T+KGM:1900'
+TDT+1++3++226-0012644-9:172:ZZZ+++226-0012644-9:146::JORDANY FABIAN TERRERO'
+LOC+165+STW:139:6:STW+TER:ZZZ'
+CNT+16:1'
+UNT+000012+0031'
+UNZ+1+CE000727322D473'
+
+[31-Jul-2025 14:44:48 America/Santo_Domingo] Forma de generación: automatico
+[31-Jul-2025 14:44:48 America/Santo_Domingo] Guardando archivo en disco: Exportacion_out_MSNU1848790.edi
+[31-Jul-2025 14:44:48 America/Santo_Domingo] Forma de generación: automatico
+[31-Jul-2025 14:44:48 America/Santo_Domingo] Tipo: out
+[31-Jul-2025 14:44:48 America/Santo_Domingo] Guardando archivo en disco: Exportacion_out_MSNU1848790.edi
+[31-Jul-2025 14:44:48 America/Santo_Domingo] archivo guardado en : C:\proyectos\repositorios\stonewood-app\Data\ftpFiles\/Exportacion_out_MSNU1848790.edi
+[31-Jul-2025 14:44:49 America/Santo_Domingo] INFO - Conectado al servidor SFTP: 192.168.20.221:2222
+[31-Jul-2025 14:44:49 America/Santo_Domingo] INFO - Subiendo Exportacion_out_MSNU1848790.edi (400 B) a /uploads/Exportacion_out_MSNU1848790.edi
+[31-Jul-2025 14:44:49 America/Santo_Domingo] INFO - Archivo subido exitosamente: Exportacion_out_MSNU1848790.edi
+[31-Jul-2025 14:44:49 America/Santo_Domingo] INFO - Desconectado del servidor SFTP
+[31-Jul-2025 14:44:49 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 14:44:49 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CE000727322D473
+[31-Jul-2025 14:44:49 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_linea_despacho = :edi_file_linea_despacho, edi_file_linea_despacho_intentos = :edi_file_linea_despacho_intentos WHERE FCNUEMRO = :numero
+[31-Jul-2025 14:44:49 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho
+[31-Jul-2025 14:44:49 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho_intentos
+[31-Jul-2025 14:44:49 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CE000727322D473
+[31-Jul-2025 14:44:49 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 14:44:49 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 14:44:49 America/Santo_Domingo] Remote file name: Exportacion_out_MSMU1742084.edi
+[31-Jul-2025 14:44:49 America/Santo_Domingo] What was written: UNB+UNOA:2+STW+MSC+202507311444+CE000727321D473'
+UNH+0031+CODECO:D:95B:UN:ITG13'
+BGM+36++9'
+TDT+20++1++:172:ZZZ+++146'
+NAD+CF+MSC:160:166'
+EQD+CN+MSMU1742084+22G1:102:5+++4'
+RFF+BN:EDOEVA20'
+TMD+2'
+DTM+7:202506271007:203'
+MEA+AAE+T+KGM:1900'
+TDT+1++3++226-0012644-9:172:ZZZ+++226-0012644-9:146::JORDANY FABIAN TERRERO'
+LOC+165+STW:139:6:STW+TER:ZZZ'
+CNT+16:1'
+UNT+000012+0031'
+UNZ+1+CE000727321D473'
+
+[31-Jul-2025 14:44:49 America/Santo_Domingo] Forma de generación: automatico
+[31-Jul-2025 14:44:49 America/Santo_Domingo] Guardando archivo en disco: Exportacion_out_MSMU1742084.edi
+[31-Jul-2025 14:44:49 America/Santo_Domingo] Forma de generación: automatico
+[31-Jul-2025 14:44:49 America/Santo_Domingo] Tipo: out
+[31-Jul-2025 14:44:49 America/Santo_Domingo] Guardando archivo en disco: Exportacion_out_MSMU1742084.edi
+[31-Jul-2025 14:44:49 America/Santo_Domingo] archivo guardado en : C:\proyectos\repositorios\stonewood-app\Data\ftpFiles\/Exportacion_out_MSMU1742084.edi
+[31-Jul-2025 14:44:49 America/Santo_Domingo] INFO - Conectado al servidor SFTP: 192.168.20.221:2222
+[31-Jul-2025 14:44:49 America/Santo_Domingo] INFO - Subiendo Exportacion_out_MSMU1742084.edi (400 B) a /uploads/Exportacion_out_MSMU1742084.edi
+[31-Jul-2025 14:44:49 America/Santo_Domingo] INFO - Archivo subido exitosamente: Exportacion_out_MSMU1742084.edi
+[31-Jul-2025 14:44:49 America/Santo_Domingo] INFO - Desconectado del servidor SFTP
+[31-Jul-2025 14:44:49 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 14:44:49 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CE000727321D473
+[31-Jul-2025 14:44:49 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_linea_despacho = :edi_file_linea_despacho, edi_file_linea_despacho_intentos = :edi_file_linea_despacho_intentos WHERE FCNUEMRO = :numero
+[31-Jul-2025 14:44:49 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho
+[31-Jul-2025 14:44:49 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho_intentos
+[31-Jul-2025 14:44:49 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CE000727321D473
+[31-Jul-2025 14:44:49 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 14:44:49 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 14:44:49 America/Santo_Domingo] Remote file name: Exportacion_out_MSDU2741050.edi
+[31-Jul-2025 14:44:49 America/Santo_Domingo] What was written: UNB+UNOA:2+STW+MSC+202507311444+CE000727646D473'
+UNH+0031+CODECO:D:95B:UN:ITG13'
+BGM+36++9'
+TDT+20++1++:172:ZZZ+++146'
+NAD+CF+MSC:160:166'
+EQD+CN+MSDU2741050+22G1:102:5+++4'
+RFF+BN:EDOEVA20'
+TMD+2'
+DTM+7:202506271738:203'
+MEA+AAE+T+KGM:1900'
+TDT+1++3++226-0012644-9:172:ZZZ+++226-0012644-9:146::JORDANY FABIAN TERRERO'
+LOC+165+STW:139:6:STW+TER:ZZZ'
+CNT+16:1'
+UNT+000012+0031'
+UNZ+1+CE000727646D473'
+
+[31-Jul-2025 14:44:49 America/Santo_Domingo] Forma de generación: automatico
+[31-Jul-2025 14:44:49 America/Santo_Domingo] Guardando archivo en disco: Exportacion_out_MSDU2741050.edi
+[31-Jul-2025 14:44:49 America/Santo_Domingo] Forma de generación: automatico
+[31-Jul-2025 14:44:49 America/Santo_Domingo] Tipo: out
+[31-Jul-2025 14:44:49 America/Santo_Domingo] Guardando archivo en disco: Exportacion_out_MSDU2741050.edi
+[31-Jul-2025 14:44:49 America/Santo_Domingo] archivo guardado en : C:\proyectos\repositorios\stonewood-app\Data\ftpFiles\/Exportacion_out_MSDU2741050.edi
+[31-Jul-2025 14:44:50 America/Santo_Domingo] INFO - Conectado al servidor SFTP: 192.168.20.221:2222
+[31-Jul-2025 14:44:50 America/Santo_Domingo] INFO - Subiendo Exportacion_out_MSDU2741050.edi (400 B) a /uploads/Exportacion_out_MSDU2741050.edi
+[31-Jul-2025 14:44:50 America/Santo_Domingo] INFO - Archivo subido exitosamente: Exportacion_out_MSDU2741050.edi
+[31-Jul-2025 14:44:50 America/Santo_Domingo] INFO - Desconectado del servidor SFTP
+[31-Jul-2025 14:44:50 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 14:44:50 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CE000727646D473
+[31-Jul-2025 14:44:50 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_linea_despacho = :edi_file_linea_despacho, edi_file_linea_despacho_intentos = :edi_file_linea_despacho_intentos WHERE FCNUEMRO = :numero
+[31-Jul-2025 14:44:50 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho
+[31-Jul-2025 14:44:50 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho_intentos
+[31-Jul-2025 14:44:50 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CE000727646D473
+[31-Jul-2025 14:44:50 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 14:44:50 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 14:44:50 America/Santo_Domingo] Remote file name: Exportacion_out_MSMU1932680.edi
+[31-Jul-2025 14:44:50 America/Santo_Domingo] What was written: UNB+UNOA:2+STW+MSC+202507311444+CE000727647D473'
+UNH+0031+CODECO:D:95B:UN:ITG13'
+BGM+36++9'
+TDT+20++1++:172:ZZZ+++146'
+NAD+CF+MSC:160:166'
+EQD+CN+MSMU1932680+22G1:102:5+++4'
+RFF+BN:EDOEVA20'
+TMD+2'
+DTM+7:202506271738:203'
+MEA+AAE+T+KGM:1900'
+TDT+1++3++226-0012644-9:172:ZZZ+++226-0012644-9:146::JORDANY FABIAN TERRERO'
+LOC+165+STW:139:6:STW+TER:ZZZ'
+CNT+16:1'
+UNT+000012+0031'
+UNZ+1+CE000727647D473'
+
+[31-Jul-2025 14:44:50 America/Santo_Domingo] Forma de generación: automatico
+[31-Jul-2025 14:44:50 America/Santo_Domingo] Guardando archivo en disco: Exportacion_out_MSMU1932680.edi
+[31-Jul-2025 14:44:50 America/Santo_Domingo] Forma de generación: automatico
+[31-Jul-2025 14:44:50 America/Santo_Domingo] Tipo: out
+[31-Jul-2025 14:44:50 America/Santo_Domingo] Guardando archivo en disco: Exportacion_out_MSMU1932680.edi
+[31-Jul-2025 14:44:50 America/Santo_Domingo] archivo guardado en : C:\proyectos\repositorios\stonewood-app\Data\ftpFiles\/Exportacion_out_MSMU1932680.edi
+[31-Jul-2025 14:44:50 America/Santo_Domingo] INFO - Conectado al servidor SFTP: 192.168.20.221:2222
+[31-Jul-2025 14:44:50 America/Santo_Domingo] INFO - Subiendo Exportacion_out_MSMU1932680.edi (400 B) a /uploads/Exportacion_out_MSMU1932680.edi
+[31-Jul-2025 14:44:50 America/Santo_Domingo] INFO - Archivo subido exitosamente: Exportacion_out_MSMU1932680.edi
+[31-Jul-2025 14:44:50 America/Santo_Domingo] INFO - Desconectado del servidor SFTP
+[31-Jul-2025 14:44:50 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 14:44:50 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CE000727647D473
+[31-Jul-2025 14:44:50 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_linea_despacho = :edi_file_linea_despacho, edi_file_linea_despacho_intentos = :edi_file_linea_despacho_intentos WHERE FCNUEMRO = :numero
+[31-Jul-2025 14:44:50 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho
+[31-Jul-2025 14:44:50 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho_intentos
+[31-Jul-2025 14:44:50 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CE000727647D473
+[31-Jul-2025 14:44:50 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 14:44:50 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 14:44:50 America/Santo_Domingo] Proceso de envío de archivos EDI linea Despacho finalizado
+[31-Jul-2025 14:44:50 America/Santo_Domingo] Iniciando proceso de envío de archivos EDI linea Retorno. Buscando conduces pendientes de enviar.
+[31-Jul-2025 14:44:50 America/Santo_Domingo] Conduces pendientes de enviar EDI retorno: 5
+[31-Jul-2025 14:44:50 America/Santo_Domingo] Remote file name: Alquiler_in_UETU6767711.edi
+[31-Jul-2025 14:44:50 America/Santo_Domingo] What was written: UNB+UNOA:2+STW+MSC+202507311444+CA000727358I366'
+UNH+0031+CODECO:D:95B:UN:ITG13'
+BGM+34++9'
+TDT+20++1++:172:ZZZ+++146'
+NAD+CF+MSC:160:166'
+EQD+CN+UETU6767711+45G1:102:5+++4'
+RFF+BN:'
+TMD+3'
+DTM+7:202506270843:203'
+MEA+AAE+T+KGM:1900'
+TDT+1++3++023-0139377-9:172:ZZZ+++023-0139377-9:146::JOSE RAMON BAEZ'
+LOC+165+STW:139:6:STW+TER:ZZZ'
+CNT+16:1'
+UNT+000012+0031'
+UNZ+1+CA000727358I366'
+
+[31-Jul-2025 14:44:50 America/Santo_Domingo] Forma de generación: automatico
+[31-Jul-2025 14:44:50 America/Santo_Domingo] Guardando archivo en disco: Alquiler_in_UETU6767711.edi
+[31-Jul-2025 14:44:50 America/Santo_Domingo] Forma de generación: automatico
+[31-Jul-2025 14:44:50 America/Santo_Domingo] Tipo: in
+[31-Jul-2025 14:44:50 America/Santo_Domingo] Guardando archivo en disco: Alquiler_in_UETU6767711.edi
+[31-Jul-2025 14:44:50 America/Santo_Domingo] archivo guardado en : C:\proyectos\repositorios\stonewood-app\Data\ftpFiles\/Alquiler_in_UETU6767711.edi
+[31-Jul-2025 14:44:51 America/Santo_Domingo] INFO - Conectado al servidor SFTP: 192.168.20.221:2222
+[31-Jul-2025 14:44:51 America/Santo_Domingo] INFO - Subiendo Alquiler_in_UETU6767711.edi (385 B) a /uploads/Alquiler_in_UETU6767711.edi
+[31-Jul-2025 14:44:51 America/Santo_Domingo] INFO - Archivo subido exitosamente: Alquiler_in_UETU6767711.edi
+[31-Jul-2025 14:44:51 America/Santo_Domingo] INFO - Desconectado del servidor SFTP
+[31-Jul-2025 14:44:51 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 14:44:51 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CA000727358I366
+[31-Jul-2025 14:44:51 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_linea_retorno = :edi_file_linea_retorno, edi_file_linea_retorno_intentos = :edi_file_linea_retorno_intentos WHERE FCNUEMRO = :numero
+[31-Jul-2025 14:44:51 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_retorno
+[31-Jul-2025 14:44:51 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_retorno_intentos
+[31-Jul-2025 14:44:51 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CA000727358I366
+[31-Jul-2025 14:44:51 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 14:44:51 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 14:44:51 America/Santo_Domingo] PHP Warning:  Undefined array key "numero" in C:\proyectos\repositorios\stonewood-app\src\jobs\EdiFileLinea\StonewoodSendPendingLine_RetornoCodecoEDIFiles.php on line 26
+[31-Jul-2025 14:44:51 America/Santo_Domingo] Conduce enviado: 
+[31-Jul-2025 14:44:51 America/Santo_Domingo] Remote file name: Alquiler_in_MEDU5438862.edi
+[31-Jul-2025 14:44:51 America/Santo_Domingo] What was written: UNB+UNOA:2+STW+MSC+202507311444+CA000728010S338'
+UNH+0031+CODECO:D:95B:UN:ITG13'
+BGM+34++9'
+TDT+20++1++:172:ZZZ+++146'
+NAD+CF+MSC:160:166'
+EQD+CN+MEDU5438862+22G1:102:5+++4'
+RFF+BN:'
+TMD+3'
+DTM+7:202506272010:203'
+MEA+AAE+T+KGM:1900'
+TDT+1++3++223-0047740-7:172:ZZZ+++223-0047740-7:146::RADHAMES MUÑOZ'
+LOC+165+STW:139:6:STW+TER:ZZZ'
+CNT+16:1'
+UNT+000012+0031'
+UNZ+1+CA000728010S338'
+
+[31-Jul-2025 14:44:51 America/Santo_Domingo] Forma de generación: automatico
+[31-Jul-2025 14:44:51 America/Santo_Domingo] Guardando archivo en disco: Alquiler_in_MEDU5438862.edi
+[31-Jul-2025 14:44:51 America/Santo_Domingo] Forma de generación: automatico
+[31-Jul-2025 14:44:51 America/Santo_Domingo] Tipo: in
+[31-Jul-2025 14:44:51 America/Santo_Domingo] Guardando archivo en disco: Alquiler_in_MEDU5438862.edi
+[31-Jul-2025 14:44:51 America/Santo_Domingo] archivo guardado en : C:\proyectos\repositorios\stonewood-app\Data\ftpFiles\/Alquiler_in_MEDU5438862.edi
+[31-Jul-2025 14:44:51 America/Santo_Domingo] INFO - Conectado al servidor SFTP: 192.168.20.221:2222
+[31-Jul-2025 14:44:51 America/Santo_Domingo] INFO - Subiendo Alquiler_in_MEDU5438862.edi (385 B) a /uploads/Alquiler_in_MEDU5438862.edi
+[31-Jul-2025 14:44:51 America/Santo_Domingo] INFO - Archivo subido exitosamente: Alquiler_in_MEDU5438862.edi
+[31-Jul-2025 14:44:51 America/Santo_Domingo] INFO - Desconectado del servidor SFTP
+[31-Jul-2025 14:44:51 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 14:44:51 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CA000728010S338
+[31-Jul-2025 14:44:51 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_linea_retorno = :edi_file_linea_retorno, edi_file_linea_retorno_intentos = :edi_file_linea_retorno_intentos WHERE FCNUEMRO = :numero
+[31-Jul-2025 14:44:51 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_retorno
+[31-Jul-2025 14:44:51 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_retorno_intentos
+[31-Jul-2025 14:44:51 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CA000728010S338
+[31-Jul-2025 14:44:51 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 14:44:51 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 14:44:51 America/Santo_Domingo] PHP Warning:  Undefined array key "numero" in C:\proyectos\repositorios\stonewood-app\src\jobs\EdiFileLinea\StonewoodSendPendingLine_RetornoCodecoEDIFiles.php on line 26
+[31-Jul-2025 14:44:51 America/Santo_Domingo] Conduce enviado: 
+[31-Jul-2025 14:44:51 America/Santo_Domingo] Remote file name: Alquiler_in_DFSU1489564.edi
+[31-Jul-2025 14:44:51 America/Santo_Domingo] What was written: UNB+UNOA:2+STW+MSC+202507311444+CA000727982S629'
+UNH+0031+CODECO:D:95B:UN:ITG13'
+BGM+34++9'
+TDT+20++1++:172:ZZZ+++146'
+NAD+CF+MSC:160:166'
+EQD+CN+DFSU1489564+22G1:102:5+++4'
+RFF+BN:'
+TMD+3'
+DTM+7:202506271927:203'
+MEA+AAE+T+KGM:1900'
+TDT+1++3++227-0000261-5:172:ZZZ+++227-0000261-5:146::NATARAEL LOPEZ CARELA'
+LOC+165+STW:139:6:STW+TER:ZZZ'
+CNT+16:1'
+UNT+000012+0031'
+UNZ+1+CA000727982S629'
+
+[31-Jul-2025 14:44:51 America/Santo_Domingo] Forma de generación: automatico
+[31-Jul-2025 14:44:51 America/Santo_Domingo] Guardando archivo en disco: Alquiler_in_DFSU1489564.edi
+[31-Jul-2025 14:44:51 America/Santo_Domingo] Forma de generación: automatico
+[31-Jul-2025 14:44:51 America/Santo_Domingo] Tipo: in
+[31-Jul-2025 14:44:51 America/Santo_Domingo] Guardando archivo en disco: Alquiler_in_DFSU1489564.edi
+[31-Jul-2025 14:44:51 America/Santo_Domingo] archivo guardado en : C:\proyectos\repositorios\stonewood-app\Data\ftpFiles\/Alquiler_in_DFSU1489564.edi
+[31-Jul-2025 14:44:51 America/Santo_Domingo] INFO - Conectado al servidor SFTP: 192.168.20.221:2222
+[31-Jul-2025 14:44:51 America/Santo_Domingo] INFO - Subiendo Alquiler_in_DFSU1489564.edi (391 B) a /uploads/Alquiler_in_DFSU1489564.edi
+[31-Jul-2025 14:44:51 America/Santo_Domingo] INFO - Archivo subido exitosamente: Alquiler_in_DFSU1489564.edi
+[31-Jul-2025 14:44:51 America/Santo_Domingo] INFO - Desconectado del servidor SFTP
+[31-Jul-2025 14:44:51 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 14:44:51 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CA000727982S629
+[31-Jul-2025 14:44:51 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_linea_retorno = :edi_file_linea_retorno, edi_file_linea_retorno_intentos = :edi_file_linea_retorno_intentos WHERE FCNUEMRO = :numero
+[31-Jul-2025 14:44:51 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_retorno
+[31-Jul-2025 14:44:51 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_retorno_intentos
+[31-Jul-2025 14:44:51 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CA000727982S629
+[31-Jul-2025 14:44:51 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 14:44:51 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 14:44:51 America/Santo_Domingo] PHP Warning:  Undefined array key "numero" in C:\proyectos\repositorios\stonewood-app\src\jobs\EdiFileLinea\StonewoodSendPendingLine_RetornoCodecoEDIFiles.php on line 26
+[31-Jul-2025 14:44:51 America/Santo_Domingo] Conduce enviado: 
+[31-Jul-2025 14:44:51 America/Santo_Domingo] Remote file name: Alquiler_in_MSDU1631103.edi
+[31-Jul-2025 14:44:51 America/Santo_Domingo] What was written: UNB+UNOA:2+STW+MSC+202507311444+CA000727926S630'
+UNH+0031+CODECO:D:95B:UN:ITG13'
+BGM+34++9'
+TDT+20++1++:172:ZZZ+++146'
+NAD+CF+MSC:160:166'
+EQD+CN+MSDU1631103+22G1:102:5+++4'
+RFF+BN:'
+TMD+3'
+DTM+7:202506271843:203'
+MEA+AAE+T+KGM:1900'
+TDT+1++3++402-2088977-4:172:ZZZ+++402-2088977-4:146::JUAN ENRIQUE CELEDONIO'
+LOC+165+STW:139:6:STW+TER:ZZZ'
+CNT+16:1'
+UNT+000012+0031'
+UNZ+1+CA000727926S630'
+
+[31-Jul-2025 14:44:51 America/Santo_Domingo] Forma de generación: automatico
+[31-Jul-2025 14:44:51 America/Santo_Domingo] Guardando archivo en disco: Alquiler_in_MSDU1631103.edi
+[31-Jul-2025 14:44:51 America/Santo_Domingo] Forma de generación: automatico
+[31-Jul-2025 14:44:51 America/Santo_Domingo] Tipo: in
+[31-Jul-2025 14:44:51 America/Santo_Domingo] Guardando archivo en disco: Alquiler_in_MSDU1631103.edi
+[31-Jul-2025 14:44:51 America/Santo_Domingo] archivo guardado en : C:\proyectos\repositorios\stonewood-app\Data\ftpFiles\/Alquiler_in_MSDU1631103.edi
+[31-Jul-2025 14:44:52 America/Santo_Domingo] INFO - Conectado al servidor SFTP: 192.168.20.221:2222
+[31-Jul-2025 14:44:52 America/Santo_Domingo] INFO - Subiendo Alquiler_in_MSDU1631103.edi (392 B) a /uploads/Alquiler_in_MSDU1631103.edi
+[31-Jul-2025 14:44:52 America/Santo_Domingo] INFO - Archivo subido exitosamente: Alquiler_in_MSDU1631103.edi
+[31-Jul-2025 14:44:52 America/Santo_Domingo] INFO - Desconectado del servidor SFTP
+[31-Jul-2025 14:44:52 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 14:44:52 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CA000727926S630
+[31-Jul-2025 14:44:52 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_linea_retorno = :edi_file_linea_retorno, edi_file_linea_retorno_intentos = :edi_file_linea_retorno_intentos WHERE FCNUEMRO = :numero
+[31-Jul-2025 14:44:52 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_retorno
+[31-Jul-2025 14:44:52 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_retorno_intentos
+[31-Jul-2025 14:44:52 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CA000727926S630
+[31-Jul-2025 14:44:52 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 14:44:52 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 14:44:52 America/Santo_Domingo] PHP Warning:  Undefined array key "numero" in C:\proyectos\repositorios\stonewood-app\src\jobs\EdiFileLinea\StonewoodSendPendingLine_RetornoCodecoEDIFiles.php on line 26
+[31-Jul-2025 14:44:52 America/Santo_Domingo] Conduce enviado: 
+[31-Jul-2025 14:44:52 America/Santo_Domingo] Remote file name: Alquiler_in_MEDU6418876.edi
+[31-Jul-2025 14:44:52 America/Santo_Domingo] What was written: UNB+UNOA:2+STW+MSC+202507311444+CA000727904S776'
+UNH+0031+CODECO:D:95B:UN:ITG13'
+BGM+34++9'
+TDT+20++1++:172:ZZZ+++146'
+NAD+CF+MSC:160:166'
+EQD+CN+MEDU6418876+22G1:102:5+++4'
+RFF+BN:'
+TMD+3'
+DTM+7:202506271833:203'
+MEA+AAE+T+KGM:1900'
+TDT+1++3++223-0079129-4:172:ZZZ+++223-0079129-4:146::FELIX RODRIGUEZ FERMIN'
+LOC+165+STW:139:6:STW+TER:ZZZ'
+CNT+16:1'
+UNT+000012+0031'
+UNZ+1+CA000727904S776'
+
+[31-Jul-2025 14:44:52 America/Santo_Domingo] Forma de generación: automatico
+[31-Jul-2025 14:44:52 America/Santo_Domingo] Guardando archivo en disco: Alquiler_in_MEDU6418876.edi
+[31-Jul-2025 14:44:52 America/Santo_Domingo] Forma de generación: automatico
+[31-Jul-2025 14:44:52 America/Santo_Domingo] Tipo: in
+[31-Jul-2025 14:44:52 America/Santo_Domingo] Guardando archivo en disco: Alquiler_in_MEDU6418876.edi
+[31-Jul-2025 14:44:52 America/Santo_Domingo] archivo guardado en : C:\proyectos\repositorios\stonewood-app\Data\ftpFiles\/Alquiler_in_MEDU6418876.edi
+[31-Jul-2025 14:44:52 America/Santo_Domingo] INFO - Conectado al servidor SFTP: 192.168.20.221:2222
+[31-Jul-2025 14:44:52 America/Santo_Domingo] INFO - Subiendo Alquiler_in_MEDU6418876.edi (392 B) a /uploads/Alquiler_in_MEDU6418876.edi
+[31-Jul-2025 14:44:52 America/Santo_Domingo] INFO - Archivo subido exitosamente: Alquiler_in_MEDU6418876.edi
+[31-Jul-2025 14:44:52 America/Santo_Domingo] INFO - Desconectado del servidor SFTP
+[31-Jul-2025 14:44:52 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 14:44:52 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CA000727904S776
+[31-Jul-2025 14:44:52 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_linea_retorno = :edi_file_linea_retorno, edi_file_linea_retorno_intentos = :edi_file_linea_retorno_intentos WHERE FCNUEMRO = :numero
+[31-Jul-2025 14:44:52 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_retorno
+[31-Jul-2025 14:44:52 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_retorno_intentos
+[31-Jul-2025 14:44:52 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CA000727904S776
+[31-Jul-2025 14:44:52 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 14:44:52 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 14:44:52 America/Santo_Domingo] PHP Warning:  Undefined array key "numero" in C:\proyectos\repositorios\stonewood-app\src\jobs\EdiFileLinea\StonewoodSendPendingLine_RetornoCodecoEDIFiles.php on line 26
+[31-Jul-2025 14:44:52 America/Santo_Domingo] Conduce enviado: 
+[31-Jul-2025 14:44:52 America/Santo_Domingo] Proceso de envío de archivos EDI linea Retorno finalizado
+[31-Jul-2025 14:50:57 America/Santo_Domingo] Iniciando proceso de envío de archivos EDI linea Despacho. Buscando conduces pendientes de enviar.
+[31-Jul-2025 14:50:57 America/Santo_Domingo] Conduces pendientes de enviar EDI Despacho: 5
+[31-Jul-2025 14:50:57 America/Santo_Domingo] Remote file name: Exportacion_out_UETU7772970.edi
+[31-Jul-2025 14:50:57 America/Santo_Domingo] What was written: UNB+UNOA:2+STW+MSC+202507311450+CE000727074S435'
+UNH+0031+CODECO:D:95B:UN:ITG13'
+BGM+36++9'
+TDT+20++1++:172:ZZZ+++146'
+NAD+CF+MSC:160:166'
+EQD+CN+UETU7772970+45G1:102:5+++4'
+RFF+BN:344DOM51123'
+TMD+2'
+DTM+7:202506270034:203'
+MEA+AAE+T+KGM:1900'
+TDT+1++3++402-2237241-5:172:ZZZ+++402-2237241-5:146::EMMANUEL SIERRA TOLENTINO'
+LOC+165+STW:139:6:STW+TER:ZZZ'
+CNT+16:1'
+UNT+000012+0031'
+UNZ+1+CE000727074S435'
+
+[31-Jul-2025 14:50:57 America/Santo_Domingo] Guardando archivo en disco: Exportacion_out_UETU7772970.edi
+[31-Jul-2025 14:50:57 America/Santo_Domingo] Forma de generación: automatico
+[31-Jul-2025 14:50:57 America/Santo_Domingo] Tipo: out
+[31-Jul-2025 14:50:57 America/Santo_Domingo] Guardando archivo en disco: Exportacion_out_UETU7772970.edi
+[31-Jul-2025 14:50:57 America/Santo_Domingo] archivo guardado en : C:\proyectos\repositorios\stonewood-app\Data\ftpFiles\/Exportacion_out_UETU7772970.edi
+[31-Jul-2025 14:50:57 America/Santo_Domingo] PHP Deprecated:  Optional parameter $port declared before required parameter $password is implicitly treated as a required parameter in C:\proyectos\repositorios\stonewood-lib\src\Utils\SftpFileTransfer.php on line 14
+[31-Jul-2025 14:50:58 America/Santo_Domingo] INFO - Conectado al servidor SFTP: 192.168.20.221:2222
+[31-Jul-2025 14:50:58 America/Santo_Domingo] INFO - Subiendo Exportacion_out_UETU7772970.edi (406 B) a /uploads/Exportacion_out_UETU7772970.edi
+[31-Jul-2025 14:50:58 America/Santo_Domingo] INFO - Archivo subido exitosamente: Exportacion_out_UETU7772970.edi
+[31-Jul-2025 14:50:58 America/Santo_Domingo] INFO - Desconectado del servidor SFTP
+[31-Jul-2025 14:50:58 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 14:50:58 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CE000727074S435
+[31-Jul-2025 14:50:58 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_linea_despacho = :edi_file_linea_despacho, edi_file_linea_despacho_intentos = :edi_file_linea_despacho_intentos WHERE FCNUEMRO = :numero
+[31-Jul-2025 14:50:58 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho
+[31-Jul-2025 14:50:58 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho_intentos
+[31-Jul-2025 14:50:58 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CE000727074S435
+[31-Jul-2025 14:50:58 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 14:50:58 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 14:50:58 America/Santo_Domingo] Remote file name: Exportacion_out_BMOU6910817.edi
+[31-Jul-2025 14:50:58 America/Santo_Domingo] What was written: UNB+UNOA:2+STW+MSC+202507311450+CE000727018D510'
+UNH+0031+CODECO:D:95B:UN:ITG13'
+BGM+36++9'
+TDT+20++1++:172:ZZZ+++146'
+NAD+CF+MSC:160:166'
+EQD+CN+BMOU6910817+45G1:102:5+++4'
+RFF+BN:344DOM51071'
+TMD+2'
+DTM+7:202506270130:203'
+MEA+AAE+T+KGM:1900'
+TDT+1++3++226-0023392-2:172:ZZZ+++226-0023392-2:146::YONATHAN C. ENCARNACION'
+LOC+165+STW:139:6:STW+TER:ZZZ'
+CNT+16:1'
+UNT+000012+0031'
+UNZ+1+CE000727018D510'
+
+[31-Jul-2025 14:50:58 America/Santo_Domingo] Guardando archivo en disco: Exportacion_out_BMOU6910817.edi
+[31-Jul-2025 14:50:58 America/Santo_Domingo] Forma de generación: automatico
+[31-Jul-2025 14:50:58 America/Santo_Domingo] Tipo: out
+[31-Jul-2025 14:50:58 America/Santo_Domingo] Guardando archivo en disco: Exportacion_out_BMOU6910817.edi
+[31-Jul-2025 14:50:58 America/Santo_Domingo] archivo guardado en : C:\proyectos\repositorios\stonewood-app\Data\ftpFiles\/Exportacion_out_BMOU6910817.edi
+[31-Jul-2025 14:50:58 America/Santo_Domingo] INFO - Conectado al servidor SFTP: 192.168.20.221:2222
+[31-Jul-2025 14:50:58 America/Santo_Domingo] INFO - Subiendo Exportacion_out_BMOU6910817.edi (404 B) a /uploads/Exportacion_out_BMOU6910817.edi
+[31-Jul-2025 14:50:58 America/Santo_Domingo] INFO - Archivo subido exitosamente: Exportacion_out_BMOU6910817.edi
+[31-Jul-2025 14:50:58 America/Santo_Domingo] INFO - Desconectado del servidor SFTP
+[31-Jul-2025 14:50:58 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 14:50:58 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CE000727018D510
+[31-Jul-2025 14:50:58 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_linea_despacho = :edi_file_linea_despacho, edi_file_linea_despacho_intentos = :edi_file_linea_despacho_intentos WHERE FCNUEMRO = :numero
+[31-Jul-2025 14:50:58 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho
+[31-Jul-2025 14:50:58 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho_intentos
+[31-Jul-2025 14:50:58 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CE000727018D510
+[31-Jul-2025 14:50:58 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 14:50:58 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 14:50:58 America/Santo_Domingo] Remote file name: Exportacion_out_CAAU7286560.edi
+[31-Jul-2025 14:50:58 America/Santo_Domingo] What was written: UNB+UNOA:2+STW+MSC+202507311450+CE000727057C455'
+UNH+0031+CODECO:D:95B:UN:ITG13'
+BGM+36++9'
+TDT+20++1++:172:ZZZ+++146'
+NAD+CF+MSC:160:166'
+EQD+CN+CAAU7286560+45G1:102:5+++4'
+RFF+BN:344DOM50884'
+TMD+2'
+DTM+7:202506270159:203'
+MEA+AAE+T+KGM:1900'
+TDT+1++3++031-0270752-2:172:ZZZ+++031-0270752-2:146::RAMON ANT. REYNOSO'
+LOC+165+STW:139:6:STW+TER:ZZZ'
+CNT+16:1'
+UNT+000012+0031'
+UNZ+1+CE000727057C455'
+
+[31-Jul-2025 14:50:58 America/Santo_Domingo] Guardando archivo en disco: Exportacion_out_CAAU7286560.edi
+[31-Jul-2025 14:50:58 America/Santo_Domingo] Forma de generación: automatico
+[31-Jul-2025 14:50:58 America/Santo_Domingo] Tipo: out
+[31-Jul-2025 14:50:58 America/Santo_Domingo] Guardando archivo en disco: Exportacion_out_CAAU7286560.edi
+[31-Jul-2025 14:50:58 America/Santo_Domingo] archivo guardado en : C:\proyectos\repositorios\stonewood-app\Data\ftpFiles\/Exportacion_out_CAAU7286560.edi
+[31-Jul-2025 14:50:58 America/Santo_Domingo] INFO - Conectado al servidor SFTP: 192.168.20.221:2222
+[31-Jul-2025 14:50:58 America/Santo_Domingo] INFO - Subiendo Exportacion_out_CAAU7286560.edi (399 B) a /uploads/Exportacion_out_CAAU7286560.edi
+[31-Jul-2025 14:50:58 America/Santo_Domingo] INFO - Archivo subido exitosamente: Exportacion_out_CAAU7286560.edi
+[31-Jul-2025 14:50:58 America/Santo_Domingo] INFO - Desconectado del servidor SFTP
+[31-Jul-2025 14:50:58 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 14:50:58 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CE000727057C455
+[31-Jul-2025 14:50:58 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_linea_despacho = :edi_file_linea_despacho, edi_file_linea_despacho_intentos = :edi_file_linea_despacho_intentos WHERE FCNUEMRO = :numero
+[31-Jul-2025 14:50:58 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho
+[31-Jul-2025 14:50:58 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho_intentos
+[31-Jul-2025 14:50:58 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CE000727057C455
+[31-Jul-2025 14:50:59 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 14:50:59 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 14:50:59 America/Santo_Domingo] Remote file name: Exportacion_out_MSDU2953721.edi
+[31-Jul-2025 14:50:59 America/Santo_Domingo] What was written: UNB+UNOA:2+STW+MSC+202507311450+CE000727035B199'
+UNH+0031+CODECO:D:95B:UN:ITG13'
+BGM+36++9'
+TDT+20++1++:172:ZZZ+++146'
+NAD+CF+MSC:160:166'
+EQD+CN+MSDU2953721+22G1:102:5+++4'
+RFF+BN:344DOM51022'
+TMD+2'
+DTM+7:202506270404:203'
+MEA+AAE+T+KGM:1900'
+TDT+1++3++223-0145471-0:172:ZZZ+++223-0145471-0:146::REY ALFREDO REYES'
+LOC+165+STW:139:6:STW+TER:ZZZ'
+CNT+16:1'
+UNT+000012+0031'
+UNZ+1+CE000727035B199'
+
+[31-Jul-2025 14:50:59 America/Santo_Domingo] Guardando archivo en disco: Exportacion_out_MSDU2953721.edi
+[31-Jul-2025 14:50:59 America/Santo_Domingo] Forma de generación: automatico
+[31-Jul-2025 14:50:59 America/Santo_Domingo] Tipo: out
+[31-Jul-2025 14:50:59 America/Santo_Domingo] Guardando archivo en disco: Exportacion_out_MSDU2953721.edi
+[31-Jul-2025 14:50:59 America/Santo_Domingo] archivo guardado en : C:\proyectos\repositorios\stonewood-app\Data\ftpFiles\/Exportacion_out_MSDU2953721.edi
+[31-Jul-2025 14:50:59 America/Santo_Domingo] INFO - Conectado al servidor SFTP: 192.168.20.221:2222
+[31-Jul-2025 14:50:59 America/Santo_Domingo] INFO - Subiendo Exportacion_out_MSDU2953721.edi (398 B) a /uploads/Exportacion_out_MSDU2953721.edi
+[31-Jul-2025 14:50:59 America/Santo_Domingo] INFO - Archivo subido exitosamente: Exportacion_out_MSDU2953721.edi
+[31-Jul-2025 14:50:59 America/Santo_Domingo] INFO - Desconectado del servidor SFTP
+[31-Jul-2025 14:50:59 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 14:50:59 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CE000727035B199
+[31-Jul-2025 14:50:59 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_linea_despacho = :edi_file_linea_despacho, edi_file_linea_despacho_intentos = :edi_file_linea_despacho_intentos WHERE FCNUEMRO = :numero
+[31-Jul-2025 14:50:59 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho
+[31-Jul-2025 14:50:59 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho_intentos
+[31-Jul-2025 14:50:59 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CE000727035B199
+[31-Jul-2025 14:50:59 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 14:50:59 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 14:50:59 America/Santo_Domingo] Remote file name: Exportacion_out_MSDU5947830.edi
+[31-Jul-2025 14:50:59 America/Santo_Domingo] What was written: UNB+UNOA:2+STW+MSC+202507311450+CE000727044G989'
+UNH+0031+CODECO:D:95B:UN:ITG13'
+BGM+36++9'
+TDT+20++1++:172:ZZZ+++146'
+NAD+CF+MSC:160:166'
+EQD+CN+MSDU5947830+45G1:102:5+++4'
+RFF+BN:344DOM50884'
+TMD+2'
+DTM+7:202506270525:203'
+MEA+AAE+T+KGM:1900'
+TDT+1++3++223-0089441-1:172:ZZZ+++223-0089441-1:146::WANDY RAFAEL GONZALEZ'
+LOC+165+STW:139:6:STW+TER:ZZZ'
+CNT+16:1'
+UNT+000012+0031'
+UNZ+1+CE000727044G989'
+
+[31-Jul-2025 14:50:59 America/Santo_Domingo] Guardando archivo en disco: Exportacion_out_MSDU5947830.edi
+[31-Jul-2025 14:50:59 America/Santo_Domingo] Forma de generación: automatico
+[31-Jul-2025 14:50:59 America/Santo_Domingo] Tipo: out
+[31-Jul-2025 14:50:59 America/Santo_Domingo] Guardando archivo en disco: Exportacion_out_MSDU5947830.edi
+[31-Jul-2025 14:50:59 America/Santo_Domingo] archivo guardado en : C:\proyectos\repositorios\stonewood-app\Data\ftpFiles\/Exportacion_out_MSDU5947830.edi
+[31-Jul-2025 14:50:59 America/Santo_Domingo] INFO - Conectado al servidor SFTP: 192.168.20.221:2222
+[31-Jul-2025 14:50:59 America/Santo_Domingo] INFO - Subiendo Exportacion_out_MSDU5947830.edi (402 B) a /uploads/Exportacion_out_MSDU5947830.edi
+[31-Jul-2025 14:50:59 America/Santo_Domingo] INFO - Archivo subido exitosamente: Exportacion_out_MSDU5947830.edi
+[31-Jul-2025 14:50:59 America/Santo_Domingo] INFO - Desconectado del servidor SFTP
+[31-Jul-2025 14:50:59 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 14:50:59 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CE000727044G989
+[31-Jul-2025 14:50:59 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_linea_despacho = :edi_file_linea_despacho, edi_file_linea_despacho_intentos = :edi_file_linea_despacho_intentos WHERE FCNUEMRO = :numero
+[31-Jul-2025 14:50:59 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho
+[31-Jul-2025 14:50:59 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_despacho_intentos
+[31-Jul-2025 14:50:59 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CE000727044G989
+[31-Jul-2025 14:50:59 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 14:50:59 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 14:50:59 America/Santo_Domingo] Proceso de envío de archivos EDI linea Despacho finalizado
+[31-Jul-2025 14:50:59 America/Santo_Domingo] Iniciando proceso de envío de archivos EDI linea Retorno. Buscando conduces pendientes de enviar.
+[31-Jul-2025 14:51:00 America/Santo_Domingo] Conduces pendientes de enviar EDI retorno: 4
+[31-Jul-2025 14:51:00 America/Santo_Domingo] Remote file name: Alquiler_in_MSBU1355081.edi
+[31-Jul-2025 14:51:00 America/Santo_Domingo] What was written: UNB+UNOA:2+STW+MSC+202507311451+CA000728141S629'
+UNH+0031+CODECO:D:95B:UN:ITG13'
+BGM+34++9'
+TDT+20++1++:172:ZZZ+++146'
+NAD+CF+MSC:160:166'
+EQD+CN+MSBU1355081+22G1:102:5+++4'
+RFF+BN:'
+TMD+3'
+DTM+7:202506282017:203'
+MEA+AAE+T+KGM:1900'
+TDT+1++3++227-0000261-5:172:ZZZ+++227-0000261-5:146::NATARAEL LOPEZ CARELA'
+LOC+165+STW:139:6:STW+TER:ZZZ'
+CNT+16:1'
+UNT+000012+0031'
+UNZ+1+CA000728141S629'
+
+[31-Jul-2025 14:51:00 America/Santo_Domingo] Guardando archivo en disco: Alquiler_in_MSBU1355081.edi
+[31-Jul-2025 14:51:00 America/Santo_Domingo] Forma de generación: automatico
+[31-Jul-2025 14:51:00 America/Santo_Domingo] Tipo: in
+[31-Jul-2025 14:51:00 America/Santo_Domingo] Guardando archivo en disco: Alquiler_in_MSBU1355081.edi
+[31-Jul-2025 14:51:00 America/Santo_Domingo] archivo guardado en : C:\proyectos\repositorios\stonewood-app\Data\ftpFiles\/Alquiler_in_MSBU1355081.edi
+[31-Jul-2025 14:51:00 America/Santo_Domingo] INFO - Conectado al servidor SFTP: 192.168.20.221:2222
+[31-Jul-2025 14:51:00 America/Santo_Domingo] INFO - Subiendo Alquiler_in_MSBU1355081.edi (391 B) a /uploads/Alquiler_in_MSBU1355081.edi
+[31-Jul-2025 14:51:00 America/Santo_Domingo] INFO - Archivo subido exitosamente: Alquiler_in_MSBU1355081.edi
+[31-Jul-2025 14:51:00 America/Santo_Domingo] INFO - Desconectado del servidor SFTP
+[31-Jul-2025 14:51:00 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 14:51:00 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CA000728141S629
+[31-Jul-2025 14:51:00 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_linea_retorno = :edi_file_linea_retorno, edi_file_linea_retorno_intentos = :edi_file_linea_retorno_intentos WHERE FCNUEMRO = :numero
+[31-Jul-2025 14:51:00 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_retorno
+[31-Jul-2025 14:51:00 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_retorno_intentos
+[31-Jul-2025 14:51:00 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CA000728141S629
+[31-Jul-2025 14:51:00 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 14:51:00 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 14:51:00 America/Santo_Domingo] PHP Warning:  Undefined array key "numero" in C:\proyectos\repositorios\stonewood-app\src\jobs\EdiFileLinea\StonewoodSendPendingLine_RetornoCodecoEDIFiles.php on line 26
+[31-Jul-2025 14:51:00 America/Santo_Domingo] Conduce enviado: 
+[31-Jul-2025 14:51:00 America/Santo_Domingo] Remote file name: Alquiler_in_MAGU2397289.edi
+[31-Jul-2025 14:51:00 America/Santo_Domingo] What was written: UNB+UNOA:2+STW+MSC+202507311451+CA000728134S338'
+UNH+0031+CODECO:D:95B:UN:ITG13'
+BGM+34++9'
+TDT+20++1++:172:ZZZ+++146'
+NAD+CF+MSC:160:166'
+EQD+CN+MAGU2397289+22G1:102:5+++4'
+RFF+BN:'
+TMD+3'
+DTM+7:202506281953:203'
+MEA+AAE+T+KGM:1900'
+TDT+1++3++223-0047740-7:172:ZZZ+++223-0047740-7:146::RADHAMES MUÑOZ'
+LOC+165+STW:139:6:STW+TER:ZZZ'
+CNT+16:1'
+UNT+000012+0031'
+UNZ+1+CA000728134S338'
+
+[31-Jul-2025 14:51:00 America/Santo_Domingo] Guardando archivo en disco: Alquiler_in_MAGU2397289.edi
+[31-Jul-2025 14:51:00 America/Santo_Domingo] Forma de generación: automatico
+[31-Jul-2025 14:51:00 America/Santo_Domingo] Tipo: in
+[31-Jul-2025 14:51:00 America/Santo_Domingo] Guardando archivo en disco: Alquiler_in_MAGU2397289.edi
+[31-Jul-2025 14:51:00 America/Santo_Domingo] archivo guardado en : C:\proyectos\repositorios\stonewood-app\Data\ftpFiles\/Alquiler_in_MAGU2397289.edi
+[31-Jul-2025 14:51:00 America/Santo_Domingo] INFO - Conectado al servidor SFTP: 192.168.20.221:2222
+[31-Jul-2025 14:51:00 America/Santo_Domingo] INFO - Subiendo Alquiler_in_MAGU2397289.edi (385 B) a /uploads/Alquiler_in_MAGU2397289.edi
+[31-Jul-2025 14:51:00 America/Santo_Domingo] INFO - Archivo subido exitosamente: Alquiler_in_MAGU2397289.edi
+[31-Jul-2025 14:51:00 America/Santo_Domingo] INFO - Desconectado del servidor SFTP
+[31-Jul-2025 14:51:00 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 14:51:00 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CA000728134S338
+[31-Jul-2025 14:51:00 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_linea_retorno = :edi_file_linea_retorno, edi_file_linea_retorno_intentos = :edi_file_linea_retorno_intentos WHERE FCNUEMRO = :numero
+[31-Jul-2025 14:51:00 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_retorno
+[31-Jul-2025 14:51:00 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_retorno_intentos
+[31-Jul-2025 14:51:00 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CA000728134S338
+[31-Jul-2025 14:51:00 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 14:51:00 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 14:51:00 America/Santo_Domingo] PHP Warning:  Undefined array key "numero" in C:\proyectos\repositorios\stonewood-app\src\jobs\EdiFileLinea\StonewoodSendPendingLine_RetornoCodecoEDIFiles.php on line 26
+[31-Jul-2025 14:51:00 America/Santo_Domingo] Conduce enviado: 
+[31-Jul-2025 14:51:00 America/Santo_Domingo] Remote file name: Alquiler_in_MEDU6161725.edi
+[31-Jul-2025 14:51:00 America/Santo_Domingo] What was written: UNB+UNOA:2+STW+MSC+202507311451+CA000728133S776'
+UNH+0031+CODECO:D:95B:UN:ITG13'
+BGM+34++9'
+TDT+20++1++:172:ZZZ+++146'
+NAD+CF+MSC:160:166'
+EQD+CN+MEDU6161725+22G1:102:5+++4'
+RFF+BN:'
+TMD+3'
+DTM+7:202506281936:203'
+MEA+AAE+T+KGM:1900'
+TDT+1++3++223-0079129-4:172:ZZZ+++223-0079129-4:146::FELIX RODRIGUEZ FERMIN'
+LOC+165+STW:139:6:STW+TER:ZZZ'
+CNT+16:1'
+UNT+000012+0031'
+UNZ+1+CA000728133S776'
+
+[31-Jul-2025 14:51:00 America/Santo_Domingo] Guardando archivo en disco: Alquiler_in_MEDU6161725.edi
+[31-Jul-2025 14:51:00 America/Santo_Domingo] Forma de generación: automatico
+[31-Jul-2025 14:51:00 America/Santo_Domingo] Tipo: in
+[31-Jul-2025 14:51:00 America/Santo_Domingo] Guardando archivo en disco: Alquiler_in_MEDU6161725.edi
+[31-Jul-2025 14:51:00 America/Santo_Domingo] archivo guardado en : C:\proyectos\repositorios\stonewood-app\Data\ftpFiles\/Alquiler_in_MEDU6161725.edi
+[31-Jul-2025 14:51:00 America/Santo_Domingo] INFO - Conectado al servidor SFTP: 192.168.20.221:2222
+[31-Jul-2025 14:51:00 America/Santo_Domingo] INFO - Subiendo Alquiler_in_MEDU6161725.edi (392 B) a /uploads/Alquiler_in_MEDU6161725.edi
+[31-Jul-2025 14:51:01 America/Santo_Domingo] INFO - Archivo subido exitosamente: Alquiler_in_MEDU6161725.edi
+[31-Jul-2025 14:51:01 America/Santo_Domingo] INFO - Desconectado del servidor SFTP
+[31-Jul-2025 14:51:01 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 14:51:01 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CA000728133S776
+[31-Jul-2025 14:51:01 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_linea_retorno = :edi_file_linea_retorno, edi_file_linea_retorno_intentos = :edi_file_linea_retorno_intentos WHERE FCNUEMRO = :numero
+[31-Jul-2025 14:51:01 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_retorno
+[31-Jul-2025 14:51:01 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_retorno_intentos
+[31-Jul-2025 14:51:01 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CA000728133S776
+[31-Jul-2025 14:51:01 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 14:51:01 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 14:51:01 America/Santo_Domingo] PHP Warning:  Undefined array key "numero" in C:\proyectos\repositorios\stonewood-app\src\jobs\EdiFileLinea\StonewoodSendPendingLine_RetornoCodecoEDIFiles.php on line 26
+[31-Jul-2025 14:51:01 America/Santo_Domingo] Conduce enviado: 
+[31-Jul-2025 14:51:01 America/Santo_Domingo] Remote file name: Exportacion_in_CXDU2134036.edi
+[31-Jul-2025 14:51:01 America/Santo_Domingo] What was written: 
+[31-Jul-2025 14:51:01 America/Santo_Domingo] Enviando archivo EDI linea automatico
+[31-Jul-2025 14:51:01 America/Santo_Domingo] Tipo: in
+[31-Jul-2025 14:51:01 America/Santo_Domingo] Guardando archivo en disco: Exportacion_in_CXDU2134036.edi
+[31-Jul-2025 14:51:01 America/Santo_Domingo] archivo guardado en : C:\proyectos\repositorios\stonewood-app\Data\ftpFiles\/Exportacion_in_CXDU2134036.edi
+[31-Jul-2025 14:51:01 America/Santo_Domingo] INFO - Conectado al servidor SFTP: 192.168.20.221:2222
+[31-Jul-2025 14:51:01 America/Santo_Domingo] PHP Deprecated:  file_exists(): Passing null to parameter #1 ($filename) of type string is deprecated in C:\proyectos\repositorios\stonewood-lib\src\Utils\SftpFileTransfer.php on line 80
+[31-Jul-2025 14:51:01 America/Santo_Domingo] ERROR - Archivo local no existe: 
+[31-Jul-2025 14:51:01 America/Santo_Domingo] INFO - Desconectado del servidor SFTP
+[31-Jul-2025 14:51:01 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 14:51:01 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CE000728130B745
+[31-Jul-2025 14:51:01 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_linea_retorno = :edi_file_linea_retorno, edi_file_linea_retorno_intentos = :edi_file_linea_retorno_intentos WHERE FCNUEMRO = :numero
+[31-Jul-2025 14:51:01 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_retorno
+[31-Jul-2025 14:51:01 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_retorno_intentos
+[31-Jul-2025 14:51:01 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CE000728130B745
+[31-Jul-2025 14:51:01 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 14:51:01 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 14:51:01 America/Santo_Domingo] PHP Warning:  Undefined array key "numero" in C:\proyectos\repositorios\stonewood-app\src\jobs\EdiFileLinea\StonewoodSendPendingLine_RetornoCodecoEDIFiles.php on line 30
+[31-Jul-2025 14:51:01 America/Santo_Domingo] Error al enviar EDI retorno: 
+[31-Jul-2025 14:51:01 America/Santo_Domingo] Proceso de envío de archivos EDI linea Retorno finalizado
+[31-Jul-2025 15:01:01 America/Santo_Domingo] Iniciando proceso de envío de archivos EDI linea Despacho. Buscando conduces pendientes de enviar.
+[31-Jul-2025 15:01:06 America/Santo_Domingo] Conduces pendientes de enviar EDI Despacho: 0
+[31-Jul-2025 15:01:06 America/Santo_Domingo] Proceso de envío de archivos EDI linea Despacho finalizado
+[31-Jul-2025 15:01:06 America/Santo_Domingo] Iniciando proceso de envío de archivos EDI linea Retorno. Buscando conduces pendientes de enviar.
+[31-Jul-2025 15:01:12 America/Santo_Domingo] Conduces pendientes de enviar EDI retorno: 1
+[31-Jul-2025 15:01:12 America/Santo_Domingo] Remote file name: Alquiler_in_CAAU7330683.edi
+[31-Jul-2025 15:01:12 America/Santo_Domingo] What was written: UNB+UNOA:2+STW+MSC+202507311501+CA000749318E252'
+UNH+0031+CODECO:D:95B:UN:ITG13'
+BGM+34++9'
+TDT+20++1++:172:ZZZ+++146'
+NAD+CF+MSC:160:166'
+EQD+CN+CAAU7330683+45G1:102:5+++4'
+RFF+BN:'
+TMD+3'
+DTM+7:202507311343:203'
+MEA+AAE+T+KGM:1900'
+TDT+1++3++226-0011979-0:172:ZZZ+++226-0011979-0:146::VICTOR RAMON PADILLA VARGAS'
+LOC+165+STW:139:6:STW+TER:ZZZ'
+CNT+16:1'
+UNT+000012+0031'
+UNZ+1+CA000749318E252'
+
+[31-Jul-2025 15:01:12 America/Santo_Domingo] Guardando archivo en disco: Alquiler_in_CAAU7330683.edi
+[31-Jul-2025 15:01:12 America/Santo_Domingo] Forma de generación: automatico
+[31-Jul-2025 15:01:12 America/Santo_Domingo] Tipo: in
+[31-Jul-2025 15:01:12 America/Santo_Domingo] Guardando archivo en disco: Alquiler_in_CAAU7330683.edi
+[31-Jul-2025 15:01:12 America/Santo_Domingo] archivo guardado en : C:\proyectos\repositorios\stonewood-app\Data\ftpFiles\/Alquiler_in_CAAU7330683.edi
+[31-Jul-2025 15:01:12 America/Santo_Domingo] PHP Deprecated:  Optional parameter $port declared before required parameter $password is implicitly treated as a required parameter in C:\proyectos\repositorios\stonewood-lib\src\Utils\SftpFileTransfer.php on line 14
+[31-Jul-2025 15:01:14 America/Santo_Domingo] INFO - Conectado al servidor SFTP: ftp.msc.com:22
+[31-Jul-2025 15:01:14 America/Santo_Domingo] INFO - Subiendo Alquiler_in_CAAU7330683.edi (397 B) a /DO344-DOHAIAA/Upload/Alquiler_in_CAAU7330683.edi
+[31-Jul-2025 15:01:15 America/Santo_Domingo] INFO - Archivo subido exitosamente: Alquiler_in_CAAU7330683.edi
+[31-Jul-2025 15:01:15 America/Santo_Domingo] INFO - Desconectado del servidor SFTP
+[31-Jul-2025 15:01:15 America/Santo_Domingo] `updateWithPHPKeys`: Primary key mapping. : numero
+[31-Jul-2025 15:01:15 America/Santo_Domingo] `updateWithPHPKeys`: Identifer value.     : CA000749318E252
+[31-Jul-2025 15:01:15 America/Santo_Domingo] SQL String: UPDATE fconduce SET edi_file_linea_retorno = :edi_file_linea_retorno, edi_file_linea_retorno_intentos = :edi_file_linea_retorno_intentos WHERE FCNUEMRO = :numero
+[31-Jul-2025 15:01:15 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_retorno
+[31-Jul-2025 15:01:15 America/Santo_Domingo] `updateWithPHPKeys`: Will bind value for column mapping: edi_file_linea_retorno_intentos
+[31-Jul-2025 15:01:15 America/Santo_Domingo] `updateWithPHPKeys`: Binding primary key value (numero): CA000749318E252
+[31-Jul-2025 15:01:15 America/Santo_Domingo] Ignoring recordAudit
+[31-Jul-2025 15:01:15 America/Santo_Domingo] `updateWithPHPKeys` - Update result: 1
+[31-Jul-2025 15:01:15 America/Santo_Domingo] PHP Warning:  Undefined array key "numero" in C:\proyectos\repositorios\stonewood-app\src\jobs\EdiFileLinea\StonewoodSendPendingLine_RetornoCodecoEDIFiles.php on line 26
+[31-Jul-2025 15:01:15 America/Santo_Domingo] Conduce enviado: 
+[31-Jul-2025 15:01:15 America/Santo_Domingo] Proceso de envío de archivos EDI linea Retorno finalizado

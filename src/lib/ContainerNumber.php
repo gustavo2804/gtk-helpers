@@ -393,6 +393,12 @@ class ContainerNumber
 			"length"    => 20,
 			"stonewood" => "20TK",
 		],
+		"22T1" => [ // 5
+			"english"   => "20' Tank (nondangerous liquids, test pressure 0,45 bar)", 
+			"spanish"   => "Contenedor de 20 pies cisterna (líquidos no peligrosos, presión de prueba 0,45 bar)",
+			"length"    => 20,
+			"stonewood" => "20TK",
+		],
 		"20T5" => [ // 6
 			"english"  => "20' Tank (dangerous liquids, test pressure 4 bar)", 
 			"spanish"  => "Contenedor de 20 pies cisterna (líquidos peligrosos, presión de prueba 4 bar)",
@@ -551,6 +557,20 @@ class ContainerNumber
 		// 40 = 8' 40 foot containers
 		//--------------------------
 		"40OT" => [ // 1
+			"english" => "40' Open Top", 
+			"spanish" => "Contenedor de 40 pies tipo techo abierto",
+			"length"  => 40,
+			"stonewood" => "40OT",
+			"msc_code" => "45.51",
+		],
+		"45U0" => [ // 1
+			"english" => "40' Open Top", 
+			"spanish" => "Contenedor de 40 pies tipo techo abierto",
+			"length"  => 40,
+			"stonewood" => "40OT",
+			"msc_code" => "45.51",
+		],
+		"45U1" => [ // 1
 			"english" => "40' Open Top", 
 			"spanish" => "Contenedor de 40 pies tipo techo abierto",
 			"length"  => 40,
