@@ -93,7 +93,8 @@ function currentUserIfChecked($columnMapping, $formItem)
         case "1":
         case "checked":
         case "on":
-            $toReturn = DataAccessManager::get('persona')->getCurrentUser("cedula");
+            $user = DataAccessManager::get('session')->getCurrentUser();
+            $toReturn = DAM::get("persona")->valueForKey("cedula", $user);
             break;
         default:
             break;
