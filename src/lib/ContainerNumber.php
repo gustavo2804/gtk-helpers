@@ -522,6 +522,12 @@ class ContainerNumber
 			"stonewood" => "20DC",
 			"msc_code"  => "22.13",
 		],
+		"22K2" => [ // 18
+			"english"   => "20' HC Tank (22K2) (non-dangerous, 4 bar)", 
+			"spanish"   => "Contenedor de 20 pies cisterna alta altura (22K2) (no peligrosos, 4 bar)",
+			"length"    => 20,
+			"stonewood" => "20TK"
+		],
 		//--------------------------
 		// 24 = 8'6" 20 foot containers HC
 		//--------------------------
